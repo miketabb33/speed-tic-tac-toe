@@ -3,7 +3,7 @@ describe("gameplay", ()=> {
 		cy.visit("http://localhost:3000/")
 	})
 
-	it('first test', () => {
-		cy.get('h1').contains('Welcome to')
+	it('gameplay', () => {
+		cy.get('.square').contains('x')
 	})
 })
