@@ -3,36 +3,36 @@ import renderer from 'react-test-renderer'
 import Square from '../../views/square.js'
 
 test('render empty', () => {
-	const square = renderer.create(
+	const subject = renderer.create(
 		<Square 
 			onClick = { () => {} }
 		/>
 	)
 
-	const result = square.toJSON()
+	const result = subject.toJSON()
 	expect(result).toMatchSnapshot()
 })
 
 test('render x', () => {
-	const square = renderer.create(
+	const subject = renderer.create(
 		<Square 
 		 	value = "x"
 			onClick = { () => {} }
 		/>
 	)
 
-	const result = square.toJSON()
+	const result = subject.toJSON()
 	expect(result).toMatchSnapshot()
 })
 
 test('render o', () => {
-	const square = renderer.create(
+	const subject = renderer.create(
 		<Square 
 		 	value = "o"
 			onClick = { () => {} }
 		/>
 	)
 
-	const result = square.toJSON()
+	const result = subject.toJSON()
 	expect(result).toMatchSnapshot()
 })

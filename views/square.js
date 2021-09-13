@@ -17,7 +17,7 @@ export default class Square extends React.Component {
 	}
 
 	getContents(imageName) {
-		if (imageName == 'x' || imageName == 'o') {
+		if (imageName == 'X' || imageName == 'O') {
 			return this.getMarkerImage(imageName)
    	} else {
    		return this.getBlankSpace()

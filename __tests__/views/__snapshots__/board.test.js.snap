@@ -148,12 +148,12 @@ exports[`render 1`] = `
             />
           </div>
           <img
-            alt="x player marker"
+            alt="X player marker"
             data-nimg="intrinsic"
             decoding="async"
             draggable="false"
-            src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-            srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
+            src="/_next/image?url=%2Fplayer-markers%2FX.png&w=256&q=75"
+            srcSet="/_next/image?url=%2Fplayer-markers%2FX.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2FX.png&w=256&q=75 2x"
             style={
               Object {
                 "border": "none",
@@ -179,13 +179,13 @@ exports[`render 1`] = `
           />
           <noscript>
             <img
-              alt="x player marker"
+              alt="X player marker"
               data-nimg="intrinsic"
               decoding="async"
               draggable="false"
               loading="lazy"
-              src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-              srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
+              src="/_next/image?url=%2Fplayer-markers%2FX.png&w=256&q=75"
+              srcSet="/_next/image?url=%2Fplayer-markers%2FX.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2FX.png&w=256&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -216,211 +216,31 @@ exports[`render 1`] = `
         className="square"
         onClick={[Function]}
       >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+        <svg
+          height={79}
+          width={79}
         >
-          <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "block",
-                "maxWidth": "100%",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzkiIGhlaWdodD0iNzkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-              style={
-                Object {
-                  "border": "none",
-                  "display": "block",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "padding": 0,
-                }
-              }
-            />
-          </div>
-          <img
-            alt="o player marker"
-            data-nimg="intrinsic"
-            decoding="async"
-            draggable="false"
-            src="/_next/image?url=%2Fplayer-markers%2Fo.png&w=256&q=75"
-            srcSet="/_next/image?url=%2Fplayer-markers%2Fo.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fo.png&w=256&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
+          <rect
+            className="blank"
+            height={79}
+            width={79}
           />
-          <noscript>
-            <img
-              alt="o player marker"
-              data-nimg="intrinsic"
-              decoding="async"
-              draggable="false"
-              loading="lazy"
-              src="/_next/image?url=%2Fplayer-markers%2Fo.png&w=256&q=75"
-              srcSet="/_next/image?url=%2Fplayer-markers%2Fo.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fo.png&w=256&q=75 2x"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </div>
+        </svg>
       </button>
       <button
         className="square"
         onClick={[Function]}
       >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+        <svg
+          height={79}
+          width={79}
         >
-          <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "block",
-                "maxWidth": "100%",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzkiIGhlaWdodD0iNzkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-              style={
-                Object {
-                  "border": "none",
-                  "display": "block",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "padding": 0,
-                }
-              }
-            />
-          </div>
-          <img
-            alt="x player marker"
-            data-nimg="intrinsic"
-            decoding="async"
-            draggable="false"
-            src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-            srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
+          <rect
+            className="blank"
+            height={79}
+            width={79}
           />
-          <noscript>
-            <img
-              alt="x player marker"
-              data-nimg="intrinsic"
-              decoding="async"
-              draggable="false"
-              loading="lazy"
-              src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-              srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </div>
+        </svg>
       </button>
     </div>
     <div>
@@ -475,106 +295,16 @@ exports[`render 1`] = `
         className="square"
         onClick={[Function]}
       >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+        <svg
+          height={79}
+          width={79}
         >
-          <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "block",
-                "maxWidth": "100%",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzkiIGhlaWdodD0iNzkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-              style={
-                Object {
-                  "border": "none",
-                  "display": "block",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "padding": 0,
-                }
-              }
-            />
-          </div>
-          <img
-            alt="x player marker"
-            data-nimg="intrinsic"
-            decoding="async"
-            draggable="false"
-            src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-            srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
+          <rect
+            className="blank"
+            height={79}
+            width={79}
           />
-          <noscript>
-            <img
-              alt="x player marker"
-              data-nimg="intrinsic"
-              decoding="async"
-              draggable="false"
-              loading="lazy"
-              src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-              srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </div>
+        </svg>
       </button>
       <button
         className="square"

@@ -3,10 +3,7 @@ import styles from '../styles/Styles.module.css'
 
 export default class TextDisplay extends React.Component {
 	static xFirst = 'X Goes First'
-	static xTurn = this.turn("X")
-	static oTurn = this.turn("O")
-	static xWin = this.winner("X")
-	static oWin = this.winner("O")
+	static draw = 'Draw'
 
 	static turn(player) {
 		return player + "'s Turn"
