@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Styles.module.css'
 
-export default class Display extends React.Component {
+export default class TextDisplay extends React.Component {
 	static xFirst = 'X Goes First'
 	static xTurn = this.turn("X")
 	static oTurn = this.turn("O")
@@ -18,7 +18,7 @@ export default class Display extends React.Component {
 
 	render() {
 		return (
-			<div className={styles.display}>
+			<div className={styles.textDisplay}>
 				{ this.props.value }
 			</div>
 		)

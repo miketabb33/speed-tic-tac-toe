@@ -1,12 +1,5 @@
 .container {}
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
-
 .blank {
 	opacity: 0;
 }
@@ -15,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70vh;
 }
 
 .boardImage {
@@ -34,7 +28,7 @@
   margin: 5px;
 }
 
-.display {
+.textDisplay {
   display: flex;
   justify-content: center;
   align-items: center;

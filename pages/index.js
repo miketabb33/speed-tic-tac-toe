@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
-import Board from '../views/board.js'
-import Display from '../views/display.js'
+import Game from '../views/game.js'
 
 export default function Home() {
   return (
@@ -12,12 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section>
-        <Display value = { Display.oWin }/>
-      </section>
-
       <main className={styles.main}>
-        <Board />
+        <Game />
       </main>
     </div>
   )
