@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render oTurn 1`] = `
+<div
+  className="display"
+>
+  O's Turn
+</div>
+`;
+
+exports[`render oWin 1`] = `
+<div
+  className="display"
+>
+  O is the Winner!
+</div>
+`;
+
+exports[`render xFirst 1`] = `
+<div
+  className="display"
+>
+  X Goes First
+</div>
+`;
+
+exports[`render xTurn 1`] = `
+<div
+  className="display"
+>
+  X's Turn
+</div>
+`;
+
+exports[`render xWin 1`] = `
+<div
+  className="display"
+>
+  X is the Winner!
+</div>
+`;
