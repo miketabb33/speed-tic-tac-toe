@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
-import Square from '../views/square.js'
+import Board from '../views/board.js'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Square />
+        <Board />
       </main>
     </div>
   )

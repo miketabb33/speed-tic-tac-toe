@@ -3,13 +3,13 @@ import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
 
 export default class Square extends React.Component {
-	size = 100
+	size = 79
 
 	render() { 
 		return (
 			<button
 				className = { styles.square }
-				onClick = { didClickSquare } 
+				onClick = { this.props.onClick } 
 			>
 			{ this.getContents(this.props.value) }
      	</button>
@@ -44,8 +44,4 @@ export default class Square extends React.Component {
 			</svg>
  		)
 	}
-}
-
-function didClickSquare() {
-  console.log('hi')
 }

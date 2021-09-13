@@ -1,23 +1,37 @@
 .container {
+
+}
+
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.main {
-  flex: 1;
+.blank {
+	opacity: 0;
+}
+
+.board {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.square {
-	background-color: white;
-	border: 1px solid black;
+.boardImage {
+  position: absolute;
 }
 
-.blank {
-	opacity: 0;
+.boardSquares {
+  position: absolute;
+}
+
+.square {
+  display: inline-block;
+  box-sizing: content-box;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 0px solid black;
+  padding: 10px;
+  margin: 5px;
 }
