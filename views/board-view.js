@@ -1,16 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
-import Square from '../views/square.js'
+import SquareView from './square-view.js'
 
-export default class Board extends React.Component {
-	size = 330
+export default class BoardView extends React.Component {
+	boardImageSize = 330
 
 	renderSquare(i) {
 		return (
-			<Square 
+			<SquareView 
 	      value = { this.props.moves[i] }
-	      onClick = { ()=> this.props.onClick(i) } 
+	      onClick = { ()=> this.props.onClick(i, this.props.boardIndex) } 
 	    />
 		)
 	}
@@ -29,8 +29,8 @@ export default class Board extends React.Component {
 			<div className= {styles.boardImage}>
 				<Image 
 					src= "/board.png"
-					width= {this.size}
-					height= {this.size}
+					width= {this.boardImageSize}
+					height= {this.boardImageSize}
 				/>
 			</div>
 		)

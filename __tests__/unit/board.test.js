@@ -1,17 +1,16 @@
-import React from 'react'
-import GameManager from '../../game/game-manager.js'
+import Board from '../../game/board.js'
 
 let subject
 
 beforeEach(() => {
-	subject = new GameManager
+	subject = new Board
 })
 
-test('addMove', () => {
-	const moveToAdd = 'X'
+test('addMove', () => {	
 	expect(subject.moves).toStrictEqual([null, null, null, null, null, null, null, null, null])
+	const moveToAdd = 'X'
 
-	subject.addMove(2, moveToAdd)
+	subject.addMove(moveToAdd, 2)
 
 	expect(subject.moves).toStrictEqual([null, null, moveToAdd, null, null, null, null, null, null])
 })
@@ -20,7 +19,7 @@ test('moveAvailable-isAvailable', () => {
 	subject.moves = ['X', null, 'O', null, 'X', null]
 
 	const i = 1
-	const result = subject.moveAvailable(i)
+	const result = subject.isMoveAvailable(i)
 
 	expect(result).toBe(true)
 })
@@ -29,7 +28,7 @@ test('moveAvailable-notAvailable', () => {
 	subject.moves = ['X', null, 'O', null, 'X', null]
 
 	const i = 2
-	const result = subject.moveAvailable(i)
+	const result = subject.isMoveAvailable(i)
 
 	expect(result).toBe(false)
 })
@@ -56,7 +55,6 @@ test('winner X', () => {
 	let result = subject.winner()
 
 	expect(result).toBe("X")
-	expect(subject.isGameOver).toBe(true)
 })
 
 test('winner O', () => {
@@ -65,7 +63,6 @@ test('winner O', () => {
 	let result = subject.winner()
 
 	expect(result).toBe("O")
-	expect(subject.isGameOver).toBe(true)
 })
 
 test('winner undefined', () => {
@@ -74,5 +71,4 @@ test('winner undefined', () => {
 	let result = subject.winner()
 
 	expect(result).toBe(undefined)
-	expect(subject.isGameOver).toBe(false)
 })

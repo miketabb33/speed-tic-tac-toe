@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Styles.module.css'
 
-export default class TextDisplay extends React.Component {
+export default class TextDisplayView extends React.Component {
 	static xFirst = 'X Goes First'
 	static draw = 'Draw'
 

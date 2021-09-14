@@ -1,8 +1,7 @@
-export default class GameManager {
+export default class Board {
 	moves = Array(9).fill(null)
-	isGameOver = false
 
-	winningMoves = [
+  winningMoves = [
 		[0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -13,13 +12,13 @@ export default class GameManager {
     [2, 4, 6]
 	]
 
-	addMove(index, marker) {
+  addMove(marker, index) {
 		const newMoves = this.moves.slice()
     newMoves[index] = marker
     this.moves = newMoves
 	}
 
-	moveAvailable(index) {
+	isMoveAvailable(index) {
 		return this.moves[index] == null ? true : false
 	}
 
@@ -28,7 +27,7 @@ export default class GameManager {
 		return availableMoves.length != 0 
 	}
 
-	winner() {
+  winner() {
 		for (let i = 0; i < this.winningMoves.length; i++) {
 	    const [a, b, c] = this.winningMoves[i];
 	    if (this.moves[a] && this.moves[a] === this.moves[b] && this.moves[a] === this.moves[c]) {

@@ -1,6 +1,10 @@
 export default class Player {
-  #playerMarkers = ["X", "O"]
+  #playerMarkers = []
   #currentPlayerIndex = 0
+
+	constructor(playerMarkers) {
+		this.#playerMarkers = playerMarkers
+	}
 
   current() {
 		return this.#playerMarkers[this.#currentPlayerIndex]

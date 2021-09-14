@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Board from '../../views/board.js'
+import GameView from '../../views/game-view.js'
 
 test('render', () => {
 	const subject = renderer.create(
-		<Board moves = { ["X"] }/>
+		<GameView />
 	)
 
 	const result = subject.toJSON()

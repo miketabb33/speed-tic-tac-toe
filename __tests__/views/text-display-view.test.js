@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import TextDisplay from '../../views/text-display.js'
+import TextDisplayView from '../../views/text-display-view.js'
 
 test('render xFirst', () => {
 	const subject = renderer.create(
-		<TextDisplay value = { TextDisplay.xFirst } />
+		<TextDisplayView value = { TextDisplayView.xFirst } />
 	)
 
 	const result = subject.toJSON()
@@ -13,7 +13,7 @@ test('render xFirst', () => {
 
 test('render xTurn', () => {
 	const subject = renderer.create(
-		<TextDisplay value = { TextDisplay.turn("X") } />
+		<TextDisplayView value = { TextDisplayView.turn("X") } />
 	)
 
 	const result = subject.toJSON()
@@ -22,7 +22,7 @@ test('render xTurn', () => {
 
 test('render oTurn', () => {
 	const subject = renderer.create(
-		<TextDisplay value = { TextDisplay.turn("O") } />
+		<TextDisplayView value = { TextDisplayView.turn("O") } />
 	)
 
 	const result = subject.toJSON()
@@ -31,7 +31,7 @@ test('render oTurn', () => {
 
 test('render xWin', () => {
 	const subject = renderer.create(
-		<TextDisplay value = { TextDisplay.winner("X") } />
+		<TextDisplayView value = { TextDisplayView.winner("X") } />
 	)
 
 	const result = subject.toJSON()
@@ -40,7 +40,7 @@ test('render xWin', () => {
 
 test('render oWin', () => {
 	const subject = renderer.create(
-		<TextDisplay value = { TextDisplay.winner("O") } />
+		<TextDisplayView value = { TextDisplayView.winner("O") } />
 	)
 
 	const result = subject.toJSON()
@@ -49,7 +49,7 @@ test('render oWin', () => {
 
 test('render draw', () => {
 	const subject = renderer.create(
-		<TextDisplay value = { TextDisplay.draw } />
+		<TextDisplayView value = { TextDisplayView.draw } />
 	)
 
 	const result = subject.toJSON()

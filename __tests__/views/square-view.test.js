@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Square from '../../views/square.js'
+import SquareView from '../../views/square-view.js'
 
 test('render empty', () => {
 	const subject = renderer.create(
-		<Square 
+		<SquareView 
 			onClick = { () => {} }
 		/>
 	)
@@ -15,7 +15,7 @@ test('render empty', () => {
 
 test('render x', () => {
 	const subject = renderer.create(
-		<Square 
+		<SquareView 
 		 	value = "x"
 			onClick = { () => {} }
 		/>
@@ -27,7 +27,7 @@ test('render x', () => {
 
 test('render o', () => {
 	const subject = renderer.create(
-		<Square 
+		<SquareView 
 		 	value = "o"
 			onClick = { () => {} }
 		/>

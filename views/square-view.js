@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
 
-export default class Square extends React.Component {
+export default class SquareView extends React.Component {
 	size = 79
 
 	render() { 

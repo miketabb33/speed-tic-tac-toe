@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
-import Game from '../views/game.js'
+import GameView from '../views/game-view.js'
 
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Game />
+        <GameView />
       </main>
     </div>
   )
