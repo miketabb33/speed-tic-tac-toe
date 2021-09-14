@@ -8,23 +8,12 @@ beforeEach(() => {
 })
 
 test('addMove', () => {
+	const moveToAdd = 'X'
 	expect(subject.moves).toStrictEqual([null, null, null, null, null, null, null, null, null])
 
-	subject.addMove(2)
+	subject.addMove(2, moveToAdd)
 
-	expect(subject.moves).toStrictEqual([null, null, "X", null, null, null, null, null, null])
-})
-
-test('currentPlayer nextPlayer', () => {
-	expect(subject.currentPlayer()).toBe("X")
-
-	subject.nextPlayer()
-
-	expect(subject.currentPlayer()).toBe("O")
-
-	subject.nextPlayer()
-
-	expect(subject.currentPlayer()).toBe("X")
+	expect(subject.moves).toStrictEqual([null, null, moveToAdd, null, null, null, null, null, null])
 })
 
 test('moveAvailable-isAvailable', () => {

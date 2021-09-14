@@ -3,11 +3,13 @@ import styles from '../styles/Styles.module.css'
 import Board from '../views/board.js'
 import TextDisplay from '../views/text-display.js'
 import GameManager from '../game/game-manager.js'
+import Player from '../game/player.js'
 
 export default class Game extends React.Component {
   constructor(props) {
     super(props)
     this.gameManager = new GameManager
+    this.player = new Player
     this.state = {
       moves: this.gameManager.moves,
       display: TextDisplay.xFirst
@@ -34,15 +36,16 @@ export default class Game extends React.Component {
 
   didClickValidSquare(i) {
     let displayContent
-    this.gameManager.addMove(i)
+    const currentPlayer = this.player.current()
+    this.gameManager.addMove(i, currentPlayer)
 
     const winner = this.gameManager.winner()
     if (winner) {
       displayContent = TextDisplay.winner(winner)
     } else {
       if (this.gameManager.anyAvailableMoves()) {
-        this.gameManager.nextPlayer()
-        displayContent = TextDisplay.turn(this.gameManager.currentPlayer())
+        this.player.next()
+        displayContent = TextDisplay.turn(currentPlayer)
       } else {
         displayContent = TextDisplay.draw
       }
