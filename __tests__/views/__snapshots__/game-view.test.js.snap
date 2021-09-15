@@ -8,81 +8,54 @@ exports[`render 1`] = `
     X Goes First
   </div>
   <div
-    className="board"
+    className="boards"
   >
     <div
-      className="boardImage"
+      className="board"
     >
       <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "margin": 0,
-            "maxWidth": "100%",
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
+        className="boardImage"
       >
         <div
           style={
             Object {
               "boxSizing": "border-box",
-              "display": "block",
+              "display": "inline-block",
+              "margin": 0,
               "maxWidth": "100%",
+              "overflow": "hidden",
+              "position": "relative",
             }
           }
         >
-          <img
-            alt=""
-            aria-hidden={true}
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+          <div
             style={
               Object {
-                "border": "none",
+                "boxSizing": "border-box",
                 "display": "block",
-                "margin": 0,
                 "maxWidth": "100%",
-                "padding": 0,
               }
             }
-          />
-        </div>
-        <img
-          data-nimg="intrinsic"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-        <noscript>
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style={
+                Object {
+                  "border": "none",
+                  "display": "block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "padding": 0,
+                }
+              }
+            />
+          </div>
           <img
             data-nimg="intrinsic"
             decoding="async"
-            loading="lazy"
-            src="/_next/image?url=%2Fboard.png&w=750&q=75"
-            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style={
               Object {
                 "border": "none",
@@ -106,152 +79,694 @@ exports[`render 1`] = `
               }
             }
           />
-        </noscript>
+          <noscript>
+            <img
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fboard.png&w=750&q=75"
+              srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </div>
+      </div>
+      <div
+        className="boardSquares"
+      >
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        className="boardTitle"
+      >
+        Top
       </div>
     </div>
     <div
-      className="boardSquares"
+      className="board"
     >
-      <div>
-        <button
-          className="square"
-          onClick={[Function]}
+      <div
+        className="boardImage"
+      >
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
         >
-          <svg
-            height={79}
-            width={79}
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "block",
+                "maxWidth": "100%",
+              }
+            }
           >
-            <rect
-              className="blank"
-              height={79}
-              width={79}
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style={
+                Object {
+                  "border": "none",
+                  "display": "block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "padding": 0,
+                }
+              }
             />
-          </svg>
-        </button>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
-          >
-            <rect
-              className="blank"
-              height={79}
-              width={79}
+          </div>
+          <img
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fboard.png&w=750&q=75"
+              srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
             />
-          </svg>
-        </button>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
-          >
-            <rect
-              className="blank"
-              height={79}
-              width={79}
-            />
-          </svg>
-        </button>
+          </noscript>
+        </div>
       </div>
-      <div>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
+      <div
+        className="boardSquares"
+      >
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
           >
-            <rect
-              className="blank"
+            <svg
               height={79}
               width={79}
-            />
-          </svg>
-        </button>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
           >
-            <rect
-              className="blank"
+            <svg
               height={79}
               width={79}
-            />
-          </svg>
-        </button>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
           >
-            <rect
-              className="blank"
+            <svg
               height={79}
               width={79}
-            />
-          </svg>
-        </button>
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div>
-        <button
-          className="square"
-          onClick={[Function]}
+      <div
+        className="boardTitle"
+      >
+        Middle
+      </div>
+    </div>
+    <div
+      className="board"
+    >
+      <div
+        className="boardImage"
+      >
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
         >
-          <svg
-            height={79}
-            width={79}
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "block",
+                "maxWidth": "100%",
+              }
+            }
           >
-            <rect
-              className="blank"
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style={
+                Object {
+                  "border": "none",
+                  "display": "block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "padding": 0,
+                }
+              }
+            />
+          </div>
+          <img
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fboard.png&w=750&q=75"
+              srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </div>
+      </div>
+      <div
+        className="boardSquares"
+      >
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
               height={79}
               width={79}
-            />
-          </svg>
-        </button>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
           >
-            <rect
-              className="blank"
+            <svg
               height={79}
               width={79}
-            />
-          </svg>
-        </button>
-        <button
-          className="square"
-          onClick={[Function]}
-        >
-          <svg
-            height={79}
-            width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
           >
-            <rect
-              className="blank"
+            <svg
               height={79}
               width={79}
-            />
-          </svg>
-        </button>
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+          <button
+            className="square"
+            onClick={[Function]}
+          >
+            <svg
+              height={79}
+              width={79}
+            >
+              <rect
+                className="clear"
+                height={79}
+                width={79}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        className="boardTitle"
+      >
+        Bottom
       </div>
     </div>
   </div>

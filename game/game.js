@@ -1,12 +1,13 @@
 import GameState from './game-state.js'
+import Winner from './winner.js'
 
 export default class Game {
 	isGameOver = false
+	#boards
 
-	#boards = []
-
-	constructor(boards) {
-		this.#boards = boards
+	constructor(board1, board2, board3) {
+		this.#boards = [board1, board2, board3]
+		this.winner = new Winner
 	}
 
 	getMoves(boardIndex) {
@@ -24,8 +25,7 @@ export default class Game {
 	}
 
 	getPostMoveGameState() {
-		if (this.winner()) {
-			// Double testing winner...
+		if (this.winner.check(this.#boards)) {
 			return GameState.winner
 		} else {
 			if (this.anyAvailableMoves()) {
@@ -40,16 +40,6 @@ export default class Game {
 		for (var i = 0; i < this.#boards.length; i++) {
 			const board = this.#boards[i]
 			if (board.anyAvailableMoves()) {
-				return true
-			}
-		}
-		return false
-	}
-
-	winner() {
-		for (var i = 0; i < this.#boards.length; i++) {
-			const board = this.#boards[i]
-			if (board.winner()) {
 				return true
 			}
 		}

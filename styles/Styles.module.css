@@ -1,27 +1,36 @@
 .container {}
 
-.blank {
-	opacity: 0;
+.clear {
+	opacity: 0.0;
+}
+
+.boards {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .board {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
+ margin: 0px 3em;
 }
 
 .boardImage {
   position: absolute;
+  z-index: -1;
 }
 
-.boardSquares {
-  position: absolute;
+.boardSquares {}
+
+.boardTitle {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 15px;
 }
 
 .square {
   display: inline-block;
-  box-sizing: content-box;
   background-color: rgba(0, 0, 0, 0.0);
   border: 0px solid black;
   padding: 10px;
@@ -32,6 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  font-size: 3em;
   margin-top: 10px;
 }

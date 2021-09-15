@@ -10,7 +10,7 @@ exports[`render empty 1`] = `
     width={79}
   >
     <rect
-      className="blank"
+      className="clear"
       height={79}
       width={79}
     />
@@ -28,7 +28,7 @@ exports[`render o 1`] = `
     width={79}
   >
     <rect
-      className="blank"
+      className="clear"
       height={79}
       width={79}
     />
@@ -46,7 +46,7 @@ exports[`render x 1`] = `
     width={79}
   >
     <rect
-      className="blank"
+      className="clear"
       height={79}
       width={79}
     />

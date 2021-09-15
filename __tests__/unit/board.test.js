@@ -48,27 +48,3 @@ test('anyAvailableMoves 1 left', () => {
 
 	expect(result).toBe(true)
 })
-
-test('winner X', () => {
-	subject.moves = ["X", "X", "X", null, null, null, null, null, null,]
-
-	let result = subject.winner()
-
-	expect(result).toBe("X")
-})
-
-test('winner O', () => {
-	subject.moves = ["O", "X", "X", "O", null, null, "O", null, null,]
-
-	let result = subject.winner()
-
-	expect(result).toBe("O")
-})
-
-test('winner undefined', () => {
-	subject.moves = ["O", "X", "X", "O", null, null, "X", null, null,]
-
-	let result = subject.winner()
-
-	expect(result).toBe(undefined)
-})

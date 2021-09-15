@@ -40,7 +40,7 @@ export default class SquareView extends React.Component {
 	getBlankSpace() {
 		return (
    		<svg width={this.size} height={this.size}>
-			  <rect width={this.size} height={this.size} className={styles.blank}/>
+			  <rect width={this.size} height={this.size} className={styles.clear}/>
 			</svg>
  		)
 	}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Styles.module.css'
 import GameState from '../game/game-state'
-import BoardView from './board-view.js'
+import BoardsView from './boards-view.js'
 import TextDisplayView from './text-display-view.js'
 import Game from '../game/game.js'
 import Player from '../game/player.js'
@@ -13,12 +13,18 @@ export default class GameView extends React.Component {
 
     const playerMarkers = ['X', 'O']
     const board1 = new Board
+    const board2 = new Board
+    const board3 = new Board
 
-    this.game = new Game([board1])
+    this.game = new Game(board1, board2, board3)
     this.player = new Player(playerMarkers)
     
     this.state = {
-      moves: this.game.getMoves(0),
+      moves: [
+        this.game.getMoves(0), 
+        this.game.getMoves(1),
+        this.game.getMoves(2)
+      ],
       display: TextDisplayView.xFirst
     }
   }
@@ -26,10 +32,9 @@ export default class GameView extends React.Component {
   render() {
     return (
       <div>
-        <TextDisplayView value = { this.state.display }/>
-        <BoardView 
-          moves = { this.state.moves } 
-          boardIndex = { 0 }
+        <TextDisplayView value = { this.state.display } />
+        <BoardsView 
+          moves = { this.state.moves }
           onClick = { (squareIndex, boardIndex) => this.didClickSquare(squareIndex, boardIndex) }
         />
       </div>
@@ -51,7 +56,11 @@ export default class GameView extends React.Component {
     }
 
     this.setState({
-      moves: this.game.getMoves(0),
+      moves: [
+        this.game.getMoves(0), 
+        this.game.getMoves(1),
+        this.game.getMoves(2)
+      ],
       display: displayContent
     })
   }

@@ -20,6 +20,7 @@ export default class BoardView extends React.Component {
 			<div className= {styles.board}>
 				{ this.boardImage() }
 				{ this.boardSquares() }
+				{ this.boardLabel(this.props.boardTitle) }
 			</div>
 		)
 	}
@@ -54,6 +55,14 @@ export default class BoardView extends React.Component {
 					{this.renderSquare(7)}
 					{this.renderSquare(8)}
 				</div>
+			</div>
+		)
+	}
+
+	boardLabel(title) {
+		return (
+			<div className={ styles.boardTitle }>
+				{ title }
 			</div>
 		)
 	}

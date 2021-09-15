@@ -221,7 +221,7 @@ exports[`render 1`] = `
           width={79}
         >
           <rect
-            className="blank"
+            className="clear"
             height={79}
             width={79}
           />
@@ -236,54 +236,7 @@ exports[`render 1`] = `
           width={79}
         >
           <rect
-            className="blank"
-            height={79}
-            width={79}
-          />
-        </svg>
-      </button>
-    </div>
-    <div>
-      <button
-        className="square"
-        onClick={[Function]}
-      >
-        <svg
-          height={79}
-          width={79}
-        >
-          <rect
-            className="blank"
-            height={79}
-            width={79}
-          />
-        </svg>
-      </button>
-      <button
-        className="square"
-        onClick={[Function]}
-      >
-        <svg
-          height={79}
-          width={79}
-        >
-          <rect
-            className="blank"
-            height={79}
-            width={79}
-          />
-        </svg>
-      </button>
-      <button
-        className="square"
-        onClick={[Function]}
-      >
-        <svg
-          height={79}
-          width={79}
-        >
-          <rect
-            className="blank"
+            className="clear"
             height={79}
             width={79}
           />
@@ -300,7 +253,7 @@ exports[`render 1`] = `
           width={79}
         >
           <rect
-            className="blank"
+            className="clear"
             height={79}
             width={79}
           />
@@ -315,7 +268,7 @@ exports[`render 1`] = `
           width={79}
         >
           <rect
-            className="blank"
+            className="clear"
             height={79}
             width={79}
           />
@@ -330,7 +283,54 @@ exports[`render 1`] = `
           width={79}
         >
           <rect
-            className="blank"
+            className="clear"
+            height={79}
+            width={79}
+          />
+        </svg>
+      </button>
+    </div>
+    <div>
+      <button
+        className="square"
+        onClick={[Function]}
+      >
+        <svg
+          height={79}
+          width={79}
+        >
+          <rect
+            className="clear"
+            height={79}
+            width={79}
+          />
+        </svg>
+      </button>
+      <button
+        className="square"
+        onClick={[Function]}
+      >
+        <svg
+          height={79}
+          width={79}
+        >
+          <rect
+            className="clear"
+            height={79}
+            width={79}
+          />
+        </svg>
+      </button>
+      <button
+        className="square"
+        onClick={[Function]}
+      >
+        <svg
+          height={79}
+          width={79}
+        >
+          <rect
+            className="clear"
             height={79}
             width={79}
           />
@@ -338,5 +338,8 @@ exports[`render 1`] = `
       </button>
     </div>
   </div>
+  <div
+    className="boardTitle"
+  />
 </div>
 `;
