@@ -4,26 +4,18 @@ import GameState from '../game/game-state'
 import BoardsView from './boards-view.js'
 import TextDisplayView from './text-display-view.js'
 import Game from '../game/game.js'
-import Player from '../game/player.js'
-import Board from '../game/board'
+
 
 export default class GameView extends React.Component {
   constructor(props) {
     super(props)
+    this.game = new Game()
 
-    const playerMarkers = ['X', 'O']
-    const board1 = new Board
-    const board2 = new Board
-    const board3 = new Board
-
-    this.game = new Game(board1, board2, board3)
-    this.player = new Player(playerMarkers)
-    
     this.state = {
       moves: [
-        this.game.getMoves(0), 
-        this.game.getMoves(1),
-        this.game.getMoves(2)
+        this.game.getMovesForBoard(0), 
+        this.game.getMovesForBoard(1),
+        this.game.getMovesForBoard(2)
       ],
       display: TextDisplayView.xFirst
     }
@@ -43,13 +35,12 @@ export default class GameView extends React.Component {
 
   didClickSquare(squareIndex, boardIndex) {
     let displayContent
-    const result = this.game.attemptToAddMove(this.player.current(), squareIndex, boardIndex)
-    if (result == GameState.readyForNextMove) {
-      this.player.next()
-      displayContent = TextDisplayView.turn(this.player.current())
-    } else if (result == GameState.winner) {
-      displayContent = TextDisplayView.winner(this.player.current())
-    } else if (result == GameState.draw) {
+    const [state, marker] = this.game.attemptToAddMove(squareIndex, boardIndex)
+    if (state == GameState.readyForNextMove) {
+      displayContent = TextDisplayView.turn(marker)
+    } else if (state == GameState.winner) {
+      displayContent = TextDisplayView.winner(marker)
+    } else if (state == GameState.draw) {
       displayContent = TextDisplayView.draw
     } else {
       return
@@ -57,9 +48,9 @@ export default class GameView extends React.Component {
 
     this.setState({
       moves: [
-        this.game.getMoves(0), 
-        this.game.getMoves(1),
-        this.game.getMoves(2)
+        this.game.getMovesForBoard(0), 
+        this.game.getMovesForBoard(1),
+        this.game.getMovesForBoard(2)
       ],
       display: displayContent
     })

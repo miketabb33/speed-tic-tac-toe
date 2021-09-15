@@ -10,13 +10,6 @@ export default class Winner {
     [2, 4, 6]
 	]
 
-  check(boards) {
-		if (this.isolatedBoardWinner(boards)) { return true }
-		if (this.samePosition3DWinner(boards)) { return true }
-    if (this.winner3D(boards)) { return true }
-    return false
-	}
-
   isolatedBoardWinner(boards) {
 		for (var i = 0; i < boards.length; i++) {
 			const board = boards[i]
@@ -36,7 +29,7 @@ export default class Winner {
 				const board = boards[j]
 				currentCombo.push(board.moves[i])
 			}
-			if (this.isWinningCombination(currentCombo)) { return true }
+			if (this.#isWinningCombination(currentCombo)) { return true }
 		}
   }
 
@@ -48,11 +41,11 @@ export default class Winner {
         const board = boards[j]
         currentCombo.push(board.moves[variation[j]])
       }
-      if (this.isWinningCombination(currentCombo)) { return true }
+      if (this.#isWinningCombination(currentCombo)) { return true }
     }
   }
 
-  isWinningCombination(combination) {
+  #isWinningCombination(combination) {
     if (combination[0] && combination[0] == combination[1] && combination[0] == combination[2]) {
       return true
     }

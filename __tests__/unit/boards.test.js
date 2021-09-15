@@ -1,8 +1,8 @@
-import Board from '../../game/board.js'
-import Game from '../../game/game.js'
-import GameState from '../../game/game-state.js'
+import Board from "../../game/board"
+import Boards from "../../game/boards"
 
 let subject
+
 let board1 
 let board2 
 let board3
@@ -12,10 +12,40 @@ beforeEach(() => {
   board2 = new Board
   board3 = new Board
 
-	subject = new Game(board1, board2, board3)
+	subject = new Boards(board1, board2, board3)
 })
 
-test('getMove', () => { 
+test('addMove first', () => {
+  const marker = "X"
+  const boardIndex = 2
+  const squareIndex = 0
+
+  subject.addMove(marker, squareIndex, boardIndex)
+
+  expect(subject.allBoards[boardIndex].moves[squareIndex]).toBe(marker)
+})
+
+test('addMove second', () => {
+  const marker = "X"
+  const boardIndex = 1
+  const squareIndex = 5
+
+  subject.addMove(marker, squareIndex, boardIndex)
+
+  expect(subject.allBoards[boardIndex].moves[squareIndex]).toBe(marker)
+})
+
+test('addMove third', () => {
+  const marker = "O"
+  const boardIndex = 0
+  const squareIndex = 8
+
+  subject.addMove(marker, squareIndex, boardIndex)
+
+  expect(subject.allBoards[boardIndex].moves[squareIndex]).toBe(marker)
+})
+
+test('getMove', () => {
   board1.moves = ['X', null, null, null, null, null, null, null, null]
   board2.moves = [null, 'X', null, null, null, null, null, null, null]
   board3.moves = [null, null, "X", null, null, null, null, null, null]
@@ -30,30 +60,20 @@ test('getMove', () => {
   expect(result3).toStrictEqual(board3.moves)
 })
 
-test('getPostMoveGameState winner', () => {
-  board1.moves = ['X', 'X', 'X', null, null, null, null, null, null]
+test('isMoveAvailable yes', () => {
+  board2.moves = [null, null, null, null, null, null, null, null, null]
 
-  const result = subject.getPostMoveGameState()
+  const result = subject.isMoveAvailable(3, 1)
 
-  expect(result).toBe(GameState.winner)
+  expect(result).toBe(true)
 })
 
-test('getPostMoveGameState draw', () => {
-  // board1.moves = ['X', 'O', 'X', 'X', 'X', 'O', 'O', 'X', 'O']
-  // board2.moves = ['X', 'O', 'X', 'X', 'X', 'O', 'O', 'X', 'O']
-  // board3.moves = ['X', 'O', 'X', 'X', 'X', 'O', 'O', 'X', 'O']
+test('isMoveAvailable no', () => {
+  board2.moves = [null, null, null, "X", null, null, null, null, null]
 
-  // const result = subject.getPostMoveGameState()
+  const result = subject.isMoveAvailable(3, 1)
 
-  // expect(result).toBe(GameState.draw)
-})
-
-test('getPostMoveGameState readyForNextMove', () => {
-  board1.moves = ['X', null, null, null, null, null, null, null, null]
-
-  const result = subject.getPostMoveGameState()
-
-  expect(result).toBe(GameState.readyForNextMove)
+  expect(result).toBe(false)
 })
 
 test('anyAvailableMoves yes', () => {
