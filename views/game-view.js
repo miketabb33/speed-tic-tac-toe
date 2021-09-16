@@ -23,7 +23,8 @@ export default class GameView extends React.Component {
       textDisplay: TextDisplayView.xFirst,
       currentPlayer: this.game.getCurrentPlayer(),
       xRemainingTime: 1000,
-      oRemainingTime: 1000
+      oRemainingTime: 1000,
+      hideTimeInputView: false
     }
   }
 
@@ -38,6 +39,7 @@ export default class GameView extends React.Component {
         />
         <TimeInputView 
           didChangeTime = { (newTime) => this.didChangeTotalTime(newTime) }
+          hide = { this.state.hideTimeInputView }
         />
         <BoardsView 
           moves = { this.state.moves }
@@ -68,7 +70,8 @@ export default class GameView extends React.Component {
         this.game.getMovesForBoard(2)
       ],
       textDisplay: displayContent, 
-      currentPlayer: this.game.getCurrentPlayer()
+      currentPlayer: this.game.getCurrentPlayer(),
+      hideTimeInputView: true
     })
   }
 

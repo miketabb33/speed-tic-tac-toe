@@ -38,7 +38,7 @@ export default class Game {
     if (status == GameState.winner) { this.setGameOver() }
     if (status == GameState.draw) { this.setGameOver() }
 		if (status == GameState.readyForNextMove) {
-      this.#switchTimers(this.#player.current())
+      //this.#switchTimers(this.#player.current())
       this.#player.next() 
     }
     return [status, this.#player.current()]
@@ -55,7 +55,7 @@ export default class Game {
   }
 
   #getPostMoveGameState() {
-    if (this.#checkForWinner(this.#boards.allBoards)) {
+    if (this.#winner.check(this.#boards.allBoards)) {
       return GameState.winner
     } else {
       if (this.#boards.anyAvailableMoves()) {
@@ -75,11 +75,4 @@ export default class Game {
       this.#xTimer.startTimer()
     }
   }
-
-  #checkForWinner(boards) {
-		if (this.#winner.isolatedBoardWinner(boards)) { return true }
-		if (this.#winner.samePosition3DWinner(boards)) { return true }
-    if (this.#winner.winner3D(boards)) { return true }
-    return false
-	}
 }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render 1`] = `
+exports[`render hidden 1`] = `
 <div
   className="timerInputView"
 >
@@ -11,6 +11,26 @@ exports[`render 1`] = `
   </div>
   <input
     className="timerInput"
+    defaultValue="10"
+    maxLength="2"
+    onKeyPress={[Function]}
+    type="text"
+  />
+</div>
+`;
+
+exports[`render not hidden 1`] = `
+<div
+  className="timerInputView"
+>
+  <div
+    className="timerInputText"
+  >
+    Starting Time:
+  </div>
+  <input
+    className="timerInput"
+    defaultValue="10"
     maxLength="2"
     onKeyPress={[Function]}
     type="text"

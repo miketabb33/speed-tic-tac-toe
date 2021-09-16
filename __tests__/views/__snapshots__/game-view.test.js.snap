@@ -247,6 +247,7 @@ exports[`render 1`] = `
     </div>
     <input
       className="timerInput"
+      defaultValue="10"
       maxLength="2"
       onKeyPress={[Function]}
       type="text"
