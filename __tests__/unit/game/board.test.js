@@ -1,4 +1,4 @@
-import Board from '../../game/board.js'
+import Board from '../../../game/board.js'
 
 let subject
 

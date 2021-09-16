@@ -1,5 +1,5 @@
-import Winner from "../../game/winner";
-import Board from "../../game/board";
+import Board from "../../../game/board"
+import Winner from "../../../game/winner"
 
 let subject
 let board1 

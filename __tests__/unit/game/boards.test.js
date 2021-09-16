@@ -1,5 +1,5 @@
-import Board from "../../game/board"
-import Boards from "../../game/boards"
+import Board from "../../../game/board"
+import Boards from "../../../game/boards"
 
 let subject
 

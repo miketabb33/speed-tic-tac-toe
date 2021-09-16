@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Styles.module.css'
+import styles from '../styles/TopBarStyles.module.css'
 
 export default class TextDisplayView extends React.Component {
 	static xFirst = 'X Goes First'

@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import styles from '../styles/Styles.module.css'
+import PlayerImage from '../utils/player-image'
 
 export default class SquareView extends React.Component {
 	size = 79
@@ -26,14 +26,7 @@ export default class SquareView extends React.Component {
 
 	getMarkerImage(imageName) {
 		return (
-			<Image
-	      priority
-	      src= { '/player-markers/' + imageName + '.png' } 
-	      height={this.size}
-	      width={this.size}
-	      alt={ imageName + ' player marker' }
-	      draggable="false"
-	   	/>
+			PlayerImage.get(imageName, this.size)
  		)
 	}
 

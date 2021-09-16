@@ -9,7 +9,10 @@ import InfoBarView from './info-bar-view'
 export default class GameView extends React.Component {
   constructor(props) {
     super(props)
-    this.game = new Game()
+    this.game = new Game(
+      (time) => this.didChangeXtime(time), 
+      (time) => this.didChangeOTime(time)
+    )
 
     this.state = {
       moves: [
@@ -17,16 +20,24 @@ export default class GameView extends React.Component {
         this.game.getMovesForBoard(1),
         this.game.getMovesForBoard(2)
       ],
-      textDisplay: TextDisplayView.xFirst
+      textDisplay: TextDisplayView.xFirst,
+      currentPlayer: this.game.getCurrentPlayer(),
+      xRemainingTime: 1000,
+      oRemainingTime: 1000
     }
   }
 
   render() {
     return (
       <div>
-        <InfoBarView textDisplay = { this.state.textDisplay } />
+        <InfoBarView 
+          textDisplay = { this.state.textDisplay } 
+          activePlayer = { this.state.currentPlayer }
+          xRemainingTime = { this.state.xRemainingTime }
+          oRemainingTime = { this.state.oRemainingTime }
+        />
         <TimeInputView 
-          didChangeTime = { (newTime) => this.didChangeTime(newTime) }
+          didChangeTime = { (newTime) => this.didChangeTotalTime(newTime) }
         />
         <BoardsView 
           moves = { this.state.moves }
@@ -39,6 +50,7 @@ export default class GameView extends React.Component {
   didClickSquare(squareIndex, boardIndex) {
     let displayContent
     const [state, marker] = this.game.attemptToAddMove(squareIndex, boardIndex)
+
     if (state == GameState.readyForNextMove) {
       displayContent = TextDisplayView.turn(marker)
     } else if (state == GameState.winner) {
@@ -55,11 +67,24 @@ export default class GameView extends React.Component {
         this.game.getMovesForBoard(1),
         this.game.getMovesForBoard(2)
       ],
-      textDisplay: displayContent
+      textDisplay: displayContent, 
+      currentPlayer: this.game.getCurrentPlayer()
     })
   }
 
-  didChangeTime(time) {
+  didChangeTotalTime(time) {
     console.log(time)
+  }
+
+  didChangeXtime(time) {
+    this.setState({
+      xRemainingTime: time
+    })
+  }
+
+  didChangeOTime(time) {
+    this.setState({
+      oRemainingTime: time
+    }) 
   }
 }
