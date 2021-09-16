@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render xFirst 1`] = `
+exports[`render 1`] = `
 <div
   className="timerInputView"
 >

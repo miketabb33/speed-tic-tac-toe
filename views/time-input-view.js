@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Styles.module.css'
 
-export default class TimerInputView extends React.Component {
+export default class TimeInputView extends React.Component {
   render() {
     return (
       <div className={styles.timerInputView}>

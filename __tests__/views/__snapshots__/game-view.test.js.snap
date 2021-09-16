@@ -3,9 +3,23 @@
 exports[`render 1`] = `
 <div>
   <div
-    className="textDisplay"
+    class="topBar"
   >
-    X Goes First
+    <div
+      className="timerView"
+    >
+      X 10:00
+    </div>
+    <div
+      className="textDisplay"
+    >
+      X Goes First
+    </div>
+    <div
+      className="timerView"
+    >
+      X 10:00
+    </div>
   </div>
   <div
     className="timerInputView"

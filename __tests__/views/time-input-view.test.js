@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import TimerInputView from '../../views/timer-input-view'
+import TimeInputView from '../../views/time-input-view'
 
-test('render xFirst', () => {
+test('render', () => {
 	const subject = renderer.create(
-		<TimerInputView />
+		<TimeInputView />
 	)
 
 	const result = subject.toJSON()

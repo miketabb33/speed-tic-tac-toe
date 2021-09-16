@@ -1,10 +1,10 @@
 import React from 'react'
 import GameState from '../game/game-state'
 import BoardsView from './boards-view.js'
-import TextDisplayView from './text-display-view.js'
 import Game from '../game/game.js'
-import TimerInputView from './timer-input-view'
-
+import TimeInputView from './time-input-view'
+import TextDisplayView from './text-display-view'
+import InfoBarView from './info-bar-view'
 
 export default class GameView extends React.Component {
   constructor(props) {
@@ -17,15 +17,15 @@ export default class GameView extends React.Component {
         this.game.getMovesForBoard(1),
         this.game.getMovesForBoard(2)
       ],
-      display: TextDisplayView.xFirst
+      textDisplay: TextDisplayView.xFirst
     }
   }
 
   render() {
     return (
       <div>
-        <TextDisplayView value = { this.state.display } />
-        <TimerInputView 
+        <InfoBarView textDisplay = { this.state.textDisplay } />
+        <TimeInputView 
           didChangeTime = { (newTime) => this.didChangeTime(newTime) }
         />
         <BoardsView 
@@ -55,7 +55,7 @@ export default class GameView extends React.Component {
         this.game.getMovesForBoard(1),
         this.game.getMovesForBoard(2)
       ],
-      display: displayContent
+      textDisplay: displayContent
     })
   }
 
