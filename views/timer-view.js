@@ -6,24 +6,24 @@ export default class TimerView extends React.Component {
   imageSize = 25
 
   render() {
+    if (this.props.remainingTime == 0) {
+      return this.renderTimerView('red'+ this.props.player, styles.timerViewNoTimeLeft, styles.timerViewTextNoTimeLeft)
+    } else {
+      return this.renderTimerView(this.props.player, this.getActiveState(), this.getPlayerStyle())
+    }
+  }
+
+  renderTimerView(imageName, viewStyle, textStyle) {
     return (
-      <div className={ `${styles.timerView} ${this.getActiveState()}` }>
+      <div className={ `${styles.timerView} ${viewStyle}` }>
         <div className={styles.timerViewImage}>
-          {PlayerImage.get(this.props.player, this.imageSize)}
+          {PlayerImage.get(imageName, this.imageSize)}
         </div>
-        <div className={ `${styles.timerViewText} ${this.getPlayerStyle()} `}>
+        <div className={ `${styles.timerViewText} ${textStyle} `}>
           { this.formatTime(this.props.remainingTime) }
         </div>
       </div>
     )
-  }
-
-  getPlayerStyle() {
-    if (this.props.player == 'X') {
-      return styles.timerViewX
-    } else if (this.props.player == 'O'){
-      return styles.timerViewO
-    }
   }
 
   getActiveState() {
@@ -33,6 +33,14 @@ export default class TimerView extends React.Component {
       return styles.timerViewActiveO
     } else {
       return styles.timerViewInactive
+    }
+  }
+
+  getPlayerStyle() {
+    if (this.props.player == 'X') {
+      return styles.timerViewX
+    } else if (this.props.player == 'O'){
+      return styles.timerViewO
     }
   }
 

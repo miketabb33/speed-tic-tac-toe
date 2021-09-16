@@ -10,8 +10,8 @@ export default class GameView extends React.Component {
   constructor(props) {
     super(props)
     this.game = new Game(
-      (time) => this.didChangeXtime(time), 
-      (time) => this.didChangeOTime(time)
+      (marker, time) => this.timerValueDidChange(marker, time),
+      (winnerMarker) => this.timerDidHit0(winnerMarker)
     )
 
     this.state = {
@@ -76,15 +76,18 @@ export default class GameView extends React.Component {
     console.log(time)
   }
 
-  didChangeXtime(time) {
-    this.setState({
-      xRemainingTime: time
-    })
+  timerValueDidChange(marker, time) {
+    if (marker == this.game.playerMarkers[0]) {
+      this.setState({ xRemainingTime: time })
+    } else if (marker == this.game.playerMarkers[1]) {
+      this.setState({ oRemainingTime: time })
+    }
   }
 
-  didChangeOTime(time) {
+  timerDidHit0(winnerMarker) {
+    this.game.setGameOver()
     this.setState({
-      oRemainingTime: time
+      textDisplay: TextDisplayView.winner(winnerMarker)
     }) 
   }
 }

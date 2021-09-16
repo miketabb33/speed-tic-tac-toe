@@ -56,3 +56,11 @@
   text-align: left;
   width: 80px;
 }
+
+.timerViewNoTimeLeft {
+  border-color: red;
+}
+
+.timerViewTextNoTimeLeft {
+  color: red;
+}

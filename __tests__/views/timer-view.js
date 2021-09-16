@@ -37,3 +37,21 @@ test('render o inactive', () => {
 	const result = subject.toJSON()
 	expect(result).toMatchSnapshot()
 })
+
+test('render x no time', () => {
+	const subject = renderer.create(
+		<TimerView player={'X'} activePlayer={'X'} remainingTime={0}/>
+	)
+
+	const result = subject.toJSON()
+	expect(result).toMatchSnapshot()
+})
+
+test('render o no time', () => {
+	const subject = renderer.create(
+		<TimerView player={'O'} activePlayer={'O'} remainingTime={0}/>
+	)
+
+	const result = subject.toJSON()
+	expect(result).toMatchSnapshot()
+})

@@ -12,24 +12,18 @@ export default class Game {
   #xTimer
   #oTimer
   #isGameOver = false
+  playerMarkers = ['X', 'O']
 
-	constructor(didChangeXtime, didChangeOtime) {
-		const playerMarkers = ['X', 'O']
+	constructor(timerValueDidChange, timerDidHit0) {
     const board1 = new Board
     const board2 = new Board
     const board3 = new Board
     
 		this.#boards = new Boards(board1, board2, board3)
-		this.#player = new Player(playerMarkers)
+		this.#player = new Player(this.playerMarkers)
 		this.#winner = new Winner
-    this.#xTimer = new Timer((time) => didChangeXtime(time))
-    this.#oTimer = new Timer((time) => didChangeOtime(time))
-    setTimeout(() => {
-      this.#oTimer.startTimer()
-    }, 3000);
-    setTimeout(() => {
-      this.#xTimer.startTimer()
-    }, 1000);  
+    this.#xTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[0], time), () => timerDidHit0(this.playerMarkers[1]))
+    this.#oTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[1], time), () => timerDidHit0(this.playerMarkers[0]))
   }
 
 	getMovesForBoard(boardIndex) {
@@ -43,7 +37,10 @@ export default class Game {
     const status = this.#getPostMoveGameState()
     if (status == GameState.winner) { this.setGameOver() }
     if (status == GameState.draw) { this.setGameOver() }
-		if (status == GameState.readyForNextMove) { this.#player.next() }
+		if (status == GameState.readyForNextMove) {
+      this.#switchTimers(this.#player.current())
+      this.#player.next() 
+    }
     return [status, this.#player.current()]
   }
 
@@ -66,6 +63,16 @@ export default class Game {
       } else {
         return GameState.draw
       }
+    }
+  }
+
+  #switchTimers(currentPlayer) {
+    if (currentPlayer == this.playerMarkers[0]) {
+      this.#xTimer.stopTimer()
+      this.#oTimer.startTimer()
+    } else {
+      this.#oTimer.stopTimer()
+      this.#xTimer.startTimer()
     }
   }
 
