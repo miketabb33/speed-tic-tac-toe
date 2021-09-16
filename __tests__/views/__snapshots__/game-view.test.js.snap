@@ -238,7 +238,7 @@ exports[`render 1`] = `
     </div>
   </div>
   <div
-    className="timerInputView"
+    className="timerInputView undefined "
   >
     <div
       className="timerInputText"
@@ -249,7 +249,7 @@ exports[`render 1`] = `
       className="timerInput"
       defaultValue="10"
       maxLength="2"
-      onKeyPress={[Function]}
+      onKeyDown={[Function]}
       type="text"
     />
   </div>

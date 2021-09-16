@@ -76,7 +76,11 @@ export default class GameView extends React.Component {
   }
 
   didChangeTotalTime(time) {
-    console.log(time)
+    this.game.setTimers(time)
+    this.setState({
+      xRemainingTime: time,
+      oRemainingTime: time
+    })
   }
 
   timerValueDidChange(marker, time) {

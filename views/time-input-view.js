@@ -1,10 +1,11 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 import styles from '../styles/Styles.module.css'
 
 export default class TimeInputView extends React.Component {
   render() {
     return (
-      <div className={ `${styles.timerInputView}`}>
+      <div className={ `${styles.timerInputView} ${this.shouldHide()} `}>
         <div className= {styles.timerInputText}>
           Starting Time:
         </div>
@@ -13,7 +14,7 @@ export default class TimeInputView extends React.Component {
           className= {styles.timerInput}
           defaultValue='10'
           maxLength="2"
-          onKeyPress= { this.didPressKey }
+          onKeyDown= { (e)=> this.didPressKey(e, this.props.didChangeTime) }
         />
       </div>
     )
@@ -25,12 +26,13 @@ export default class TimeInputView extends React.Component {
     }
   }
 
-  didPressKey(e) {
+  didPressKey(e, callback) {
     const event = e || window.event
     const key = String.fromCharCode(event.keyCode || event.which)
-    const regex = /[0-9]|\./
+    const regex = new RegExp("^[0-9,\b][0-9,\b]*$");
     if (regex.test(key)) {
-      this.props.didChangeTime(event.value)
+      let value = (event.target.value + key).substring(0,2) + "00"
+      callback(parseInt(value))
     } else {
       event.preventDefault()
     }

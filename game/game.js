@@ -38,7 +38,7 @@ export default class Game {
     if (status == GameState.winner) { this.setGameOver() }
     if (status == GameState.draw) { this.setGameOver() }
 		if (status == GameState.readyForNextMove) {
-      //this.#switchTimers(this.#player.current())
+      this.#switchTimers(this.#player.current())
       this.#player.next() 
     }
     return [status, this.#player.current()]
@@ -46,6 +46,11 @@ export default class Game {
 
   getCurrentPlayer() {
     return this.#player.current()
+  }
+
+  setTimers(time) {
+    this.#xTimer.totalTime = time
+    this.#oTimer.totalTime = time
   }
 
   setGameOver() {
