@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render xFirst 1`] = `
+<div
+  className="timerInputView"
+>
+  <div
+    className="timerInputText"
+  >
+    Starting Time:
+  </div>
+  <input
+    className="timerInput"
+    maxLength="2"
+    onKeyPress={[Function]}
+    type="text"
+  />
+</div>
+`;

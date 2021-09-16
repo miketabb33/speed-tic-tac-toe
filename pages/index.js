@@ -4,13 +4,13 @@ import GameView from '../views/game-view.js'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Speed Tic Tac Toe</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <GameView />
       </main>
     </div>

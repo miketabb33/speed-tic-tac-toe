@@ -32,6 +32,7 @@ export default class BoardView extends React.Component {
 					src= "/board.png"
 					width= {this.boardImageSize}
 					height= {this.boardImageSize}
+					draggable="false"
 				/>
 			</div>
 		)

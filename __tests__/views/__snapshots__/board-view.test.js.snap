@@ -46,6 +46,7 @@ exports[`render 1`] = `
       <img
         data-nimg="intrinsic"
         decoding="async"
+        draggable="false"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -74,6 +75,7 @@ exports[`render 1`] = `
         <img
           data-nimg="intrinsic"
           decoding="async"
+          draggable="false"
           loading="lazy"
           src="/_next/image?url=%2Fboard.png&w=750&q=75"
           srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"

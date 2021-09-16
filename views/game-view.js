@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../styles/Styles.module.css'
 import GameState from '../game/game-state'
 import BoardsView from './boards-view.js'
 import TextDisplayView from './text-display-view.js'
 import Game from '../game/game.js'
+import TimerInputView from './timer-input-view'
 
 
 export default class GameView extends React.Component {
@@ -25,6 +25,9 @@ export default class GameView extends React.Component {
     return (
       <div>
         <TextDisplayView value = { this.state.display } />
+        <TimerInputView 
+          didChangeTime = { (newTime) => this.didChangeTime(newTime) }
+        />
         <BoardsView 
           moves = { this.state.moves }
           onClick = { (squareIndex, boardIndex) => this.didClickSquare(squareIndex, boardIndex) }
@@ -54,5 +57,9 @@ export default class GameView extends React.Component {
       ],
       display: displayContent
     })
+  }
+
+  didChangeTime(time) {
+    console.log(time)
   }
 }
