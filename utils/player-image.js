@@ -5,7 +5,7 @@ export default class PlayerImage {
     return (
       <Image
         priority
-        src= { '/player-markers/' + imageName + '.png' } 
+        src= { '/' + imageName + '.png' } 
         height={size}
         width={size}
         alt={ imageName + ' player marker' }
