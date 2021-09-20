@@ -27,4 +27,3 @@ test('updateTime time at 0', () => {
   expect(remainingTime).toBe(0)
   expect(timerDidHit0Invoked).toBe(true)
 })
-

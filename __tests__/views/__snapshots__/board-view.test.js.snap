@@ -150,12 +150,11 @@ exports[`render 1`] = `
             />
           </div>
           <img
-            alt="X player marker"
+            alt="x player marker"
             data-nimg="intrinsic"
             decoding="async"
             draggable="false"
-            src="/_next/image?url=%2FX.png&w=256&q=75"
-            srcSet="/_next/image?url=%2FX.png&w=96&q=75 1x, /_next/image?url=%2FX.png&w=256&q=75 2x"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style={
               Object {
                 "border": "none",
@@ -181,13 +180,13 @@ exports[`render 1`] = `
           />
           <noscript>
             <img
-              alt="X player marker"
+              alt="x player marker"
               data-nimg="intrinsic"
               decoding="async"
               draggable="false"
               loading="lazy"
-              src="/_next/image?url=%2FX.png&w=256&q=75"
-              srcSet="/_next/image?url=%2FX.png&w=96&q=75 1x, /_next/image?url=%2FX.png&w=256&q=75 2x"
+              src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
+              srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
               style={
                 Object {
                   "border": "none",

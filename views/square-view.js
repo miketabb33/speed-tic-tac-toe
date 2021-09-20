@@ -4,6 +4,7 @@ import PlayerImage from '../utils/player-image'
 
 export default class SquareView extends React.Component {
 	size = 79
+	playerImage = new PlayerImage
 
 	render() { 
 		return (
@@ -18,16 +19,10 @@ export default class SquareView extends React.Component {
 
 	getContents(imageName) {
 		if (imageName == 'X' || imageName == 'O') {
-			return this.getMarkerImage(imageName)
-   	} else {
+			return this.playerImage.getPlayerImage(imageName, this.size)
+		} else {
    		return this.getBlankSpace()
    	}
-	}
-
-	getMarkerImage(imageName) {
-		return (
-			PlayerImage.get(imageName, this.size)
- 		)
 	}
 
 	getBlankSpace() {

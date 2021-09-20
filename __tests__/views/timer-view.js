@@ -55,3 +55,22 @@ test('render o no time', () => {
 	const result = subject.toJSON()
 	expect(result).toMatchSnapshot()
 })
+
+
+test('render o no time', () => {
+	const subject = renderer.create(
+		<TimerView player={'O'} activePlayer={'O'} remainingTime={0}/>
+	)
+
+	const result = subject.toJSON()
+	expect(result).toMatchSnapshot()
+})
+
+test('render x below 0', () => {
+	const subject = renderer.create(
+		<TimerView player={'X'} activePlayer={'X'} remainingTime={-49}/>
+	)
+
+	const result = subject.toJSON()
+	expect(result).toMatchSnapshot()
+})

@@ -44,12 +44,11 @@ exports[`render o active 1`] = `
         />
       </div>
       <img
-        alt="O player marker"
+        alt="o player marker"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
-        src="/_next/image?url=%2FO.png&w=64&q=75"
-        srcSet="/_next/image?url=%2FO.png&w=32&q=75 1x, /_next/image?url=%2FO.png&w=64&q=75 2x"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
             "border": "none",
@@ -75,13 +74,13 @@ exports[`render o active 1`] = `
       />
       <noscript>
         <img
-          alt="O player marker"
+          alt="o player marker"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2FO.png&w=64&q=75"
-          srcSet="/_next/image?url=%2FO.png&w=32&q=75 1x, /_next/image?url=%2FO.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -160,12 +159,11 @@ exports[`render o inactive 1`] = `
         />
       </div>
       <img
-        alt="O player marker"
+        alt="o player marker"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
-        src="/_next/image?url=%2FO.png&w=64&q=75"
-        srcSet="/_next/image?url=%2FO.png&w=32&q=75 1x, /_next/image?url=%2FO.png&w=64&q=75 2x"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
             "border": "none",
@@ -191,13 +189,13 @@ exports[`render o inactive 1`] = `
       />
       <noscript>
         <img
-          alt="O player marker"
+          alt="o player marker"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2FO.png&w=64&q=75"
-          srcSet="/_next/image?url=%2FO.png&w=32&q=75 1x, /_next/image?url=%2FO.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -276,12 +274,11 @@ exports[`render o no time 1`] = `
         />
       </div>
       <img
-        alt="redO player marker"
+        alt="red o player marker"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
-        src="/_next/image?url=%2FredO.png&w=64&q=75"
-        srcSet="/_next/image?url=%2FredO.png&w=32&q=75 1x, /_next/image?url=%2FredO.png&w=64&q=75 2x"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
             "border": "none",
@@ -307,13 +304,128 @@ exports[`render o no time 1`] = `
       />
       <noscript>
         <img
-          alt="redO player marker"
+          alt="red o player marker"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2FredO.png&w=64&q=75"
-          srcSet="/_next/image?url=%2FredO.png&w=32&q=75 1x, /_next/image?url=%2FredO.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </div>
+  </div>
+  <div
+    className="timerViewText timerViewTextNoTimeLeft "
+  >
+    00:00
+  </div>
+</div>
+`;
+
+exports[`render o no time 2`] = `
+<div
+  className="timerView timerViewNoTimeLeft"
+>
+  <div
+    className="timerViewImage"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "margin": 0,
+          "maxWidth": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+          style={
+            Object {
+              "border": "none",
+              "display": "block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "padding": 0,
+            }
+          }
+        />
+      </div>
+      <img
+        alt="red o player marker"
+        data-nimg="intrinsic"
+        decoding="async"
+        draggable="false"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="red o player marker"
+          data-nimg="intrinsic"
+          decoding="async"
+          draggable="false"
+          loading="lazy"
+          src="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -392,12 +504,11 @@ exports[`render x active 1`] = `
         />
       </div>
       <img
-        alt="X player marker"
+        alt="x player marker"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
-        src="/_next/image?url=%2FX.png&w=64&q=75"
-        srcSet="/_next/image?url=%2FX.png&w=32&q=75 1x, /_next/image?url=%2FX.png&w=64&q=75 2x"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
             "border": "none",
@@ -423,13 +534,13 @@ exports[`render x active 1`] = `
       />
       <noscript>
         <img
-          alt="X player marker"
+          alt="x player marker"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2FX.png&w=64&q=75"
-          srcSet="/_next/image?url=%2FX.png&w=32&q=75 1x, /_next/image?url=%2FX.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -460,6 +571,121 @@ exports[`render x active 1`] = `
     className="timerViewText timerViewX "
   >
     00:05
+  </div>
+</div>
+`;
+
+exports[`render x below 0 1`] = `
+<div
+  className="timerView timerViewNoTimeLeft"
+>
+  <div
+    className="timerViewImage"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "margin": 0,
+          "maxWidth": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+          style={
+            Object {
+              "border": "none",
+              "display": "block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "padding": 0,
+            }
+          }
+        />
+      </div>
+      <img
+        alt="red x player marker"
+        data-nimg="intrinsic"
+        decoding="async"
+        draggable="false"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="red x player marker"
+          data-nimg="intrinsic"
+          decoding="async"
+          draggable="false"
+          loading="lazy"
+          src="/_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </div>
+  </div>
+  <div
+    className="timerViewText timerViewTextNoTimeLeft "
+  >
+    00:00
   </div>
 </div>
 `;
@@ -508,12 +734,11 @@ exports[`render x inactive 1`] = `
         />
       </div>
       <img
-        alt="X player marker"
+        alt="x player marker"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
-        src="/_next/image?url=%2FX.png&w=64&q=75"
-        srcSet="/_next/image?url=%2FX.png&w=32&q=75 1x, /_next/image?url=%2FX.png&w=64&q=75 2x"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
             "border": "none",
@@ -539,13 +764,13 @@ exports[`render x inactive 1`] = `
       />
       <noscript>
         <img
-          alt="X player marker"
+          alt="x player marker"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2FX.png&w=64&q=75"
-          srcSet="/_next/image?url=%2FX.png&w=32&q=75 1x, /_next/image?url=%2FX.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -624,12 +849,11 @@ exports[`render x no time 1`] = `
         />
       </div>
       <img
-        alt="redX player marker"
+        alt="red x player marker"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
-        src="/_next/image?url=%2FredX.png&w=64&q=75"
-        srcSet="/_next/image?url=%2FredX.png&w=32&q=75 1x, /_next/image?url=%2FredX.png&w=64&q=75 2x"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
             "border": "none",
@@ -655,13 +879,13 @@ exports[`render x no time 1`] = `
       />
       <noscript>
         <img
-          alt="redX player marker"
+          alt="red x player marker"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2FredX.png&w=64&q=75"
-          srcSet="/_next/image?url=%2FredX.png&w=32&q=75 1x, /_next/image?url=%2FredX.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-markers%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",

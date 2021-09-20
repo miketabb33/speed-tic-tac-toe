@@ -4,9 +4,10 @@ import PlayerImage from '../utils/player-image'
 
 export default class TimerView extends React.Component {
   imageSize = 25
+  playerImage = new PlayerImage
 
   render() {
-    if (this.props.remainingTime == 0) {
+    if (this.props.remainingTime <= 0) {
       return this.renderTimerView('red'+ this.props.player, styles.timerViewNoTimeLeft, styles.timerViewTextNoTimeLeft)
     } else {
       return this.renderTimerView(this.props.player, this.getActiveState(), this.getPlayerStyle())
@@ -17,7 +18,7 @@ export default class TimerView extends React.Component {
     return (
       <div className={ `${styles.timerView} ${viewStyle}` }>
         <div className={styles.timerViewImage}>
-          {PlayerImage.get(imageName, this.imageSize)}
+          { this.playerImage.getPlayerImage(imageName, this.imageSize) }
         </div>
         <div className={ `${styles.timerViewText} ${textStyle} `}>
           { this.formatTime(this.props.remainingTime) }
@@ -45,14 +46,11 @@ export default class TimerView extends React.Component {
   }
 
   formatTime(time) {
-    const s = time.toString()
-    const milliseconds = s.substring(s.length-2, s.length)
-    const seconds = s.substring(0, s.length-2)
-
-    const prefixedMilliseconds = this.addPrefixWhenNeeded(milliseconds)
-    const prefixSeconds = this.addPrefixWhenNeeded(seconds)
-    
-    return prefixSeconds + ':' + prefixedMilliseconds
+    if (time <= 0) {
+      return this.get0TimeFormat()
+    } else {
+      return this.getOver0TimeFormat(time)
+    }
   }
 
   addPrefixWhenNeeded(time) {
@@ -63,5 +61,20 @@ export default class TimerView extends React.Component {
     } else if (time.length == 0) {
       return "00"
     }
+  }
+
+  get0TimeFormat() {
+    return '00:00'
+  }
+
+  getOver0TimeFormat(time) {
+    const s = time.toString()
+    const milliseconds = s.substring(s.length-2, s.length)
+    const seconds = s.substring(0, s.length-2)
+
+    const prefixedMilliseconds = this.addPrefixWhenNeeded(milliseconds)
+    const prefixSeconds = this.addPrefixWhenNeeded(seconds)
+    
+    return prefixSeconds + ':' + prefixedMilliseconds
   }
 }

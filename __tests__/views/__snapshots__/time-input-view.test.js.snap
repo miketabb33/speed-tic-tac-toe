@@ -14,6 +14,7 @@ exports[`render hidden 1`] = `
     defaultValue="10"
     maxLength="2"
     onKeyDown={[Function]}
+    onKeyUp={[Function]}
     type="text"
   />
 </div>
@@ -33,6 +34,7 @@ exports[`render not hidden 1`] = `
     defaultValue="10"
     maxLength="2"
     onKeyDown={[Function]}
+    onKeyUp={[Function]}
     type="text"
   />
 </div>
