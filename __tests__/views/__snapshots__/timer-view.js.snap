@@ -44,10 +44,11 @@ exports[`render o active 1`] = `
         />
       </div>
       <img
-        alt="o player marker"
+        alt="o-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="o-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -74,10 +75,11 @@ exports[`render o active 1`] = `
       />
       <noscript>
         <img
-          alt="o player marker"
+          alt="o-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="o-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
@@ -159,10 +161,11 @@ exports[`render o inactive 1`] = `
         />
       </div>
       <img
-        alt="o player marker"
+        alt="o-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="o-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -189,10 +192,11 @@ exports[`render o inactive 1`] = `
       />
       <noscript>
         <img
-          alt="o player marker"
+          alt="o-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="o-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
@@ -274,10 +278,11 @@ exports[`render o no time 1`] = `
         />
       </div>
       <img
-        alt="red o player marker"
+        alt="redo-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="redo-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -304,10 +309,11 @@ exports[`render o no time 1`] = `
       />
       <noscript>
         <img
-          alt="red o player marker"
+          alt="redo-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="redo-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
@@ -389,10 +395,11 @@ exports[`render o no time 2`] = `
         />
       </div>
       <img
-        alt="red o player marker"
+        alt="redo-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="redo-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -419,10 +426,11 @@ exports[`render o no time 2`] = `
       />
       <noscript>
         <img
-          alt="red o player marker"
+          alt="redo-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="redo-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
@@ -504,10 +512,11 @@ exports[`render x active 1`] = `
         />
       </div>
       <img
-        alt="x player marker"
+        alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="x-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -534,10 +543,11 @@ exports[`render x active 1`] = `
       />
       <noscript>
         <img
-          alt="x player marker"
+          alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -619,10 +629,11 @@ exports[`render x below 0 1`] = `
         />
       </div>
       <img
-        alt="red x player marker"
+        alt="redx-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="redx-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -649,10 +660,11 @@ exports[`render x below 0 1`] = `
       />
       <noscript>
         <img
-          alt="red x player marker"
+          alt="redx-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="redx-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
@@ -734,10 +746,11 @@ exports[`render x inactive 1`] = `
         />
       </div>
       <img
-        alt="x player marker"
+        alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="x-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -764,10 +777,11 @@ exports[`render x inactive 1`] = `
       />
       <noscript>
         <img
-          alt="x player marker"
+          alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -849,10 +863,11 @@ exports[`render x no time 1`] = `
         />
       </div>
       <img
-        alt="red x player marker"
+        alt="redx-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="redx-marker-timer-view"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -879,10 +894,11 @@ exports[`render x no time 1`] = `
       />
       <noscript>
         <img
-          alt="red x player marker"
+          alt="redx-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="redx-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
           srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"

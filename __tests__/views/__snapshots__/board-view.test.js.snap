@@ -44,9 +44,11 @@ exports[`render 1`] = `
         />
       </div>
       <img
+        alt="board-1"
         data-nimg="intrinsic"
         decoding="async"
         draggable="false"
+        id="board-1"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -73,9 +75,11 @@ exports[`render 1`] = `
       />
       <noscript>
         <img
+          alt="board-1"
           data-nimg="intrinsic"
           decoding="async"
           draggable="false"
+          id="board-1"
           loading="lazy"
           src="/_next/image?url=%2Fboard.png&w=750&q=75"
           srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
@@ -111,6 +115,7 @@ exports[`render 1`] = `
     <div>
       <button
         className="square"
+        id="board-2-square-1"
         onClick={[Function]}
       >
         <div
@@ -150,10 +155,11 @@ exports[`render 1`] = `
             />
           </div>
           <img
-            alt="x player marker"
+            alt="x-marker-board-2-square-1"
             data-nimg="intrinsic"
             decoding="async"
             draggable="false"
+            id="x-marker-board-2-square-1"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style={
               Object {
@@ -180,10 +186,11 @@ exports[`render 1`] = `
           />
           <noscript>
             <img
-              alt="x player marker"
+              alt="x-marker-board-2-square-1"
               data-nimg="intrinsic"
               decoding="async"
               draggable="false"
+              id="x-marker-board-2-square-1"
               loading="lazy"
               src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 2x"
@@ -215,6 +222,7 @@ exports[`render 1`] = `
       </button>
       <button
         className="square"
+        id="board-2-square-2"
         onClick={[Function]}
       >
         <svg
@@ -230,53 +238,7 @@ exports[`render 1`] = `
       </button>
       <button
         className="square"
-        onClick={[Function]}
-      >
-        <svg
-          height={79}
-          width={79}
-        >
-          <rect
-            className="clear"
-            height={79}
-            width={79}
-          />
-        </svg>
-      </button>
-    </div>
-    <div>
-      <button
-        className="square"
-        onClick={[Function]}
-      >
-        <svg
-          height={79}
-          width={79}
-        >
-          <rect
-            className="clear"
-            height={79}
-            width={79}
-          />
-        </svg>
-      </button>
-      <button
-        className="square"
-        onClick={[Function]}
-      >
-        <svg
-          height={79}
-          width={79}
-        >
-          <rect
-            className="clear"
-            height={79}
-            width={79}
-          />
-        </svg>
-      </button>
-      <button
-        className="square"
+        id="board-2-square-3"
         onClick={[Function]}
       >
         <svg
@@ -294,6 +256,7 @@ exports[`render 1`] = `
     <div>
       <button
         className="square"
+        id="board-2-square-4"
         onClick={[Function]}
       >
         <svg
@@ -309,6 +272,7 @@ exports[`render 1`] = `
       </button>
       <button
         className="square"
+        id="board-2-square-5"
         onClick={[Function]}
       >
         <svg
@@ -324,6 +288,57 @@ exports[`render 1`] = `
       </button>
       <button
         className="square"
+        id="board-2-square-6"
+        onClick={[Function]}
+      >
+        <svg
+          height={79}
+          width={79}
+        >
+          <rect
+            className="clear"
+            height={79}
+            width={79}
+          />
+        </svg>
+      </button>
+    </div>
+    <div>
+      <button
+        className="square"
+        id="board-2-square-7"
+        onClick={[Function]}
+      >
+        <svg
+          height={79}
+          width={79}
+        >
+          <rect
+            className="clear"
+            height={79}
+            width={79}
+          />
+        </svg>
+      </button>
+      <button
+        className="square"
+        id="board-2-square-8"
+        onClick={[Function]}
+      >
+        <svg
+          height={79}
+          width={79}
+        >
+          <rect
+            className="clear"
+            height={79}
+            width={79}
+          />
+        </svg>
+      </button>
+      <button
+        className="square"
+        id="board-2-square-9"
         onClick={[Function]}
       >
         <svg

@@ -2,10 +2,14 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import SquareView from '../../views/square-view.js'
 
+const whateverIndex = 1
+
 test('render empty', () => {
 	const subject = renderer.create(
 		<SquareView 
 			onClick = { () => {} }
+			squareIndex = { whateverIndex }
+			boardIndex = { whateverIndex }
 		/>
 	)
 
@@ -18,6 +22,8 @@ test('render x', () => {
 		<SquareView 
 		 	value = "x"
 			onClick = { () => {} }
+			squareIndex = { whateverIndex }
+			boardIndex = { whateverIndex }
 		/>
 	)
 
@@ -30,6 +36,8 @@ test('render o', () => {
 		<SquareView 
 		 	value = "o"
 			onClick = { () => {} }
+			squareIndex = { whateverIndex }
+			boardIndex = { whateverIndex }
 		/>
 	)
 

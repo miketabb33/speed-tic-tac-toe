@@ -3,6 +3,7 @@
 exports[`render empty 1`] = `
 <button
   className="square"
+  id="board-2-square-2"
   onClick={[Function]}
 >
   <svg
@@ -21,6 +22,7 @@ exports[`render empty 1`] = `
 exports[`render o 1`] = `
 <button
   className="square"
+  id="board-2-square-2"
   onClick={[Function]}
 >
   <svg
@@ -39,6 +41,7 @@ exports[`render o 1`] = `
 exports[`render x 1`] = `
 <button
   className="square"
+  id="board-2-square-2"
   onClick={[Function]}
 >
   <svg

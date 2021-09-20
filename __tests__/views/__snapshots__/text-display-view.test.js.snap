@@ -3,6 +3,7 @@
 exports[`render draw 1`] = `
 <div
   className="textDisplay"
+  id="text-display-view"
 >
   Draw
 </div>
@@ -11,6 +12,7 @@ exports[`render draw 1`] = `
 exports[`render oTurn 1`] = `
 <div
   className="textDisplay"
+  id="text-display-view"
 >
   O's Turn
 </div>
@@ -19,6 +21,7 @@ exports[`render oTurn 1`] = `
 exports[`render oWin 1`] = `
 <div
   className="textDisplay"
+  id="text-display-view"
 >
   O is the Winner!
 </div>
@@ -27,6 +30,7 @@ exports[`render oWin 1`] = `
 exports[`render xFirst 1`] = `
 <div
   className="textDisplay"
+  id="text-display-view"
 >
   X Goes First
 </div>
@@ -35,6 +39,7 @@ exports[`render xFirst 1`] = `
 exports[`render xTurn 1`] = `
 <div
   className="textDisplay"
+  id="text-display-view"
 >
   X's Turn
 </div>
@@ -43,6 +48,7 @@ exports[`render xTurn 1`] = `
 exports[`render xWin 1`] = `
 <div
   className="textDisplay"
+  id="text-display-view"
 >
   X is the Winner!
 </div>

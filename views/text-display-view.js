@@ -15,7 +15,10 @@ export default class TextDisplayView extends React.Component {
 
 	render() {
 		return (
-			<div className={topBarStyles.textDisplay}>
+			<div 
+				className={topBarStyles.textDisplay}
+				id = { 'text-display-view' }
+			>
 				{ this.props.value }
 			</div>
 		)

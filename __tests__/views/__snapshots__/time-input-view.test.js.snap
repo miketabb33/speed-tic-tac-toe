@@ -2,16 +2,18 @@
 
 exports[`render hidden 1`] = `
 <div
-  className="timerInputView clear "
+  className="timeInputView clear "
+  id="time-input-view"
 >
   <div
-    className="timerInputText"
+    className="timeInputText"
   >
     Starting Time:
   </div>
   <input
-    className="timerInput"
+    className="timeInput"
     defaultValue="10"
+    id="time-input"
     maxLength="2"
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -22,16 +24,18 @@ exports[`render hidden 1`] = `
 
 exports[`render not hidden 1`] = `
 <div
-  className="timerInputView undefined "
+  className="timeInputView undefined "
+  id="time-input-view"
 >
   <div
-    className="timerInputText"
+    className="timeInputText"
   >
     Starting Time:
   </div>
   <input
-    className="timerInput"
+    className="timeInput"
     defaultValue="10"
+    id="time-input"
     maxLength="2"
     onKeyDown={[Function]}
     onKeyUp={[Function]}

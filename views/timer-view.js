@@ -1,10 +1,10 @@
 import React from 'react'
-import PlayerImage from '../utils/player-image'
+import PlayerMarkerImage from '../images/player-marker-image'
 import topBarStyles from '../styles/TopBarStyles.module.css'
 
 export default class TimerView extends React.Component {
   imageSize = 25
-  playerImage = new PlayerImage
+  playerMarkerImage = new PlayerMarkerImage
 
   render() {
     if (this.props.remainingTime <= 0) {
@@ -18,7 +18,7 @@ export default class TimerView extends React.Component {
     return (
       <div className={ `${topBarStyles.timerView} ${viewStyle}` }>
         <div className={topBarStyles.timerViewImage}>
-          { this.playerImage.getPlayerImage(imageName, this.imageSize) }
+          { this.playerMarkerImage.get(imageName, this.imageSize, "timer-view") }
         </div>
         <div className={ `${topBarStyles.timerViewText} ${textStyle} `}>
           { this.formatTime(this.props.remainingTime) }
