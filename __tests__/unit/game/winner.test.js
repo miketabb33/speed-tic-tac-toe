@@ -2,332 +2,83 @@ import Board from "../../../game/board"
 import Winner from "../../../game/winner"
 
 let subject
-let board1 
-let board2 
-let board3
+let board
 
 const marker = 'X'
 
 beforeEach(() => {
-  subject = new Winner()
-
-  board1 = new Board
-  board2 = new Board
-  board3 = new Board
+  subject = new Winner
+  board = new Board
 })
 
-test('winner same board horizontal', () => {
-  board1.moves = [marker, marker, marker, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
+test('winner horizontal 1', () => {
+  board.moves = [marker, marker, marker, null, null, null, null, null, null]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
   expect(result).toBe(true) 
 })
 
-test('winner same board vertical', () => {
-  board1.moves = [marker, null, null, marker, null, null, marker, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
+test('winner horizontal 2', () => {
+  board.moves = [null, null, null, marker, marker, marker, null, null, null]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
   expect(result).toBe(true) 
 })
 
-test('winner same board diagonal', () => {
-  board1.moves = [marker, null, null, null, marker, null, null, null, marker]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
+test('winner horizontal 3', () => {
+  board.moves = [null, null, null, null, null, null, marker, marker, marker,]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
   expect(result).toBe(true) 
 })
 
-test('winner 3D in order horizontal first', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, marker, null, null, null, null, null, null, null]
-  board3.moves = [null, null, marker, null, null, null, null, null, null]
+test('winner vertical 1', () => {
+  board.moves = [marker, null, null, marker, null, null, marker, null, null]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
-  expect(result).toBe(true)
+  expect(result).toBe(true) 
 })
 
-test('winner 3D in order horizontal second', () => {
-  board1.moves = [null, null, null, marker, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, marker, null, null, null]
+test('winner vertical 2', () => {
+  board.moves = [null, marker, null, null, marker, null, null, marker, null]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
-  expect(result).toBe(true)
+  expect(result).toBe(true) 
 })
 
-test('winner 3D in order horizontal third', () => {
-  board1.moves = [null, null, null, null, null, null, marker, null, null]
-  board2.moves = [null, null, null, null, null, null, null, marker, null]
-  board3.moves = [null, null, null, null, null, null, null, null, marker]
+test('winner vertical 3', () => {
+  board.moves = [null, null, marker, null, null, marker, null, null, marker]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
-  expect(result).toBe(true)
+  expect(result).toBe(true) 
 })
 
-test('winner 3D in order vertical first', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, null, marker, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
+test('winner diagonal 1', () => {
+  board.moves = [marker, null, null, null, marker, null, null, null, marker]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
-  expect(result).toBe(true)
+  expect(result).toBe(true) 
 })
 
-test('winner 3D in order vertical second', () => {
-  board1.moves = [null, marker, null, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, marker, null]
+test('winner diagonal 2', () => {
+  board.moves = [null, null, marker, null, marker, null, marker, null, null]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
-  expect(result).toBe(true)
+  expect(result).toBe(true) 
 })
 
-test('winner 3D in order vertical third', () => {
-  board1.moves = [null, null, marker, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, marker, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, marker]
+test('not winner', () => {
+  board.moves = [null, null, null, null, marker, null, null, null, marker]
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.check(board)
 
-  expect(result).toBe(true)
-})
-
-test('winner 3D in order diagonal first', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, marker]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(true)
-})
-
-test('winner 3D in order diagonal second', () => {
-  board1.moves = [null, null, marker, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(true)
-})
-
-test('check for 3D diagonal win 1', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, marker]
-
-  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
-
-  expect(result).toBe(true)
-})
-
-test('check for 3D diagonal win 2', () => {
-  board1.moves = [null, null, null, null, null, null, null, null, marker]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [marker, null, null, null, null, null, null, null, null]
-
-  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
-
-  expect(result).toBe(true)
-})
-
-test('check for 3D diagonal win 3', () => {
-  board1.moves = [null, null, marker, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
-
-  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
-
-  expect(result).toBe(true)
-})
-
-test('check for 3D diagonal win 4', () => {
-  board1.moves = [null, null, null, null, null, null, marker, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, marker, null, null, null, null, null, null]
-
-  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
-
-  expect(result).toBe(true)
-})
-
-test('no winner for 3D out of order horizontal', () => {
-  board1.moves = [null, null, null, marker, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, marker, null, null, null]
-  board3.moves = [null, null, null, null, marker, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('no winner for 3D out of order vertical', () => {
-  board1.moves = [null, null, null, null, null, null, marker, null, null]
-  board2.moves = [marker, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, marker, null, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('no winner for 3D out of order diagonal', () => {
-  board1.moves = [null, null, null, null, marker, null, null, null, null]
-  board2.moves = [null, null, marker, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('no winner for 3D 2 boards horizontal', () => {
-  board1.moves = [null, null, null, marker, null, marker, null, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, marker, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('no winner for 3D 2 boards vertical', () => {
-  board1.moves = [null, null, null, null, null, null, marker, null, null]
-  board2.moves = [marker, null, null, marker, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('no winner for 3D 2 boards diagonal', () => {
-  board1.moves = [null, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, marker, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('no winner', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(false)
-})
-
-test('get side-to-side plane 1', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [marker, null, null, null, null, null, null, null, null]
-  board3.moves = [marker, null, null, null, null, null, null, null, null]
-
-  const expectedBoardMoves1 = [marker, marker, marker, null, null, null, null, null, null]
-  const expectedBoardMoves2 = [null, null, null, null, null, null, null, null, null]
-  const expectedBoardMoves3 = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.getSideToSidePlanes([board1, board2, board3])
-
-  expect(result[0].moves).toEqual(expectedBoardMoves1)
-  expect(result[1].moves).toEqual(expectedBoardMoves2)
-  expect(result[2].moves).toEqual(expectedBoardMoves3)
-})
-
-test('get side-to-side plane 2', () => {
-  board1.moves = [null, null, null, marker, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, marker, null, null, null]
-
-  const expectedBoardMoves1 = [null, null, null, null, null, marker, null, null, null]
-  const expectedBoardMoves2 = [null, null, null, null, marker, null, null, null, null]
-  const expectedBoardMoves3 = [null, null, null, marker, null, null, null, null, null]
-
-  const result = subject.getSideToSidePlanes([board1, board2, board3])
-
-  expect(result[0].moves).toEqual(expectedBoardMoves1)
-  expect(result[1].moves).toEqual(expectedBoardMoves2)
-  expect(result[2].moves).toEqual(expectedBoardMoves3)
-})
-
-test('get side-to-side plane 3', () => {
-  board1.moves = [null, null, null, marker, null, null, null, marker, null]
-  board2.moves = [marker, null, null, null, null, marker, null, null, null]
-  board3.moves = [null, null, marker, null, null, null, null, marker, null]
-
-  const expectedBoardMoves1 = [null, marker, null, null, null, marker, null, null, null]
-  const expectedBoardMoves2 = [null, null, null, null, null, null, marker, null, marker]
-  const expectedBoardMoves3 = [marker, null, null, null, marker, null, null, null, null]
-
-  const result = subject.getSideToSidePlanes([board1, board2, board3])
-
-  expect(result[0].moves).toEqual(expectedBoardMoves1)
-  expect(result[1].moves).toEqual(expectedBoardMoves2)
-  expect(result[2].moves).toEqual(expectedBoardMoves3)
-})
-
-test('get top-to-bottom plane 1', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [marker, null, null, null, null, null, null, null, null]
-  board3.moves = [marker, null, null, null, null, null, null, null, null]
-
-  const expectedBoardMoves1 = [marker, null, null, marker, null, null, marker, null, null]
-  const expectedBoardMoves2 = [null, null, null, null, null, null, null, null, null]
-  const expectedBoardMoves3 = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.getTopToBottomPlanes([board1, board2, board3])
-
-  expect(result[0].moves).toEqual(expectedBoardMoves1)
-  expect(result[1].moves).toEqual(expectedBoardMoves2)
-  expect(result[2].moves).toEqual(expectedBoardMoves3)
-})
-
-test('get top-to-bottom plane 2', () => {
-  board1.moves = [null, null, null, marker, null, null, null, null, null]
-  board2.moves = [null, null, null, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, marker, null, null, null]
-
-  const expectedBoardMoves1 = [null, null, null, null, null, null, null, null, null]
-  const expectedBoardMoves2 = [null, null, marker, null, marker, null, marker, null, null]
-  const expectedBoardMoves3 = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.getTopToBottomPlanes([board1, board2, board3])
-
-  expect(result[0].moves).toEqual(expectedBoardMoves1)
-  expect(result[1].moves).toEqual(expectedBoardMoves2)
-  expect(result[2].moves).toEqual(expectedBoardMoves3)
-})
-
-test('get top-to-bottom plane 3', () => {
-  board1.moves = [null, null, null, marker, null, null, null, marker, null]
-  board2.moves = [marker, null, null, null, null, marker, null, null, null]
-  board3.moves = [null, null, marker, null, null, null, null, marker, null]
-
-  const expectedBoardMoves1 = [null, null, marker, marker, null, null, null, null, null]
-  const expectedBoardMoves2 = [null, null, null, null, null, marker, marker, null, null]
-  const expectedBoardMoves3 = [null, marker, null, null, null, null, null, marker, null]
-
-  const result = subject.getTopToBottomPlanes([board1, board2, board3])
-
-  expect(result[0].moves).toEqual(expectedBoardMoves1)
-  expect(result[1].moves).toEqual(expectedBoardMoves2)
-  expect(result[2].moves).toEqual(expectedBoardMoves3)
+  expect(result).toBe(undefined) 
 })

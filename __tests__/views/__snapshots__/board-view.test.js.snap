@@ -185,8 +185,8 @@ exports[`render 1`] = `
               decoding="async"
               draggable="false"
               loading="lazy"
-              src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75"
-              srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=256&q=75 2x"
+              src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75"
+              srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 2x"
               style={
                 Object {
                   "border": "none",

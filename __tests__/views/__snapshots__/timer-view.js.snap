@@ -79,8 +79,8 @@ exports[`render o active 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -194,8 +194,8 @@ exports[`render o inactive 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -309,8 +309,8 @@ exports[`render o no time 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -424,8 +424,8 @@ exports[`render o no time 2`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fredo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -539,8 +539,8 @@ exports[`render x active 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -654,8 +654,8 @@ exports[`render x below 0 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -769,8 +769,8 @@ exports[`render x inactive 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -884,8 +884,8 @@ exports[`render x no time 1`] = `
           decoding="async"
           draggable="false"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-markers%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-markers%2FredX.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",

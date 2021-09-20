@@ -18,7 +18,7 @@ export default class PlayerImage {
   getX(size) {
     return (
       <Image
-        src= { '/player-markers/x.png' } 
+        src= { '/player-marker/x.png' } 
         height={size}
         width={size}
         alt={ 'x player marker' }
@@ -30,7 +30,7 @@ export default class PlayerImage {
   getO(size) {
     return (
       <Image
-        src= { '/player-markers/o.png' } 
+        src= { '/player-marker/o.png' } 
         height={size}
         width={size}
         alt={ 'o player marker' }
@@ -42,7 +42,7 @@ export default class PlayerImage {
   getRedO(size) {
     return (
       <Image
-        src= { '/player-markers/redo.png' } 
+        src= { '/player-marker/redo.png' } 
         height={size}
         width={size}
         alt={ 'red o player marker' }
@@ -54,7 +54,7 @@ export default class PlayerImage {
   getRedX(size) {
     return (
       <Image
-        src= { '/player-markers/redX.png' } 
+        src= { '/player-marker/redx.png' } 
         height={size}
         width={size}
         alt={ 'red x player marker' }
