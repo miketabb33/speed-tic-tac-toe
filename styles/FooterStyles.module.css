@@ -1,0 +1,16 @@
+.footerBar {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-content: center;
+}
+
+.footerText {
+  font-family: 'Lalezar', cursive;
+  font-size: 2em;
+  padding-top: 7px;
+  display: inline-block;
+}

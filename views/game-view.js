@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import GameState from '../game/game-state'
 import BoardsView from './boards-view.js'
 import Game from '../game/game.js'
@@ -31,6 +32,11 @@ export default class GameView extends React.Component {
   render() {
     return (
       <div>
+        <Head> 
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap" rel="stylesheet" />
+        </Head>
         <InfoBarView 
           textDisplay = { this.state.textDisplay } 
           activePlayer = { this.state.currentPlayer }

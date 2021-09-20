@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '../styles/Styles.module.css'
 import SquareView from './square-view.js'
+import gameStyles from '../styles/GameStyles.module.css'
 
 export default class BoardView extends React.Component {
 	boardImageSize = 330
@@ -17,7 +17,7 @@ export default class BoardView extends React.Component {
 
 	render() { 
 		return (
-			<div className= {styles.board}>
+			<div className= {gameStyles.board}>
 				{ this.boardImage() }
 				{ this.boardSquares() }
 				{ this.boardLabel(this.props.boardTitle) }
@@ -27,7 +27,7 @@ export default class BoardView extends React.Component {
 
 	boardImage() {
 		return (
-			<div className= {styles.boardImage}>
+			<div className= {gameStyles.boardImage}>
 				<Image 
 					src= "/board.png"
 					width= {this.boardImageSize}
@@ -40,7 +40,7 @@ export default class BoardView extends React.Component {
 
 	boardSquares() {
 		return (
-			<div className= {styles.boardSquares}>
+			<div className= {gameStyles.boardSquares}>
 				<div>
 					{this.renderSquare(0)}
 					{this.renderSquare(1)}
@@ -62,7 +62,7 @@ export default class BoardView extends React.Component {
 
 	boardLabel(title) {
 		return (
-			<div className={ styles.boardTitle }>
+			<div className={ gameStyles.boardTitle }>
 				{ title }
 			</div>
 		)

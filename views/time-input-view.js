@@ -1,17 +1,16 @@
 import React from 'react'
-import { useState, useEffect } from "react";
-import styles from '../styles/Styles.module.css'
+import gameStyles from '../styles/GameStyles.module.css'
 
 export default class TimeInputView extends React.Component {
   render() {
     return (
-      <div className={ `${styles.timerInputView} ${this.shouldHide()} `}>
-        <div className= {styles.timerInputText}>
+      <div className={ `${gameStyles.timerInputView} ${this.shouldHide()} `}>
+        <div className= {gameStyles.timerInputText}>
           Starting Time:
         </div>
         <input
           type="text" 
-          className= {styles.timerInput}
+          className= {gameStyles.timerInput}
           defaultValue='10'
           maxLength="2"
           onKeyDown= { (e)=> this.validateKeyPress(e) }
@@ -23,7 +22,7 @@ export default class TimeInputView extends React.Component {
 
   shouldHide() {
     if (this.props.hide) {
-      return styles.clear
+      return gameStyles.clear
     }
   }
 

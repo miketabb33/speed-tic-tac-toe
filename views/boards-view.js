@@ -1,6 +1,6 @@
-import React from "react";
-import BoardView from "./board-view";
-import styles from '../styles/Styles.module.css'
+import React from 'react'
+import BoardView from './board-view'
+import gameStyles from '../styles/GameStyles.module.css'
 
 export default class BoardsView extends React.Component {
   renderBoard(i, boardTitle) {
@@ -16,11 +16,11 @@ export default class BoardsView extends React.Component {
 
   render() {
     return (
-      <div className={ styles.boards }>
+      <div className={ gameStyles.boards }>
         { this.renderBoard(0, 'Top') }
         { this.renderBoard(1, 'Middle') }
         { this.renderBoard(2, 'Bottom') }
-        </div>
+      </div>
     )
   }
 }

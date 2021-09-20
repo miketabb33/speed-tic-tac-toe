@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Styles.module.css'
 import GameView from '../views/game-view.js'
+import FooterView from '../views/footer-view.js'
 
 export default function Home() {
   return (
@@ -13,6 +13,9 @@ export default function Home() {
       <main>
         <GameView />
       </main>
+      <footer>
+        <FooterView />
+      </footer>
     </div>
   )
 }

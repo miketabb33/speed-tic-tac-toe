@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/TopBarStyles.module.css'
+import topBarStyles from '../styles/TopBarStyles.module.css'
 
 export default class TextDisplayView extends React.Component {
 	static xFirst = 'X Goes First'
@@ -15,7 +15,7 @@ export default class TextDisplayView extends React.Component {
 
 	render() {
 		return (
-			<div className={styles.textDisplay}>
+			<div className={topBarStyles.textDisplay}>
 				{ this.props.value }
 			</div>
 		)

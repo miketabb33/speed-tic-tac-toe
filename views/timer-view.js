@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../styles/TopBarStyles.module.css'
 import PlayerImage from '../utils/player-image'
+import topBarStyles from '../styles/TopBarStyles.module.css'
 
 export default class TimerView extends React.Component {
   imageSize = 25
@@ -8,7 +8,7 @@ export default class TimerView extends React.Component {
 
   render() {
     if (this.props.remainingTime <= 0) {
-      return this.renderTimerView('red'+ this.props.player, styles.timerViewNoTimeLeft, styles.timerViewTextNoTimeLeft)
+      return this.renderTimerView('red'+ this.props.player, topBarStyles.timerViewNoTimeLeft, topBarStyles.timerViewTextNoTimeLeft)
     } else {
       return this.renderTimerView(this.props.player, this.getActiveState(), this.getPlayerStyle())
     }
@@ -16,11 +16,11 @@ export default class TimerView extends React.Component {
 
   renderTimerView(imageName, viewStyle, textStyle) {
     return (
-      <div className={ `${styles.timerView} ${viewStyle}` }>
-        <div className={styles.timerViewImage}>
+      <div className={ `${topBarStyles.timerView} ${viewStyle}` }>
+        <div className={topBarStyles.timerViewImage}>
           { this.playerImage.getPlayerImage(imageName, this.imageSize) }
         </div>
-        <div className={ `${styles.timerViewText} ${textStyle} `}>
+        <div className={ `${topBarStyles.timerViewText} ${textStyle} `}>
           { this.formatTime(this.props.remainingTime) }
         </div>
       </div>
@@ -29,19 +29,19 @@ export default class TimerView extends React.Component {
 
   getActiveState() {
     if (this.props.activePlayer == this.props.player && this.props.player == "X") {
-      return styles.timerViewActiveX
+      return topBarStyles.timerViewActiveX
     } else if (this.props.activePlayer == this.props.player && this.props.player == "O"){
-      return styles.timerViewActiveO
+      return topBarStyles.timerViewActiveO
     } else {
-      return styles.timerViewInactive
+      return topBarStyles.timerViewInactive
     }
   }
 
   getPlayerStyle() {
     if (this.props.player == 'X') {
-      return styles.timerViewX
+      return topBarStyles.timerViewX
     } else if (this.props.player == 'O'){
-      return styles.timerViewO
+      return topBarStyles.timerViewO
     }
   }
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../styles/Styles.module.css'
 import PlayerImage from '../utils/player-image'
+import gameStyles from '../styles/GameStyles.module.css'
 
 export default class SquareView extends React.Component {
 	size = 79
@@ -9,7 +9,7 @@ export default class SquareView extends React.Component {
 	render() { 
 		return (
 			<button
-				className = { styles.square }
+				className = { gameStyles.square }
 				onClick = { this.props.onClick } 
 			>
 			{ this.getContents(this.props.value) }
@@ -28,7 +28,7 @@ export default class SquareView extends React.Component {
 	getBlankSpace() {
 		return (
    		<svg width={this.size} height={this.size}>
-			  <rect width={this.size} height={this.size} className={styles.clear}/>
+			  <rect width={this.size} height={this.size} className={gameStyles.clear}/>
 			</svg>
  		)
 	}
