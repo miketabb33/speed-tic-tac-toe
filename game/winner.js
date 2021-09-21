@@ -13,8 +13,8 @@ export default class Winner {
   check(board) {
     for (let i=0; i<this.winningVariations.length; i++) {
       const [a, b, c] = this.winningVariations[i]
-      if (board.moves[a] && board.moves[a] === board.moves[b] && board.moves[a] === board.moves[c]) {
-        return true
+      if (board.squares[a].marker && board.squares[a].marker === board.squares[b].marker && board.squares[a].marker === board.squares[c].marker) {
+        return [a,b,c]
       }
     }
   }

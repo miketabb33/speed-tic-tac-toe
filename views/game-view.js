@@ -12,7 +12,8 @@ export default class GameView extends React.Component {
     super(props)
     this.game = new Game(
       (marker, time) => this.timerValueDidChange(marker, time),
-      (winnerMarker) => this.timerDidHit0(winnerMarker)
+      (winnerMarker) => this.timerDidHit0(winnerMarker),
+      (winningCombination) => this.gameDidReceiveWinningCombination(winningCombination)
     )
 
     this.state = {
@@ -102,5 +103,10 @@ export default class GameView extends React.Component {
     this.setState({
       textDisplay: TextDisplayView.winner(winnerMarker)
     }) 
+  }
+
+  gameDidReceiveWinningCombination(winningVariation) {
+    console.log('---WINING VARIATION---')
+    console.log(winningVariation)
   }
 }

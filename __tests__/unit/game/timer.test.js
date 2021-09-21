@@ -1,4 +1,4 @@
-import Timer from "../../../game/timer";
+import Timer from '../../../game/timer'
 
 let subject
 let remainingTime

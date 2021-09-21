@@ -1,3 +1,4 @@
+import Square from "../../../game/square"
 import Board from "../../../game/board"
 import Winner3D from "../../../game/winner3D"
 
@@ -11,45 +12,15 @@ const marker = 'X'
 beforeEach(() => {
   subject = new Winner3D()
 
-  board1 = new Board
-  board2 = new Board
-  board3 = new Board
-})
-
-test('winner same board horizontal', () => {
-  board1.moves = [marker, marker, marker, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(true) 
-})
-
-test('winner same board vertical', () => {
-  board1.moves = [marker, null, null, marker, null, null, marker, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(true) 
-})
-
-test('winner same board diagonal', () => {
-  board1.moves = [marker, null, null, null, marker, null, null, null, marker]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
-
-  const result = subject.check([board1, board2, board3])
-
-  expect(result).toBe(true) 
+  board1 = new Board(0)
+  board2 = new Board(1)
+  board3 = new Board(2)
 })
 
 test('winner 3D in order horizontal first', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, marker, null, null, null, null, null, null, null]
-  board3.moves = [null, null, marker, null, null, null, null, null, null]
+  board1.squares = getSquares(0, [marker, null, null, null, null, null, null, null, null])  
+  board2.squares = getSquares(1, [null, marker, null, null, null, null, null, null, null])
+  board3.squares = getSquares(2, [null, null, marker, null, null, null, null, null, null])
 
   const result = subject.check([board1, board2, board3])
 
@@ -331,3 +302,11 @@ test('get top-to-bottom plane 3', () => {
   expect(result[1].moves).toEqual(expectedBoardMoves2)
   expect(result[2].moves).toEqual(expectedBoardMoves3)
 })
+
+function getSquares(boardIndex, markers) {
+  let squares = []
+  for (let i=0; i<9; i++) {
+    squares.push(new Square(markers[i], [boardIndex,i]))
+  }
+  return squares
+}

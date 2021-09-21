@@ -8,22 +8,24 @@ import Timer from './timer.js'
 export default class Game {
   #boards
   #player
-  #winner
+  #winner3D
   #xTimer
   #oTimer
   #isGameOver = false
   playerMarkers = ['X', 'O']
+  didRecieveWinningCombination
 
-	constructor(timerValueDidChange, timerDidHit0) {
+	constructor(timerValueDidChange, timerDidHit0, didRecieveWinningCombination) {
     const board1 = new Board
     const board2 = new Board
     const board3 = new Board
     
 		this.#boards = new Boards(board1, board2, board3)
 		this.#player = new Player(this.playerMarkers)
-		this.#winner = new Winner3D
+		this.#winner3D = new Winner3D
     this.#xTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[0], time), () => timerDidHit0(this.playerMarkers[1]))
     this.#oTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[1], time), () => timerDidHit0(this.playerMarkers[0]))
+    this.didRecieveWinningCombination = didRecieveWinningCombination
   }
 
 	getMovesForBoard(boardIndex) {
@@ -34,8 +36,10 @@ export default class Game {
     if (this.#isGameOver) { return GameState.gameOver }
     if (!this.#boards.isMoveAvailable(squareIndex, boardIndex)) { return GameState.moveNotAvailable }
     this.#boards.addMove(this.#player.current(), squareIndex, boardIndex)
-    const status = this.#getPostMoveGameState()
-    if (status == GameState.winner) { this.setGameOver() }
+    const winningVariation = this.#winner3D.check(this.#boards.allBoards)
+    
+    const status = this.#getPostMoveGameState(winningVariation)
+    if (status == GameState.winner) { this.handleWinner(winningVariation) }
     if (status == GameState.draw) { this.setGameOver() }
 		if (status == GameState.readyForNextMove) {
       this.#switchTimers(this.#player.current())
@@ -59,8 +63,13 @@ export default class Game {
     this.#oTimer.stopTimer()
   }
 
-  #getPostMoveGameState() {
-    if (this.#winner.check(this.#boards.allBoards)) {
+  handleWinner(winningCombination) {
+    this.setGameOver()
+    this.didRecieveWinningCombination(winningCombination)
+  }
+
+  #getPostMoveGameState(winningCombination) {
+    if (winningCombination) {
       return GameState.winner
     } else {
       if (this.#boards.anyAvailableMoves()) {

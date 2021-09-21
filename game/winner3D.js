@@ -12,7 +12,8 @@ export default class Winner3D {
   ]
 
   check(boards) {
-    if (this.checkPlansForWinner(boards)) { return true }
+    const initialPlaneWinningCombination = this.checkPlansForWinner(boards)
+    if (initialPlaneWinningCombination) { return initialPlaneWinningCombination }
     const sideBySidePlanes = this.getSideToSidePlanes(boards)
     if (this.checkPlansForWinner(sideBySidePlanes)) { return true }
     const topToBottomPlanes = this.getTopToBottomPlanes(boards)
@@ -24,9 +25,9 @@ export default class Winner3D {
   checkPlansForWinner(boards) {
     for (let j=0; j<boards.length; j++) {
       const board = boards[j]
-      const isWinner = this.winner.check(board)
-      if (isWinner) {
-        return true
+      const winningCombination = this.winner.check(board)
+      if (winningCombination) {
+        return winningCombination
       }
     }
   }
