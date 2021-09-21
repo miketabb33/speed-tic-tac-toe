@@ -14,7 +14,7 @@ export default class SquareView extends React.Component {
 				onClick = { this.props.onClick }
 				id = { this.squareID }
 			>
-			{ this.getContents(this.props.value) }
+			{ this.getContents(this.props.marker) }
      	</button>
 		)
 	}

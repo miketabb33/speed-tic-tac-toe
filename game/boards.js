@@ -5,22 +5,22 @@ export default class Boards {
     this.allBoards = [board1, board2, board3]
   }
 
-  getMoves(boardIndex) {
-    return this.allBoards[boardIndex].moves
+  getSquares(boardIndex) {
+    return this.allBoards[boardIndex].squares
   }
 
-  addMove(marker, squareIndex, boardIndex) {
-    this.allBoards[boardIndex].addMove(marker, squareIndex)
+  addMarker(marker, squareIndex, boardIndex) {
+    this.allBoards[boardIndex].addMarker(marker, squareIndex)
   }
 
-  isMoveAvailable(squareIndex, boardIndex) {
-    return this.allBoards[boardIndex].isMoveAvailable(squareIndex)
+  isSquareAvailable(squareIndex, boardIndex) {
+    return this.allBoards[boardIndex].isSquareAvailable(squareIndex)
   }
 
-  anyAvailableMoves() {
+  anyAvailableSquares() {
     for (var i = 0; i < this.allBoards.length; i++) {
       const board = this.allBoards[i]
-      if (board.anyAvailableMoves()) {
+      if (board.anyAvailableSquares()) {
         return true
       }
     }

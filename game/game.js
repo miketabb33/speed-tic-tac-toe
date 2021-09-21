@@ -28,18 +28,17 @@ export default class Game {
     this.didRecieveWinningCombination = didRecieveWinningCombination
   }
 
-	getMovesForBoard(boardIndex) {
-    return this.#boards.getMoves(boardIndex)
+	getSquaresForBoard(boardIndex) {
+    return this.#boards.getSquares(boardIndex)
   }
   
 	attemptToAddMove(squareIndex, boardIndex) {
     if (this.#isGameOver) { return GameState.gameOver }
-    if (!this.#boards.isMoveAvailable(squareIndex, boardIndex)) { return GameState.moveNotAvailable }
-    this.#boards.addMove(this.#player.current(), squareIndex, boardIndex)
-    const winningVariation = this.#winner3D.check(this.#boards.allBoards)
-    
-    const status = this.#getPostMoveGameState(winningVariation)
-    if (status == GameState.winner) { this.handleWinner(winningVariation) }
+    if (!this.#boards.isSquareAvailable(squareIndex, boardIndex)) { return GameState.moveNotAvailable }
+    this.#boards.addMarker(this.#player.current(), squareIndex, boardIndex)
+    const winningCombination = this.#winner3D.check(this.#boards.allBoards)
+    const status = this.#getPostMoveGameState(winningCombination)
+    if (status == GameState.winner) { this.handleWinner(winningCombination) }
     if (status == GameState.draw) { this.setGameOver() }
 		if (status == GameState.readyForNextMove) {
       this.#switchTimers(this.#player.current())
@@ -72,7 +71,7 @@ export default class Game {
     if (winningCombination) {
       return GameState.winner
     } else {
-      if (this.#boards.anyAvailableMoves()) {
+      if (this.#boards.anyAvailableSquares()) {
         return GameState.readyForNextMove
       } else {
         return GameState.draw

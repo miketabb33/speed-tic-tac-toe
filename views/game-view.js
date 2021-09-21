@@ -17,10 +17,10 @@ export default class GameView extends React.Component {
     )
 
     this.state = {
-      moves: [
-        this.game.getMovesForBoard(0), 
-        this.game.getMovesForBoard(1),
-        this.game.getMovesForBoard(2)
+      squares: [
+        this.game.getSquaresForBoard(0), 
+        this.game.getSquaresForBoard(1),
+        this.game.getSquaresForBoard(2)
       ],
       textDisplay: TextDisplayView.xFirst,
       currentPlayer: this.game.getCurrentPlayer(),
@@ -49,7 +49,7 @@ export default class GameView extends React.Component {
           hide = { this.state.hideTimeInputView }
         />
         <BoardsView 
-          moves = { this.state.moves }
+          squares = { this.state.squares }
           onClick = { (squareIndex, boardIndex) => this.didClickSquare(squareIndex, boardIndex) }
         />
       </div>
@@ -71,10 +71,10 @@ export default class GameView extends React.Component {
     }
 
     this.setState({
-      moves: [
-        this.game.getMovesForBoard(0), 
-        this.game.getMovesForBoard(1),
-        this.game.getMovesForBoard(2)
+      squares: [
+        this.game.getSquaresForBoard(0), 
+        this.game.getSquaresForBoard(1),
+        this.game.getSquaresForBoard(2)
       ],
       textDisplay: displayContent, 
       currentPlayer: this.game.getCurrentPlayer(),

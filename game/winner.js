@@ -11,10 +11,11 @@ export default class Winner {
 	]
 
   check(board) {
+    const squares = board.squares
     for (let i=0; i<this.winningVariations.length; i++) {
       const [a, b, c] = this.winningVariations[i]
-      if (board.squares[a].marker && board.squares[a].marker === board.squares[b].marker && board.squares[a].marker === board.squares[c].marker) {
-        return [a,b,c]
+      if (squares[a].marker && squares[a].marker === squares[b].marker && squares[a].marker === squares[c].marker) {
+        return [squares[a].indexPath, squares[b].indexPath, squares[c].indexPath]
       }
     }
   }

@@ -5,20 +5,26 @@ export default class Winner3D {
   winner = new Winner
 
   diagonalWinVariations = [
-    [[0,0],[1,4],[2,8]],
-    [[0,2],[1,4],[2,6]],
-    [[0,6],[1,4],[2,2]],
-    [[0,8],[1,4],[2,0]]
+    [[0,0],[4,1],[8,2]],
+    [[2,0],[4,1],[6,2]],
+    [[6,0],[4,1],[2,2]],
+    [[8,0],[4,1],[0,2]]
   ]
 
   check(boards) {
     const initialPlaneWinningCombination = this.checkPlansForWinner(boards)
     if (initialPlaneWinningCombination) { return initialPlaneWinningCombination }
+
     const sideBySidePlanes = this.getSideToSidePlanes(boards)
-    if (this.checkPlansForWinner(sideBySidePlanes)) { return true }
+    const sideBySideWinningCombination = this.checkPlansForWinner(sideBySidePlanes)
+    if (sideBySideWinningCombination) { return sideBySideWinningCombination }
+
     const topToBottomPlanes = this.getTopToBottomPlanes(boards)
-    if (this.checkPlansForWinner(topToBottomPlanes)) { return true } 
-    if (this.checkFor3DDiagonalWin(boards)) { return true }
+    const topToBottomWinningCombination = this.checkPlansForWinner(topToBottomPlanes)
+    if (topToBottomWinningCombination) { return topToBottomWinningCombination } 
+
+    const diagonalWinCombination = this.checkFor3DDiagonalWin(boards)
+    if (diagonalWinCombination) { return diagonalWinCombination }
     return false
   }
 
@@ -38,106 +44,106 @@ export default class Winner3D {
       let cache = []
       for (let j=0; j<winVariation.length;j++) {
         const indexPath = winVariation[j]
-        cache.push(boards[indexPath[0]].moves[indexPath[1]])
+        cache.push(boards[indexPath[1]].squares[indexPath[0]])
       }
-      if (cache[0] && cache[0] == cache[1] && cache[0] == cache[2]) {
-        return true
+      if (cache[0].marker && cache[0].marker == cache[1].marker && cache[0].marker == cache[2].marker) {
+        return winVariation
       }
     }
   }
 
   getSideToSidePlanes(boards) {
+    const board1Squares = boards[0].squares
+    const board2Squares = boards[1].squares
+    const board3Squares = boards[2].squares
+
     let sidePlane1 = new Board
     let sidePlane2 = new Board
     let sidePlane3 = new Board
 
-    const board1 = boards[0]
-    const board2 = boards[1]
-    const board3 = boards[2] 
+    sidePlane1.squares[2] = board1Squares[0]
+    sidePlane1.squares[1] = board2Squares[0]
+    sidePlane1.squares[0] = board3Squares[0]
 
-    sidePlane1.moves[2] = board1.moves[0]
-    sidePlane1.moves[1] = board2.moves[0]
-    sidePlane1.moves[0] = board3.moves[0]
+    sidePlane1.squares[5] = board1Squares[3]
+    sidePlane1.squares[4] = board2Squares[3]
+    sidePlane1.squares[3] = board3Squares[3]
 
-    sidePlane1.moves[5] = board1.moves[3]
-    sidePlane1.moves[4] = board2.moves[3]
-    sidePlane1.moves[3] = board3.moves[3]
+    sidePlane1.squares[8] = board1Squares[6]
+    sidePlane1.squares[7] = board2Squares[6]
+    sidePlane1.squares[6] = board3Squares[6]
 
-    sidePlane1.moves[8] = board1.moves[6]
-    sidePlane1.moves[7] = board2.moves[6]
-    sidePlane1.moves[6] = board3.moves[6]
+    sidePlane2.squares[2] = board1Squares[1]
+    sidePlane2.squares[1] = board2Squares[1]
+    sidePlane2.squares[0] = board3Squares[1]
 
-    sidePlane2.moves[2] = board1.moves[1]
-    sidePlane2.moves[1] = board2.moves[1]
-    sidePlane2.moves[0] = board3.moves[1]
+    sidePlane2.squares[5] = board1Squares[4]
+    sidePlane2.squares[4] = board2Squares[4]
+    sidePlane2.squares[3] = board3Squares[4]
 
-    sidePlane2.moves[5] = board1.moves[4]
-    sidePlane2.moves[4] = board2.moves[4]
-    sidePlane2.moves[3] = board3.moves[4]
+    sidePlane2.squares[8] = board1Squares[7]
+    sidePlane2.squares[7] = board2Squares[7]
+    sidePlane2.squares[6] = board3Squares[7]
 
-    sidePlane2.moves[8] = board1.moves[7]
-    sidePlane2.moves[7] = board2.moves[7]
-    sidePlane2.moves[6] = board3.moves[7]    
+    sidePlane3.squares[2] = board1Squares[2]
+    sidePlane3.squares[1] = board2Squares[2]
+    sidePlane3.squares[0] = board3Squares[2]
 
-    sidePlane3.moves[2] = board1.moves[2]
-    sidePlane3.moves[1] = board2.moves[2]
-    sidePlane3.moves[0] = board3.moves[2]
+    sidePlane3.squares[5] = board1Squares[5]
+    sidePlane3.squares[4] = board2Squares[5]
+    sidePlane3.squares[3] = board3Squares[5]
 
-    sidePlane3.moves[5] = board1.moves[5]
-    sidePlane3.moves[4] = board2.moves[5]
-    sidePlane3.moves[3] = board3.moves[5]
-
-    sidePlane3.moves[8] = board1.moves[8]
-    sidePlane3.moves[7] = board2.moves[8]
-    sidePlane3.moves[6] = board3.moves[8]
+    sidePlane3.squares[8] = board1Squares[8]
+    sidePlane3.squares[7] = board2Squares[8]
+    sidePlane3.squares[6] = board3Squares[8]
 
     return [sidePlane1, sidePlane2, sidePlane3]
   }
 
   getTopToBottomPlanes(boards) {
+    const board1Squares = boards[0].squares
+    const board2Squares = boards[1].squares
+    const board3Squares = boards[2].squares
+
     let topDownPlane1 = new Board
     let topDownPlane2 = new Board
     let topDownPlane3 = new Board
-
-    const board1 = boards[0]
-    const board2 = boards[1]
-    const board3 = boards[2] 
     
-    topDownPlane1.moves[6] = board1.moves[0]
-    topDownPlane1.moves[3] = board2.moves[0]
-    topDownPlane1.moves[0] = board3.moves[0]
+    topDownPlane1.squares[6] = board1Squares[0]
+    topDownPlane1.squares[3] = board2Squares[0]
+    topDownPlane1.squares[0] = board3Squares[0]
 
-    topDownPlane1.moves[7] = board1.moves[1]
-    topDownPlane1.moves[4] = board2.moves[1]
-    topDownPlane1.moves[1] = board3.moves[1]
-    
-    topDownPlane1.moves[8] = board1.moves[2]
-    topDownPlane1.moves[5] = board2.moves[2]
-    topDownPlane1.moves[2] = board3.moves[2]
+    topDownPlane1.squares[7] = board1Squares[1]
+    topDownPlane1.squares[4] = board2Squares[1]
+    topDownPlane1.squares[1] = board3Squares[1]
 
-    topDownPlane2.moves[6] = board1.moves[3]
-    topDownPlane2.moves[3] = board2.moves[3]
-    topDownPlane2.moves[0] = board3.moves[3]
+    topDownPlane1.squares[8] = board1Squares[2]
+    topDownPlane1.squares[5] = board2Squares[2]
+    topDownPlane1.squares[2] = board3Squares[2]
 
-    topDownPlane2.moves[7] = board1.moves[4]
-    topDownPlane2.moves[4] = board2.moves[4]
-    topDownPlane2.moves[1] = board3.moves[4]
-    
-    topDownPlane2.moves[8] = board1.moves[5]
-    topDownPlane2.moves[5] = board2.moves[5]
-    topDownPlane2.moves[2] = board3.moves[5]
+    topDownPlane2.squares[6] = board1Squares[3]
+    topDownPlane2.squares[3] = board2Squares[3]
+    topDownPlane2.squares[0] = board3Squares[3]
 
-    topDownPlane3.moves[6] = board1.moves[6]
-    topDownPlane3.moves[3] = board2.moves[6]
-    topDownPlane3.moves[0] = board3.moves[6]
+    topDownPlane2.squares[7] = board1Squares[4]
+    topDownPlane2.squares[4] = board2Squares[4]
+    topDownPlane2.squares[1] = board3Squares[4]
 
-    topDownPlane3.moves[7] = board1.moves[7]
-    topDownPlane3.moves[4] = board2.moves[7]
-    topDownPlane3.moves[1] = board3.moves[7]
-    
-    topDownPlane3.moves[8] = board1.moves[8]
-    topDownPlane3.moves[5] = board2.moves[8]
-    topDownPlane3.moves[2] = board3.moves[8]
+    topDownPlane2.squares[8] = board1Squares[5]
+    topDownPlane2.squares[5] = board2Squares[5]
+    topDownPlane2.squares[2] = board3Squares[5]
+
+    topDownPlane3.squares[6] = board1Squares[6]
+    topDownPlane3.squares[3] = board2Squares[6]
+    topDownPlane3.squares[0] = board3Squares[6]
+
+    topDownPlane3.squares[7] = board1Squares[7]
+    topDownPlane3.squares[4] = board2Squares[7]
+    topDownPlane3.squares[1] = board3Squares[7]
+
+    topDownPlane3.squares[8] = board1Squares[8]
+    topDownPlane3.squares[5] = board2Squares[8]
+    topDownPlane3.squares[2] = board3Squares[8]
 
     return [topDownPlane1, topDownPlane2, topDownPlane3]
   }

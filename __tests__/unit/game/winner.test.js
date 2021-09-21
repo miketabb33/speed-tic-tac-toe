@@ -1,82 +1,84 @@
-import Board from "../../../game/board"
+import MockBoard from "../../../mocks/mock-board"
 import Winner from "../../../game/winner"
 
 let subject
 let board
 
+const mockBoard = new MockBoard
 const marker = 'X'
+const whateverBoardIndex = 1
 
 beforeEach(() => {
   subject = new Winner
-  board = new Board
+  board = mockBoard.getBlankBoard(whateverBoardIndex)
 })
 
 test('winner horizontal 1', () => {
-  board.moves = [marker, marker, marker, null, null, null, null, null, null]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [marker, marker, marker, null, null, null, null, null, null])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([0, 1, 2]) 
+  expect(result).toEqual([[0, whateverBoardIndex], [1, whateverBoardIndex], [2, whateverBoardIndex]]) 
 })
 
 test('winner horizontal 2', () => {
-  board.moves = [null, null, null, marker, marker, marker, null, null, null]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [null, null, null, marker, marker, marker, null, null, null])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([3, 4, 5]) 
+  expect(result).toEqual([[3, whateverBoardIndex], [4, whateverBoardIndex], [5, whateverBoardIndex]]) 
 })
 
 test('winner horizontal 3', () => {
-  board.moves = [null, null, null, null, null, null, marker, marker, marker,]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [null, null, null, null, null, null, marker, marker, marker])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([6, 7, 8]) 
+  expect(result).toEqual([[6, whateverBoardIndex], [7, whateverBoardIndex], [8, whateverBoardIndex]]) 
 })
 
 test('winner vertical 1', () => {
-  board.moves = [marker, null, null, marker, null, null, marker, null, null]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [marker, null, null, marker, null, null, marker, null, null])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([0, 3, 6]) 
+  expect(result).toEqual([[0, whateverBoardIndex], [3, whateverBoardIndex], [6, whateverBoardIndex]])
 })
 
 test('winner vertical 2', () => {
-  board.moves = [null, marker, null, null, marker, null, null, marker, null]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [null, marker, null, null, marker, null, null, marker, null])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([1, 4, 7]) 
+  expect(result).toEqual([[1, whateverBoardIndex], [4, whateverBoardIndex], [7, whateverBoardIndex]])
 })
 
 test('winner vertical 3', () => {
-  board.moves = [null, null, marker, null, null, marker, null, null, marker]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [null, null, marker, null, null, marker, null, null, marker])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([2, 5, 8])
+  expect(result).toEqual([[2, whateverBoardIndex], [5, whateverBoardIndex], [8, whateverBoardIndex]])
 })
 
 test('winner diagonal 1', () => {
-  board.moves = [marker, null, null, null, marker, null, null, null, marker]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [marker, null, null, null, marker, null, null, null, marker])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([0, 4, 8]) 
+  expect(result).toEqual([[0, whateverBoardIndex], [4, whateverBoardIndex], [8, whateverBoardIndex]])
 })
 
 test('winner diagonal 2', () => {
-  board.moves = [null, null, marker, null, marker, null, marker, null, null]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [null, null, marker, null, marker, null, marker, null, null])
 
   const result = subject.check(board)
 
-  expect(result).toEqual([2, 4, 6])
+  expect(result).toEqual([[2, whateverBoardIndex], [4, whateverBoardIndex], [6, whateverBoardIndex]])
 })
 
 test('not winner', () => {
-  board.moves = [null, null, null, null, marker, null, null, null, marker]
+  board.squares = mockBoard.getSquares(whateverBoardIndex, [null, null, null, null, marker, null, marker, null, null])
 
   const result = subject.check(board)
 

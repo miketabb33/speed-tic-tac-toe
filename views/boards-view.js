@@ -6,14 +6,14 @@ export default class BoardsView extends React.Component {
   renderBoard(i, boardTitle) {
     return (
     <BoardView
-      moves = { this.props.moves[i] } 
+      squares = { this.props.squares[i] } 
       boardIndex = { i }
       boardTitle = { boardTitle }
       onClick = { (squareIndex, boardIndex) => this.props.onClick(squareIndex, boardIndex) }
     />
     )
   }
-
+  
   render() {
     return (
       <div className={ gameStyles.boards }>

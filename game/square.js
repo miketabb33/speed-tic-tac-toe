@@ -1,6 +1,6 @@
 export default class Square {
 	marker
-	indexPath
+	indexPath //[square, board]
 
   constructor(marker, indexPath) {
     this.marker = marker

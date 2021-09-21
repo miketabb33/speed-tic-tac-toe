@@ -2,7 +2,7 @@ import Square from '../../../game/square'
 
 test('construct square with null marker', () => {
   const marker = null
-  const whateverIndexPath = [1,2]
+  const whateverIndexPath = [2,1]
 
   const subject = new Square(marker, whateverIndexPath)
 
@@ -12,7 +12,7 @@ test('construct square with null marker', () => {
 
 test('construct square with x marker', () => {
   const marker = 'X'
-  const whateverIndexPath = [3,1]
+  const whateverIndexPath = [1,3]
 
   const subject = new Square(marker, whateverIndexPath)
 
@@ -22,7 +22,7 @@ test('construct square with x marker', () => {
 
 test('construct square with o marker', () => {
   const marker = 'O'
-  const whateverIndexPath = [0,8]
+  const whateverIndexPath = [8,0]
 
   const subject = new Square(marker, whateverIndexPath)
 
