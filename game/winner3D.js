@@ -47,6 +47,9 @@ export default class Winner3D {
         cache.push(boards[indexPath[1]].squares[indexPath[0]])
       }
       if (cache[0].marker && cache[0].marker == cache[1].marker && cache[0].marker == cache[2].marker) {
+        boards[cache[0].indexPath[0]].squares[cache[0].indexPath[1]].winningMarker = true
+        boards[cache[1].indexPath[0]].squares[cache[1].indexPath[1]].winningMarker = true
+        boards[cache[2].indexPath[0]].squares[cache[2].indexPath[1]].winningMarker = true
         return winVariation
       }
     }

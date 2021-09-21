@@ -15,6 +15,9 @@ export default class Winner {
     for (let i=0; i<this.winningVariations.length; i++) {
       const [a, b, c] = this.winningVariations[i]
       if (squares[a].marker && squares[a].marker === squares[b].marker && squares[a].marker === squares[c].marker) {
+        squares[a].winningMarker = true
+        squares[b].winningMarker = true
+        squares[c].winningMarker = true
         return [squares[a].indexPath, squares[b].indexPath, squares[c].indexPath]
       }
     }

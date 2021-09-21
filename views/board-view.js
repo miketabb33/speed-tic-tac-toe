@@ -10,7 +10,7 @@ export default class BoardView extends React.Component {
 	renderSquare(i) {
 		return (
 			<SquareView 
-	      marker = { this.props.squares[i].marker }
+	      square = { this.props.squares[i] }
 				boardIndex = { this.props.boardIndex }
 				squareIndex = { i }
 	      onClick = { ()=> this.props.onClick(i, this.props.boardIndex) } 

@@ -13,12 +13,17 @@ export default class PlayerMarkerImage {
         return this.getRedX(size, imageID)
       } else if (imageName == 'redO') {
         return this.getRedO(size, imageID)
+      } else if (imageName == 'yellowX') {
+        return this.getYellowX(size, imageID)
+      } else if (imageName == 'yellowO') {
+        return this.getYellowO(size, imageID)
       }
     }
   
     getX(size, imageID) {
       return (
         <Image
+          priority
           src= { '/player-marker/x.png' } 
           height={size}
           width={size}
@@ -32,6 +37,7 @@ export default class PlayerMarkerImage {
     getO(size, imageID) {
       return (
         <Image
+          priority  
           src= { '/player-marker/o.png' } 
           height={size}
           width={size}
@@ -45,6 +51,7 @@ export default class PlayerMarkerImage {
     getRedO(size, imageID) {
       return (
         <Image
+          priority
           src= { '/player-marker/redo.png' } 
           height={size}
           width={size}
@@ -58,7 +65,36 @@ export default class PlayerMarkerImage {
     getRedX(size, imageID) {
       return (
         <Image
+          priority
           src= { '/player-marker/redx.png' } 
+          height={size}
+          width={size}
+          alt={ imageID }
+          id= { imageID }
+          draggable= { this.#imageDraggable }
+        />
+      )
+    }
+
+    getYellowX(size, imageID) {
+      return (
+        <Image
+          priority
+          src= { '/player-marker/yellowx.png' } 
+          height={size}
+          width={size}
+          alt={ imageID }
+          id= { imageID }
+          draggable= { this.#imageDraggable }
+        />
+      )
+    }
+
+    getYellowO(size, imageID) {
+      return (
+        <Image
+          priority
+          src= { '/player-marker/yellowo.png' } 
           height={size}
           width={size}
           alt={ imageID }

@@ -14,14 +14,17 @@ export default class SquareView extends React.Component {
 				onClick = { this.props.onClick }
 				id = { this.squareID }
 			>
-			{ this.getContents(this.props.marker) }
+			{ this.getContents(this.props.square) }
      	</button>
 		)
 	}
 
-	getContents(imageName) {
-		if (imageName == 'X' || imageName == 'O') {
-			return this.playerMarkerImage.get(imageName, this.size, this.squareID)
+	getContents(square) {
+		if (square.marker == 'X' && square.winningMarker || square.marker == 'O' && square.winningMarker) {
+			const winningName = 'yellow' + square.marker
+			return this.playerMarkerImage.get(winningName, this.size, this.squareID)
+		} else if (square.marker == 'X' || square.marker == 'O') {
+			return this.playerMarkerImage.get(square.marker, this.size, this.squareID)
 		} else {
    		return this.getBlankSpace()
    	}
