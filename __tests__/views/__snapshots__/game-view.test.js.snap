@@ -53,7 +53,8 @@ exports[`render 1`] = `
             decoding="async"
             draggable="false"
             id="x-marker-timer-view"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+            srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
             style={
               Object {
                 "border": "none",
@@ -173,7 +174,8 @@ exports[`render 1`] = `
             decoding="async"
             draggable="false"
             id="o-marker-timer-view"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
+            srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
             style={
               Object {
                 "border": "none",
@@ -310,7 +312,8 @@ exports[`render 1`] = `
             decoding="async"
             draggable="false"
             id="board-0"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Fboard.png&w=750&q=75"
+            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
             style={
               Object {
                 "border": "none",
@@ -578,7 +581,8 @@ exports[`render 1`] = `
             decoding="async"
             draggable="false"
             id="board-1"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Fboard.png&w=750&q=75"
+            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
             style={
               Object {
                 "border": "none",
@@ -846,7 +850,8 @@ exports[`render 1`] = `
             decoding="async"
             draggable="false"
             id="board-2"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Fboard.png&w=750&q=75"
+            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
             style={
               Object {
                 "border": "none",

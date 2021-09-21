@@ -27,7 +27,7 @@ export default class Board {
 	getBlankSquares() {
 		let squares = []
 		for (let i = 0; i < 9; i++){
-			const square = new Square(null, [this.index, i])
+			const square = new Square(null, [i, this.index])
 			squares.push(square)
 		}
 		return squares

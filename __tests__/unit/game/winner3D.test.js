@@ -29,6 +29,10 @@ test('winner 3D in order horizontal first', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[2,2], [1,1], [0,0]])
+
+  expect(board1.squares[result[2][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[0][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order horizontal second', () => {
@@ -39,6 +43,10 @@ test('winner 3D in order horizontal second', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[5,2], [4,1], [3,0]])
+
+  expect(board1.squares[result[2][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[0][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order horizontal third', () => {
@@ -49,6 +57,10 @@ test('winner 3D in order horizontal third', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[8,2], [7,1], [6,0]])
+
+  expect(board1.squares[result[2][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[0][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order vertical first', () => {
@@ -59,6 +71,10 @@ test('winner 3D in order vertical first', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[0,0], [3,1], [6,2]])
+
+  expect(board1.squares[result[0][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[2][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order vertical second', () => {
@@ -69,6 +85,10 @@ test('winner 3D in order vertical second', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[1,0], [4,1], [7,2]])
+
+  expect(board1.squares[result[0][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[2][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order vertical third', () => {
@@ -79,6 +99,10 @@ test('winner 3D in order vertical third', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[2,0], [5,1], [8,2]])
+
+  expect(board1.squares[result[0][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[2][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order diagonal first', () => {
@@ -89,6 +113,10 @@ test('winner 3D in order diagonal first', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[0,0], [4,1], [8,2]])
+
+  expect(board1.squares[result[0][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[2][0]].winningMarker).toBe(true)
 })
 
 test('winner 3D in order diagonal second', () => {
@@ -99,6 +127,10 @@ test('winner 3D in order diagonal second', () => {
   const result = subject.check([board1, board2, board3])
 
   expect(result).toEqual([[2,0], [4,1], [6,2]])
+
+  expect(board1.squares[result[0][0]].winningMarker).toBe(true)
+  expect(board2.squares[result[1][0]].winningMarker).toBe(true)
+  expect(board3.squares[result[2][0]].winningMarker).toBe(true)
 })
 
 test('check for 3D diagonal win 1', () => {
@@ -141,74 +173,74 @@ test('check for 3D diagonal win 4', () => {
   expect(result).toEqual([[6,0], [4,1], [2,2]])
 })
 
-xtest('no winner for 3D out of order horizontal', () => {
-  board1.moves = [null, null, null, marker, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, marker, null, null, null]
-  board3.moves = [null, null, null, null, marker, null, null, null, null]
+test('no winner for 3D out of order horizontal', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [null, null, null, marker, null, null, null, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [null, null, null, null, null, marker, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, null, marker, null, null, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
-xtest('no winner for 3D out of order vertical', () => {
-  board1.moves = [null, null, null, null, null, null, marker, null, null]
-  board2.moves = [marker, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, marker, null, null, null, null, null]
+test('no winner for 3D out of order vertical', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [null, null, null, null, null, null, marker, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [marker, null, null, null, null, null, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, marker, null, null, null, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
-xtest('no winner for 3D out of order diagonal', () => {
-  board1.moves = [null, null, null, null, marker, null, null, null, null]
-  board2.moves = [null, null, marker, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
+test('no winner for 3D out of order diagonal', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [null, null, null, null, marker, null, null, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [null, null, marker, null, null, null, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, null, null, null, marker, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
-xtest('no winner for 3D 2 boards horizontal', () => {
-  board1.moves = [null, null, null, marker, null, marker, null, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, marker, null, null, null, null]
+test('no winner for 3D 2 boards horizontal', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [null, null, null, marker, null, marker, null, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [null, null, null, null, null, null, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, null, marker, null, null, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
-xtest('no winner for 3D 2 boards vertical', () => {
-  board1.moves = [null, null, null, null, null, null, marker, null, null]
-  board2.moves = [marker, null, null, marker, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
+test('no winner for 3D 2 boards vertical', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [null, null, null, null, null, null, null, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [marker, null, null, marker, null, null, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, null, null, null, null, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
-xtest('no winner for 3D 2 boards diagonal', () => {
-  board1.moves = [null, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, marker, null, marker, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, marker, null, null]
+test('no winner for 3D 2 boards diagonal', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [null, null, null, null, null, null, null, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [null, null, marker, null, marker, null, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, null, null, null, marker, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
-xtest('no winner', () => {
-  board1.moves = [marker, null, null, null, null, null, null, null, null]
-  board2.moves = [null, null, null, null, null, null, null, null, null]
-  board3.moves = [null, null, null, null, null, null, null, null, null]
+test('no winner', () => {
+  board1.squares = mockBoard.getSquares(boardIndex1, [marker, null, null, null, null, null, null, null, null])  
+  board2.squares = mockBoard.getSquares(boardIndex2, [null, null, null, null, null, null, null, null, null])
+  board3.squares = mockBoard.getSquares(boardIndex3, [null, null, null, null, null, null, null, null, null])
 
-  const result = subject.check([board1, board2, board3])
+  const result = subject.checkFor3DDiagonalWin([board1, board2, board3])
 
-  expect(result).toBe(false)
+  expect(result).toBe(undefined)
 })
 
 test('get side-to-side plane 1', () => {

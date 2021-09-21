@@ -18,7 +18,11 @@ test('winner horizontal 1', () => {
 
   const result = subject.check(board)
 
-  expect(result).toEqual([[0, whateverBoardIndex], [1, whateverBoardIndex], [2, whateverBoardIndex]]) 
+  expect(result).toEqual([[0, whateverBoardIndex], [1, whateverBoardIndex], [2, whateverBoardIndex]])
+
+  expect(board.squares[0].winningMarker).toBe(true)
+  expect(board.squares[1].winningMarker).toBe(true)
+  expect(board.squares[2].winningMarker).toBe(true)
 })
 
 test('winner horizontal 2', () => {
@@ -26,7 +30,11 @@ test('winner horizontal 2', () => {
 
   const result = subject.check(board)
 
-  expect(result).toEqual([[3, whateverBoardIndex], [4, whateverBoardIndex], [5, whateverBoardIndex]]) 
+  expect(result).toEqual([[3, whateverBoardIndex], [4, whateverBoardIndex], [5, whateverBoardIndex]])
+
+  expect(board.squares[3].winningMarker).toBe(true)
+  expect(board.squares[4].winningMarker).toBe(true)
+  expect(board.squares[5].winningMarker).toBe(true)
 })
 
 test('winner horizontal 3', () => {
@@ -34,7 +42,11 @@ test('winner horizontal 3', () => {
 
   const result = subject.check(board)
 
-  expect(result).toEqual([[6, whateverBoardIndex], [7, whateverBoardIndex], [8, whateverBoardIndex]]) 
+  expect(result).toEqual([[6, whateverBoardIndex], [7, whateverBoardIndex], [8, whateverBoardIndex]])
+  
+  expect(board.squares[6].winningMarker).toBe(true)
+  expect(board.squares[7].winningMarker).toBe(true)
+  expect(board.squares[8].winningMarker).toBe(true)
 })
 
 test('winner vertical 1', () => {
@@ -43,6 +55,10 @@ test('winner vertical 1', () => {
   const result = subject.check(board)
 
   expect(result).toEqual([[0, whateverBoardIndex], [3, whateverBoardIndex], [6, whateverBoardIndex]])
+
+  expect(board.squares[0].winningMarker).toBe(true)
+  expect(board.squares[3].winningMarker).toBe(true)
+  expect(board.squares[6].winningMarker).toBe(true)
 })
 
 test('winner vertical 2', () => {
@@ -51,6 +67,10 @@ test('winner vertical 2', () => {
   const result = subject.check(board)
 
   expect(result).toEqual([[1, whateverBoardIndex], [4, whateverBoardIndex], [7, whateverBoardIndex]])
+
+  expect(board.squares[1].winningMarker).toBe(true)
+  expect(board.squares[4].winningMarker).toBe(true)
+  expect(board.squares[7].winningMarker).toBe(true)
 })
 
 test('winner vertical 3', () => {
@@ -59,6 +79,10 @@ test('winner vertical 3', () => {
   const result = subject.check(board)
 
   expect(result).toEqual([[2, whateverBoardIndex], [5, whateverBoardIndex], [8, whateverBoardIndex]])
+
+  expect(board.squares[2].winningMarker).toBe(true)
+  expect(board.squares[5].winningMarker).toBe(true)
+  expect(board.squares[8].winningMarker).toBe(true)
 })
 
 test('winner diagonal 1', () => {
@@ -67,6 +91,10 @@ test('winner diagonal 1', () => {
   const result = subject.check(board)
 
   expect(result).toEqual([[0, whateverBoardIndex], [4, whateverBoardIndex], [8, whateverBoardIndex]])
+
+  expect(board.squares[0].winningMarker).toBe(true)
+  expect(board.squares[4].winningMarker).toBe(true)
+  expect(board.squares[8].winningMarker).toBe(true)
 })
 
 test('winner diagonal 2', () => {
@@ -75,6 +103,10 @@ test('winner diagonal 2', () => {
   const result = subject.check(board)
 
   expect(result).toEqual([[2, whateverBoardIndex], [4, whateverBoardIndex], [6, whateverBoardIndex]])
+
+  expect(board.squares[2].winningMarker).toBe(true)
+  expect(board.squares[4].winningMarker).toBe(true)
+  expect(board.squares[6].winningMarker).toBe(true)
 })
 
 test('not winner', () => {

@@ -26,7 +26,9 @@ describe("gameplay", ()=> {
 		cy.get('#text-display-view').should('have.text', "X's Turn")
 
 		cy.get('button#board-1-square-1').click()
-		cy.get('img#x-marker-board-1-square-1')
+		cy.get('img#yellowx-marker-board-1-square-1')
+		cy.get('img#yellowx-marker-board-2-square-5')
+		cy.get('img#yellowx-marker-board-3-square-9')
 		cy.get('#text-display-view').should('have.text', "X is the Winner!")
 	})
 })

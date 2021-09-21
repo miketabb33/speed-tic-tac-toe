@@ -49,7 +49,8 @@ exports[`render 1`] = `
         decoding="async"
         draggable="false"
         id="board-1"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        src="/_next/image?url=%2Fboard.png&w=750&q=75"
+        srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -160,7 +161,8 @@ exports[`render 1`] = `
             decoding="async"
             draggable="false"
             id="x-marker-board-2-square-1"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75"
+            srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=96&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 2x"
             style={
               Object {
                 "border": "none",
