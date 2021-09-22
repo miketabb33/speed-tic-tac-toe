@@ -2,7 +2,7 @@ import React from 'react'
 import BoardView from './board-view'
 import gameStyles from '../styles/GameStyles.module.css'
 
-export default class BoardsView extends React.Component {
+export default class Board3DView extends React.Component {
   renderBoard(i, boardTitle) {
     return (
     <BoardView

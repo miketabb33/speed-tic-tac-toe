@@ -113,7 +113,7 @@ exports[`render o active 1`] = `
   <div
     className="timerViewText timerViewO "
   >
-    00:05
+    00:00.05
   </div>
 </div>
 `;
@@ -231,7 +231,7 @@ exports[`render o inactive 1`] = `
   <div
     className="timerViewText timerViewO "
   >
-    00:05
+    00:00.05
   </div>
 </div>
 `;
@@ -349,7 +349,7 @@ exports[`render o no time 1`] = `
   <div
     className="timerViewText timerViewTextNoTimeLeft "
   >
-    00:00
+    00:00.00
   </div>
 </div>
 `;
@@ -467,7 +467,361 @@ exports[`render o no time 2`] = `
   <div
     className="timerViewText timerViewTextNoTimeLeft "
   >
-    00:00
+    00:00.00
+  </div>
+</div>
+`;
+
+exports[`render time at 5 minutes and 50.01 seconds 1`] = `
+<div
+  className="timerView timerViewActiveX"
+>
+  <div
+    className="timerViewImage"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "margin": 0,
+          "maxWidth": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+          style={
+            Object {
+              "border": "none",
+              "display": "block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "padding": 0,
+            }
+          }
+        />
+      </div>
+      <img
+        alt="x-marker-timer-view"
+        data-nimg="intrinsic"
+        decoding="async"
+        draggable="false"
+        id="x-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="x-marker-timer-view"
+          data-nimg="intrinsic"
+          decoding="async"
+          draggable="false"
+          id="x-marker-timer-view"
+          loading="lazy"
+          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </div>
+  </div>
+  <div
+    className="timerViewText timerViewX "
+  >
+    58:20.01
+  </div>
+</div>
+`;
+
+exports[`render time at 10 seconds 1`] = `
+<div
+  className="timerView timerViewActiveX"
+>
+  <div
+    className="timerViewImage"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "margin": 0,
+          "maxWidth": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+          style={
+            Object {
+              "border": "none",
+              "display": "block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "padding": 0,
+            }
+          }
+        />
+      </div>
+      <img
+        alt="x-marker-timer-view"
+        data-nimg="intrinsic"
+        decoding="async"
+        draggable="false"
+        id="x-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="x-marker-timer-view"
+          data-nimg="intrinsic"
+          decoding="async"
+          draggable="false"
+          id="x-marker-timer-view"
+          loading="lazy"
+          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </div>
+  </div>
+  <div
+    className="timerViewText timerViewX "
+  >
+    01:40.00
+  </div>
+</div>
+`;
+
+exports[`render time at 50 seconds 1`] = `
+<div
+  className="timerView timerViewActiveX"
+>
+  <div
+    className="timerViewImage"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "margin": 0,
+          "maxWidth": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+          style={
+            Object {
+              "border": "none",
+              "display": "block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "padding": 0,
+            }
+          }
+        />
+      </div>
+      <img
+        alt="x-marker-timer-view"
+        data-nimg="intrinsic"
+        decoding="async"
+        draggable="false"
+        id="x-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="x-marker-timer-view"
+          data-nimg="intrinsic"
+          decoding="async"
+          draggable="false"
+          id="x-marker-timer-view"
+          loading="lazy"
+          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </div>
+  </div>
+  <div
+    className="timerViewText timerViewX "
+  >
+    08:20.00
   </div>
 </div>
 `;
@@ -585,12 +939,12 @@ exports[`render x active 1`] = `
   <div
     className="timerViewText timerViewX "
   >
-    00:05
+    00:00.05
   </div>
 </div>
 `;
 
-exports[`render x below 0 1`] = `
+exports[`render x below 0.00 1`] = `
 <div
   className="timerView timerViewNoTimeLeft"
 >
@@ -703,7 +1057,7 @@ exports[`render x below 0 1`] = `
   <div
     className="timerViewText timerViewTextNoTimeLeft "
   >
-    00:00
+    00:00.00
   </div>
 </div>
 `;
@@ -821,7 +1175,7 @@ exports[`render x inactive 1`] = `
   <div
     className="timerViewText timerViewX "
   >
-    00:05
+    00:00.05
   </div>
 </div>
 `;
@@ -939,7 +1293,7 @@ exports[`render x no time 1`] = `
   <div
     className="timerViewText timerViewTextNoTimeLeft "
   >
-    00:00
+    00:00.00
   </div>
 </div>
 `;

@@ -4,7 +4,6 @@ module.exports = {
     '!**/*.d.ts',
     '!**/node_modules/**',
     '!**/cypress/**',
-    '!**/*mocks/**'
   ],
   moduleNameMapper: {
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
@@ -12,8 +11,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/', 
     '<rootDir>/.next/', 
-    '<rootDir>/cypress/',
-    '<rootDir>/__tests__/unit/'
+    '<rootDir>/cypress/'
   ],
   testEnvironment: 'jsdom',
   transform: {
