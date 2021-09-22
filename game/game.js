@@ -1,4 +1,4 @@
-import Boards from './boards.js'
+import Board3D from './board3D.js'
 import GameState from './game-state.js'
 import Winner3D from './winner3D.js'
 import Player from '../game/player.js'
@@ -20,7 +20,7 @@ export default class Game {
     const board2 = new Board(1)
     const board3 = new Board(2)
     
-		this.#boards = new Boards(board1, board2, board3)
+		this.#boards = new Board3D(board1, board2, board3)
 		this.#player = new Player(this.playerMarkers)
 		this.#winner3D = new Winner3D
     this.#xTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[0], time), () => timerDidHit0(this.playerMarkers[1]))

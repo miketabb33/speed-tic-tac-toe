@@ -1,4 +1,4 @@
-export default class Boards {
+export default class Board3D {
   allBoards
 
   constructor(board1, board2, board3) {

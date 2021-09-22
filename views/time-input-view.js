@@ -15,7 +15,7 @@ export default class TimeInputView extends React.Component {
           type="text" 
           className= {gameStyles.timeInput}
           defaultValue='10'
-          maxLength="2"
+          maxLength="5"
           onKeyDown= { (e)=> this.validateKeyPress(e) }
           onKeyUp= { (e)=> this.didPressValidKey(e, this.props.didChangeTime) }
           id = { 'time-input' }

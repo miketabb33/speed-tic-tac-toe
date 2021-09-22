@@ -1,4 +1,4 @@
-import Boards from "../../../game/boards"
+import Board3D from "../../../game/board3D"
 import MockBoard from "../../../mocks/mock-board"
 
 let subject
@@ -12,8 +12,7 @@ beforeEach(() => {
   board1 = mockBoard.getBlankBoard(0)
   board2 = mockBoard.getBlankBoard(1)
   board3 = mockBoard.getBlankBoard(2)
-
-	subject = new Boards(board1, board2, board3)
+	subject = new Board3D(board1, board2, board3)
 })
 
 test('add marker first', () => {

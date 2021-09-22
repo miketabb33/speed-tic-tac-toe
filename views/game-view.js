@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import GameState from '../game/game-state'
-import BoardsView from './boards-view.js'
+import Board3DView from './board-3D-view.js'
 import Game from '../game/game.js'
 import TimeInputView from './time-input-view'
 import TextDisplayView from './text-display-view'
@@ -23,8 +23,8 @@ export default class GameView extends React.Component {
       ],
       textDisplay: TextDisplayView.xFirst,
       currentPlayer: this.game.getCurrentPlayer(),
-      xRemainingTime: 1000,
-      oRemainingTime: 1000,
+      xRemainingTimeInHundredthsOfSeconds: 1000,
+      oRemainingTimeInHundredthsOfSeconds: 1000,
       hideTimeInputView: false,
     }
   }
@@ -40,14 +40,14 @@ export default class GameView extends React.Component {
         <InfoBarView 
           textDisplay = { this.state.textDisplay } 
           activePlayer = { this.state.currentPlayer }
-          xRemainingTime = { this.state.xRemainingTime }
-          oRemainingTime = { this.state.oRemainingTime }
+          xRemainingTimeInHundredthsOfSeconds = { this.state.xRemainingTimeInHundredthsOfSeconds }
+          oRemainingTimeInHundredthsOfSeconds = { this.state.oRemainingTimeInHundredthsOfSeconds }
         />
         <TimeInputView 
           didChangeTime = { (newTime) => this.didChangeTotalTime(newTime) }
           hide = { this.state.hideTimeInputView }
         />
-        <BoardsView 
+        <Board3DView 
           squares = { this.state.squares }
           onClick = { (squareIndex, boardIndex) => this.didClickSquare(squareIndex, boardIndex) }
         />
@@ -84,16 +84,16 @@ export default class GameView extends React.Component {
   didChangeTotalTime(time) {
     this.game.setTimers(time)
     this.setState({
-      xRemainingTime: time,
-      oRemainingTime: time
+      xRemainingTimeInHundredthsOfSeconds: time,
+      oRemainingTimeInHundredthsOfSeconds: time
     })
   }
 
   timerValueDidChange(marker, time) {
     if (marker == this.game.playerMarkers[0]) {
-      this.setState({ xRemainingTime: time })
+      this.setState({ xRemainingTimeInHundredthsOfSeconds: time })
     } else if (marker == this.game.playerMarkers[1]) {
-      this.setState({ oRemainingTime: time })
+      this.setState({ oRemainingTimeInHundredthsOfSeconds: time })
     }
   }
 
