@@ -1,22 +1,21 @@
 export default class Timer {
   #timer
-  totalTime
   timerDidHit0
 
   #decrementingMillisecondInterval = 5
 
   constructor(didChangeTime, timerDidHit0) {
-    this.totalTime = 1000
-    this.usedTime = 0
+    this.totalTimeInHundredthsOfSeconds = 1000 // = 10 seconds
+    this.usedTimeInHundredthsOfSeconds = 0
     this.timerValueDidChange = didChangeTime
     this.timerDidHit0 = timerDidHit0
   }
 
-  updateTime(usedTime) {
-    this.usedTime = usedTime + this.#decrementingMillisecondInterval
-    const remainingTime = this.totalTime - usedTime
-    this.timerValueDidChange(remainingTime)
-    if (remainingTime <= 0) {
+  updateTime(usedTimeInHundredthsOfSeconds) {
+    this.usedTime = usedTimeInHundredthsOfSeconds + this.#decrementingMillisecondInterval
+    const remainingTimeInHundredthsOfSeconds = this.totalTimeInHundredthsOfSeconds - usedTimeInHundredthsOfSeconds
+    this.timerValueDidChange(remainingTimeInHundredthsOfSeconds)
+    if (remainingTimeInHundredthsOfSeconds <= 0) {
       this.timerDidHit0()
       this.stopTimer()
     }
@@ -24,7 +23,7 @@ export default class Timer {
 
   startTimer() {
     const timerInterval = this.#decrementingMillisecondInterval * 10
-    this.#timer = setInterval(() => this.updateTime(this.usedTime), timerInterval)
+    this.#timer = setInterval(() => this.updateTime(this.usedTimeInHundredthsOfSeconds), timerInterval)
   }
 
   stopTimer() {
