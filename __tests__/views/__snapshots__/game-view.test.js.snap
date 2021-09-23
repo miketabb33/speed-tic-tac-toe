@@ -116,6 +116,7 @@ exports[`render 1`] = `
       </div>
       <div
         className="timerViewText timerViewX "
+        id="Xplayer-remaining-time"
       >
         00:10.00
       </div>
@@ -237,6 +238,7 @@ exports[`render 1`] = `
       </div>
       <div
         className="timerViewText timerViewO "
+        id="Oplayer-remaining-time"
       >
         00:10.00
       </div>

@@ -20,7 +20,7 @@ export default class TimerView extends React.Component {
         <div className={topBarStyles.timerViewImage}>
           { this.playerMarkerImage.get(imageName, this.imageSize, "timer-view") }
         </div>
-        <div className={ `${topBarStyles.timerViewText} ${textStyle} `}>
+        <div className={ `${topBarStyles.timerViewText} ${textStyle} `} id = { imageName + "player-remaining-time" }>
           { this.formatTime(this.props.remainingTimeInHundredthsOfSeconds) }
         </div>
       </div>
