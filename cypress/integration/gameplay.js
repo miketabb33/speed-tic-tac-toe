@@ -30,5 +30,8 @@ describe("gameplay", ()=> {
 		cy.get('img#yellowx-marker-board-2-square-5')
 		cy.get('img#yellowx-marker-board-3-square-9')
 		cy.get('#text-display-view').should('have.text', "X is the Winner!")
+
+		cy.get('#Oplayer-remaining-time').should('not.have.text', '00:10.00')
+		cy.get('#Xplayer-remaining-time').should('not.have.text', '00:10.00')
 	})
 })

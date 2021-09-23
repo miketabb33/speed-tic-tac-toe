@@ -2,6 +2,8 @@ export default class Timer {
   #timer
   timerDidHit0
 
+  totalTimeInHundredthsOfSeconds
+
   #decrementingMillisecondInterval = 5
 
   constructor(didChangeTime, timerDidHit0) {
@@ -12,7 +14,7 @@ export default class Timer {
   }
 
   updateTime(usedTimeInHundredthsOfSeconds) {
-    this.usedTime = usedTimeInHundredthsOfSeconds + this.#decrementingMillisecondInterval
+    this.usedTimeInHundredthsOfSeconds = usedTimeInHundredthsOfSeconds + this.#decrementingMillisecondInterval
     const remainingTimeInHundredthsOfSeconds = this.totalTimeInHundredthsOfSeconds - usedTimeInHundredthsOfSeconds
     this.timerValueDidChange(remainingTimeInHundredthsOfSeconds)
     if (remainingTimeInHundredthsOfSeconds <= 0) {

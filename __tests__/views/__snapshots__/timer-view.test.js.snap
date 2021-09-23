@@ -112,6 +112,7 @@ exports[`render o active 1`] = `
   </div>
   <div
     className="timerViewText timerViewO "
+    id="Oplayer-remaining-time"
   >
     00:00.05
   </div>
@@ -230,6 +231,7 @@ exports[`render o inactive 1`] = `
   </div>
   <div
     className="timerViewText timerViewO "
+    id="Oplayer-remaining-time"
   >
     00:00.05
   </div>
@@ -348,6 +350,7 @@ exports[`render o no time 1`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
+    id="redOplayer-remaining-time"
   >
     00:00.00
   </div>
@@ -466,6 +469,7 @@ exports[`render o no time 2`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
+    id="redOplayer-remaining-time"
   >
     00:00.00
   </div>
@@ -584,6 +588,7 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
   </div>
   <div
     className="timerViewText timerViewX "
+    id="Xplayer-remaining-time"
   >
     58:20.01
   </div>
@@ -702,6 +707,7 @@ exports[`render time at 10 seconds 1`] = `
   </div>
   <div
     className="timerViewText timerViewX "
+    id="Xplayer-remaining-time"
   >
     01:40.00
   </div>
@@ -820,6 +826,7 @@ exports[`render time at 50 seconds 1`] = `
   </div>
   <div
     className="timerViewText timerViewX "
+    id="Xplayer-remaining-time"
   >
     08:20.00
   </div>
@@ -938,6 +945,7 @@ exports[`render x active 1`] = `
   </div>
   <div
     className="timerViewText timerViewX "
+    id="Xplayer-remaining-time"
   >
     00:00.05
   </div>
@@ -1056,6 +1064,7 @@ exports[`render x below 0.00 1`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
+    id="redXplayer-remaining-time"
   >
     00:00.00
   </div>
@@ -1174,6 +1183,7 @@ exports[`render x inactive 1`] = `
   </div>
   <div
     className="timerViewText timerViewX "
+    id="Xplayer-remaining-time"
   >
     00:00.05
   </div>
@@ -1292,6 +1302,7 @@ exports[`render x no time 1`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
+    id="redXplayer-remaining-time"
   >
     00:00.00
   </div>

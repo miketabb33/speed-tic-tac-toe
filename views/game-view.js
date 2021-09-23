@@ -90,6 +90,7 @@ export default class GameView extends React.Component {
   }
 
   timerValueDidChange(marker, time) {
+    console.log(time)
     if (marker == this.game.playerMarkers[0]) {
       this.setState({ xRemainingTimeInHundredthsOfSeconds: time })
     } else if (marker == this.game.playerMarkers[1]) {
