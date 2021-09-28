@@ -51,7 +51,7 @@ exports[`render 1`] = `
             alt="x-marker-timer-view"
             data-nimg="intrinsic"
             decoding="async"
-            draggable="false"
+            draggable={false}
             id="x-marker-timer-view"
             src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
             srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -83,7 +83,7 @@ exports[`render 1`] = `
               alt="x-marker-timer-view"
               data-nimg="intrinsic"
               decoding="async"
-              draggable="false"
+              draggable={false}
               id="x-marker-timer-view"
               loading="lazy"
               src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
@@ -173,7 +173,7 @@ exports[`render 1`] = `
             alt="o-marker-timer-view"
             data-nimg="intrinsic"
             decoding="async"
-            draggable="false"
+            draggable={false}
             id="o-marker-timer-view"
             src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
             srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
@@ -205,7 +205,7 @@ exports[`render 1`] = `
               alt="o-marker-timer-view"
               data-nimg="intrinsic"
               decoding="async"
-              draggable="false"
+              draggable={false}
               id="o-marker-timer-view"
               loading="lazy"
               src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
@@ -257,7 +257,7 @@ exports[`render 1`] = `
       className="timeInput"
       defaultValue="10"
       id="time-input"
-      maxLength="5"
+      maxLength={5}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       type="text"

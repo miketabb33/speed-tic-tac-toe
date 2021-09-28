@@ -1,5 +1,5 @@
-import Square from '../../../game/square.js'
-import Board from '../../../game/board.js'
+import Square from '../../../game/square'
+import Board from '../../../game/board'
 
 let subject
 let whateverIndex = 3

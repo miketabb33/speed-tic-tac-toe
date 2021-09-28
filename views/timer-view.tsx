@@ -2,7 +2,13 @@ import React from 'react'
 import PlayerMarkerImage from '../images/player-marker-image'
 import topBarStyles from '../styles/TopBarStyles.module.css'
 
-export default class TimerView extends React.Component {
+interface TimerViewProps {
+  remainingTimeInHundredthsOfSeconds: number
+  player: string
+  activePlayer: string
+}
+
+export default class TimerView extends React.Component<TimerViewProps, {}> {
   imageSize = 25
   playerMarkerImage = new PlayerMarkerImage
 
@@ -14,7 +20,7 @@ export default class TimerView extends React.Component {
     }
   }
 
-  renderTimerView(imageName, viewStyle, textStyle) {
+  renderTimerView(imageName: string, viewStyle: string, textStyle: string) {
     return (
       <div className={ `${topBarStyles.timerView} ${viewStyle}` }>
         <div className={topBarStyles.timerViewImage}>
@@ -40,12 +46,12 @@ export default class TimerView extends React.Component {
   getPlayerStyle() {
     if (this.props.player == 'X') {
       return topBarStyles.timerViewX
-    } else if (this.props.player == 'O'){
+    } else {
       return topBarStyles.timerViewO
     }
   }
 
-  formatTime(timeInHundredthsOfSeconds) {
+  formatTime(timeInHundredthsOfSeconds: number) {
     if (timeInHundredthsOfSeconds <= 0) {
       return this.get0TimeFormat()
     } else {
@@ -53,7 +59,7 @@ export default class TimerView extends React.Component {
     }
   }
 
-  addPrefixWhenNeeded(time) {
+  addPrefixWhenNeeded(time: string) {
     if (time.length == 2) {
       return time
     } else if (time.length == 1) {
@@ -69,7 +75,7 @@ export default class TimerView extends React.Component {
     return '00:00.00'
   }
 
-  getOver0TimeFormat(timeInHundredthsOfSeconds) {
+  getOver0TimeFormat(timeInHundredthsOfSeconds: number) {
     const stringifiedTimeInHundredthsOfSeconds = timeInHundredthsOfSeconds.toString()
     const timeRemovedHundredthsOfSeconds = parseInt(stringifiedTimeInHundredthsOfSeconds.substring(0, stringifiedTimeInHundredthsOfSeconds.length - 2))
 
@@ -81,7 +87,7 @@ export default class TimerView extends React.Component {
     const stringifiedSeconds = (conditionedSeconds % 60).toString()
     const stringifiedMinutes = conditionedMinutes.toString()
 
-    const conditionedHundredthsOfSeconds = stringifiedTimeInHundredthsOfSeconds.substring(stringifiedTimeInHundredthsOfSeconds.length - 2, stringifiedTimeInHundredthsOfSeconds)
+    const conditionedHundredthsOfSeconds = stringifiedTimeInHundredthsOfSeconds.substring(stringifiedTimeInHundredthsOfSeconds.length - 2, stringifiedTimeInHundredthsOfSeconds.length)
     
     const formattedMinutes = this.addPrefixWhenNeeded(stringifiedMinutes)
     const formattedSeconds = this.addPrefixWhenNeeded(stringifiedSeconds)

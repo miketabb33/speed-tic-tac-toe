@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import SquareView from '../../views/square-view.js'
-import Square from '../../game/square.js'
+import SquareView from '../../views/square-view'
+import Square from '../../game/square'
 
 const whateverIndex = 1
 

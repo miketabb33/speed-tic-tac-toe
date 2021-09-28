@@ -1,14 +1,26 @@
 import React from 'react'
 import Head from 'next/head'
 import GameState from '../game/game-state'
-import Board3DView from './board-3D-view.js'
-import Game from '../game/game.js'
+import Board3DView from './board-3D-view'
+import Game from '../game/game'
 import TimeInputView from './time-input-view'
 import TextDisplayView from './text-display-view'
 import InfoBarView from './info-bar-view'
+import Square from '../game/square'
 
-export default class GameView extends React.Component {
-  constructor(props) {
+interface GameViewState {
+  squares: Square[][]
+  textDisplay: string
+  currentPlayer: string
+  xRemainingTimeInHundredthsOfSeconds: number
+  oRemainingTimeInHundredthsOfSeconds: number
+  hideTimeInputView: boolean
+}
+
+export default class GameView extends React.Component<{}, GameViewState> {
+  game: Game
+
+  constructor(props: any) {
     super(props)
     this.game = new Game(
       (marker, time) => this.timerValueDidChange(marker, time),
@@ -34,7 +46,7 @@ export default class GameView extends React.Component {
       <div>
         <Head> 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
           <link href="https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap" rel="stylesheet" />
         </Head>
         <InfoBarView 
@@ -44,7 +56,7 @@ export default class GameView extends React.Component {
           oRemainingTimeInHundredthsOfSeconds = { this.state.oRemainingTimeInHundredthsOfSeconds }
         />
         <TimeInputView 
-          didChangeTime = { (newTime) => this.didChangeTotalTime(newTime) }
+          didChangeTime = { (newTime: number) => this.didChangeTotalTime(newTime) }
           hide = { this.state.hideTimeInputView }
         />
         <Board3DView 
@@ -55,7 +67,7 @@ export default class GameView extends React.Component {
     )
   }
 
-  didClickSquare(squareIndex, boardIndex) {
+  didClickSquare(squareIndex: number, boardIndex: number) {
     let displayContent
     const [state, marker] = this.game.attemptToAddMove(squareIndex, boardIndex)
 
@@ -81,7 +93,7 @@ export default class GameView extends React.Component {
     })
   }
 
-  didChangeTotalTime(time) {
+  didChangeTotalTime(time: number) {
     this.game.setTimers(time)
     this.setState({
       xRemainingTimeInHundredthsOfSeconds: time,
@@ -89,7 +101,7 @@ export default class GameView extends React.Component {
     })
   }
 
-  timerValueDidChange(marker, time) {
+  timerValueDidChange(marker: string, time: number) {
     console.log(time)
     if (marker == this.game.playerMarkers[0]) {
       this.setState({ xRemainingTimeInHundredthsOfSeconds: time })
@@ -98,7 +110,7 @@ export default class GameView extends React.Component {
     }
   }
 
-  timerDidHit0(winnerMarker) {
+  timerDidHit0(winnerMarker: string) {
     this.game.setGameOver()
     this.setState({
       textDisplay: TextDisplayView.winner(winnerMarker)

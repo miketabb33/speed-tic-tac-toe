@@ -1,4 +1,4 @@
-import Player from '../../../game/player.js'
+import Player from '../../../game/player'
 
 let subject
 

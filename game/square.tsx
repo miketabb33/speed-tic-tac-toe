@@ -3,7 +3,7 @@ export default class Square {
 	indexPath //[square, board]
   winningMarker = false
 
-  constructor(marker, indexPath) {
+  constructor(marker: string | null, indexPath: number[]) {
     this.marker = marker
     this.indexPath = indexPath
   }

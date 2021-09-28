@@ -11,7 +11,7 @@ export default class Winner3D {
     [[8,0],[4,1],[0,2]]
   ]
 
-  check(boards) {
+  check(boards: Board[]): boolean | number[][] {
     const initialPlaneWinningCombination = this.checkPlansForWinner(boards)
     if (initialPlaneWinningCombination) { return initialPlaneWinningCombination }
 
@@ -28,7 +28,7 @@ export default class Winner3D {
     return false
   }
 
-  checkPlansForWinner(boards) {
+  checkPlansForWinner(boards: Board[]): number[][] | undefined {
     for (let j=0; j<boards.length; j++) {
       const board = boards[j]
       const winningCombination = this.winner.check(board)
@@ -38,7 +38,7 @@ export default class Winner3D {
     }
   }
 
-  checkFor3DDiagonalWin(boards) {
+  checkFor3DDiagonalWin(boards: Board[]): number[][] | undefined {
     for (let i=0; i<this.diagonalWinVariations.length;i++) {
       const winVariation = this.diagonalWinVariations[i]
       let cache = []
@@ -55,14 +55,14 @@ export default class Winner3D {
     }
   }
 
-  getSideToSidePlanes(boards) {
+  getSideToSidePlanes(boards: Board[]): Board[] {
     const board1Squares = boards[0].squares
     const board2Squares = boards[1].squares
     const board3Squares = boards[2].squares
 
-    let sidePlane1 = new Board
-    let sidePlane2 = new Board
-    let sidePlane3 = new Board
+    let sidePlane1 = new Board(0)
+    let sidePlane2 = new Board(1)
+    let sidePlane3 = new Board(2)
 
     sidePlane1.squares[2] = board1Squares[0]
     sidePlane1.squares[1] = board2Squares[0]
@@ -103,14 +103,14 @@ export default class Winner3D {
     return [sidePlane1, sidePlane2, sidePlane3]
   }
 
-  getTopToBottomPlanes(boards) {
+  getTopToBottomPlanes(boards: Board[]): Board[] {
     const board1Squares = boards[0].squares
     const board2Squares = boards[1].squares
     const board3Squares = boards[2].squares
 
-    let topDownPlane1 = new Board
-    let topDownPlane2 = new Board
-    let topDownPlane3 = new Board
+    let topDownPlane1 = new Board(0)
+    let topDownPlane2 = new Board(1)
+    let topDownPlane3 = new Board(2)
     
     topDownPlane1.squares[6] = board1Squares[0]
     topDownPlane1.squares[3] = board2Squares[0]

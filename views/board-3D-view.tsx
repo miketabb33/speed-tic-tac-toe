@@ -1,15 +1,21 @@
 import React from 'react'
 import BoardView from './board-view'
 import gameStyles from '../styles/GameStyles.module.css'
+import Square from '../game/square'
 
-export default class Board3DView extends React.Component {
-  renderBoard(i, boardTitle) {
+interface Board3DViewProps {
+  squares: Square[][]
+  onClick: (squareIndex: number, boardIndex: number) => void
+}
+
+export default class Board3DView extends React.Component<Board3DViewProps, {}> {
+  renderBoard(i: number, boardTitle: string) {
     return (
     <BoardView
       squares = { this.props.squares[i] } 
       boardIndex = { i }
       boardTitle = { boardTitle }
-      onClick = { (squareIndex, boardIndex) => this.props.onClick(squareIndex, boardIndex) }
+      onClick = { (squareIndex: number, boardIndex: number) => this.props.onClick(squareIndex, boardIndex) }
     />
     )
   }

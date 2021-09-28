@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
 export default class PlayerMarkerImage {
-    #imageDraggable = 'false'
+    #imageDraggable = false
   
-    get(imageName, size, location) {
+    get(imageName: string, size: number, location: string) {
       const imageID = imageName.toLowerCase() + '-marker-' + location
       if (imageName == 'X') {
         return this.getX(size, imageID)
@@ -20,7 +20,7 @@ export default class PlayerMarkerImage {
       }
     }
   
-    getX(size, imageID) {
+    getX(size: number, imageID: string) {
       return (
         <Image
           priority
@@ -34,7 +34,7 @@ export default class PlayerMarkerImage {
       )
     }
   
-    getO(size, imageID) {
+    getO(size: number, imageID: string)  {
       return (
         <Image
           priority  
@@ -48,7 +48,7 @@ export default class PlayerMarkerImage {
       )
     }
   
-    getRedO(size, imageID) {
+    getRedO(size: number, imageID: string)  {
       return (
         <Image
           priority
@@ -62,7 +62,7 @@ export default class PlayerMarkerImage {
       )
     }
   
-    getRedX(size, imageID) {
+    getRedX(size: number, imageID: string)  {
       return (
         <Image
           priority
@@ -76,7 +76,7 @@ export default class PlayerMarkerImage {
       )
     }
 
-    getYellowX(size, imageID) {
+    getYellowX(size: number, imageID: string)  {
       return (
         <Image
           priority
@@ -90,7 +90,7 @@ export default class PlayerMarkerImage {
       )
     }
 
-    getYellowO(size, imageID) {
+    getYellowO(size: number, imageID: string)  {
       return (
         <Image
           priority
