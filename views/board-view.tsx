@@ -1,13 +1,21 @@
 import React from 'react'
-import SquareView from './square-view.js'
-import BoardImage from '../images/board-image.js'
+import SquareView from './square-view'
+import BoardImage from '../images/board-image'
 import gameStyles from '../styles/GameStyles.module.css'
+import Square from '../game/square.jsx'
 
-export default class BoardView extends React.Component {
+interface BoardViewProps {
+	squares: Square[]
+	boardIndex: number
+	boardTitle: string
+	onClick: (squareIndex: number, boardIndex: number) => void
+}
+
+export default class BoardView extends React.Component<BoardViewProps, {}> {
 	boardImageSize = 330
 	boardImage = new BoardImage
 
-	renderSquare(i) {
+	renderSquare(i: number) {
 		return (
 			<SquareView 
 	      square = { this.props.squares[i] }
@@ -58,7 +66,7 @@ export default class BoardView extends React.Component {
 		)
 	}
 
-	boardLabel(title) {
+	boardLabel(title: string) {
 		return (
 			<div className={ gameStyles.boardTitle }>
 				{ title }

@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import GameView from '../views/game-view.js'
-import FooterView from '../views/footer-view.js'
+import GameView from '../views/game-view'
+import FooterView from '../views/footer-view'
 
 export default function Home() {
   return (

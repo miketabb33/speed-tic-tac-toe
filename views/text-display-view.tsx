@@ -1,15 +1,19 @@
 import React from 'react'
 import topBarStyles from '../styles/TopBarStyles.module.css'
 
-export default class TextDisplayView extends React.Component {
+interface TextDisplayViewProps {
+	value: string
+}
+
+export default class TextDisplayView extends React.Component<TextDisplayViewProps, {}> {
 	static xFirst = 'X Goes First'
 	static draw = 'Draw'
 
-	static turn(player) {
+	static turn(player: string) {
 		return player + "'s Turn"
 	}
 
-	static winner(player) {
+	static winner(player: string) {
 		return player + ' is the Winner!'
 	}
 

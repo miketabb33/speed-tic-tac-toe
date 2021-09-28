@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import TextDisplayView from '../../views/text-display-view.js'
+import TextDisplayView from '../../views/text-display-view'
 
 test('render xFirst', () => {
 	const subject = renderer.create(

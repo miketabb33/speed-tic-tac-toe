@@ -1,12 +1,12 @@
 export default class Player {
-  #playerMarkers = []
+  #playerMarkers: string[]
   #currentPlayerIndex = 0
 
-	constructor(playerMarkers) {
+	constructor(playerMarkers: string[]) {
 		this.#playerMarkers = playerMarkers
 	}
 
-  current() {
+  current(): string {
 		return this.#playerMarkers[this.#currentPlayerIndex]
 	}
 

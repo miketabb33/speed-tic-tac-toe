@@ -1,19 +1,22 @@
-export default class Timer {
-  #timer
-  timerDidHit0
+export default class PlayerTimer {
+  #timer: number
+  usedTimeInHundredthsOfSeconds: number
+  totalTimeInHundredthsOfSeconds: number
 
-  totalTimeInHundredthsOfSeconds
+  timerDidHit0
+  timerValueDidChange
 
   #decrementingMillisecondInterval = 5
 
-  constructor(didChangeTime, timerDidHit0) {
+  constructor(didChangeTime: (time: number) => void, timerDidHit0: () => void) {
     this.totalTimeInHundredthsOfSeconds = 1000 // = 10 seconds
     this.usedTimeInHundredthsOfSeconds = 0
     this.timerValueDidChange = didChangeTime
     this.timerDidHit0 = timerDidHit0
+    this.#timer = 0
   }
 
-  updateTime(usedTimeInHundredthsOfSeconds) {
+  updateTime(usedTimeInHundredthsOfSeconds: number) {
     this.usedTimeInHundredthsOfSeconds = usedTimeInHundredthsOfSeconds + this.#decrementingMillisecondInterval
     const remainingTimeInHundredthsOfSeconds = this.totalTimeInHundredthsOfSeconds - usedTimeInHundredthsOfSeconds
     this.timerValueDidChange(remainingTimeInHundredthsOfSeconds)
@@ -25,7 +28,7 @@ export default class Timer {
 
   startTimer() {
     const timerInterval = this.#decrementingMillisecondInterval * 10
-    this.#timer = setInterval(() => this.updateTime(this.usedTimeInHundredthsOfSeconds), timerInterval)
+    this.#timer = window.setInterval(() => this.updateTime(this.usedTimeInHundredthsOfSeconds), timerInterval)
   }
 
   stopTimer() {

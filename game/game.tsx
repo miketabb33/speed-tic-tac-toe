@@ -1,41 +1,40 @@
-import Board3D from './board3D.js'
-import GameState from './game-state.js'
-import Winner3D from './winner3D.js'
-import Player from '../game/player.js'
-import Board from '../game/board'
-import Timer from './timer.js'
+import Board3D from './board3D'
+import Board from './board'
+import GameState from './game-state'
+import Winner3D from './winner3D'
+import Player from './player'
+import PlayerTimer from './timer'
 
 export default class Game {
-  #boards
+  #board3D
   #player
   #winner3D
   #xTimer
   #oTimer
   #isGameOver = false
   playerMarkers = ['X', 'O']
-  didRecieveWinningCombination
 
-	constructor(timerValueDidChange, timerDidHit0) {
+	constructor(timerValueDidChange: (marker: string, time: number) => void, timerDidHit0: (marker: string) => void) {   
     const board1 = new Board(0)
     const board2 = new Board(1)
     const board3 = new Board(2)
-    
-		this.#boards = new Board3D(board1, board2, board3)
+
+		this.#board3D = new Board3D(board1, board2, board3)
 		this.#player = new Player(this.playerMarkers)
 		this.#winner3D = new Winner3D
-    this.#xTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[0], time), () => timerDidHit0(this.playerMarkers[1]))
-    this.#oTimer = new Timer((time) => timerValueDidChange(this.playerMarkers[1], time), () => timerDidHit0(this.playerMarkers[0]))
+    this.#xTimer = new PlayerTimer((time: number) => timerValueDidChange(this.playerMarkers[0], time), () => timerDidHit0(this.playerMarkers[1]))
+    this.#oTimer = new PlayerTimer((time: number) => timerValueDidChange(this.playerMarkers[1], time), () => timerDidHit0(this.playerMarkers[0]))
   }
 
-	getSquaresForBoard(boardIndex) {
-    return this.#boards.getSquares(boardIndex)
+	getSquaresForBoard(boardIndex: number) {
+    return this.#board3D.getSquares(boardIndex)
   }
   
-	attemptToAddMove(squareIndex, boardIndex) {
+	attemptToAddMove(squareIndex: number, boardIndex: number) {
     if (this.#isGameOver) { return GameState.gameOver }
-    if (!this.#boards.isSquareAvailable(squareIndex, boardIndex)) { return GameState.moveNotAvailable }
-    this.#boards.addMarker(this.#player.current(), squareIndex, boardIndex)
-    const winningCombination = this.#winner3D.check(this.#boards.allBoards)
+    if (!this.#board3D.isSquareAvailable(squareIndex, boardIndex)) { return GameState.moveNotAvailable }
+    this.#board3D.addMarker(this.#player.current(), squareIndex, boardIndex)
+    const winningCombination = this.#winner3D.check(this.#board3D.allBoards)
     const status = this.#getPostMoveGameState(winningCombination)
     if (status == GameState.winner) { this.setGameOver() }
     if (status == GameState.draw) { this.setGameOver() }
@@ -50,7 +49,7 @@ export default class Game {
     return this.#player.current()
   }
 
-  setTimers(time) {
+  setTimers(time: number) {
     this.#xTimer.totalTimeInHundredthsOfSeconds = time
     this.#oTimer.totalTimeInHundredthsOfSeconds = time
   }
@@ -61,11 +60,11 @@ export default class Game {
     this.#oTimer.stopTimer()
   }
 
-  #getPostMoveGameState(winningCombination) {
+  #getPostMoveGameState(winningCombination: boolean | number[][]): string {
     if (winningCombination) {
       return GameState.winner
     } else {
-      if (this.#boards.anyAvailableSquares()) {
+      if (this.#board3D.anyAvailableSquares()) {
         return GameState.readyForNextMove
       } else {
         return GameState.draw
@@ -73,7 +72,7 @@ export default class Game {
     }
   }
 
-  #switchTimers(currentPlayer) {
+  #switchTimers(currentPlayer: string) {
     if (currentPlayer == this.playerMarkers[0]) {
       this.#xTimer.stopTimer()
       this.#oTimer.startTimer()

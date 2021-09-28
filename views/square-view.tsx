@@ -1,8 +1,16 @@
 import React from 'react'
+import Square from '../game/square'
 import PlayerMarkerImage from '../images/player-marker-image'
 import gameStyles from '../styles/GameStyles.module.css'
 
-export default class SquareView extends React.Component {
+interface SquareViewProps {
+	boardIndex: number
+	squareIndex: number
+	onClick: () => void
+	square: Square
+}
+
+export default class SquareView extends React.Component<SquareViewProps, {}> {
 	size = 79
 	playerMarkerImage = new PlayerMarkerImage
 	squareID = 'board-' + (this.props.boardIndex + 1) + '-square-' + (this.props.squareIndex + 1)
@@ -19,7 +27,7 @@ export default class SquareView extends React.Component {
 		)
 	}
 
-	getContents(square) {
+	getContents(square: Square) {
 		if (square.marker == 'X' && square.winningMarker || square.marker == 'O' && square.winningMarker) {
 			const winningName = 'yellow' + square.marker
 			return this.playerMarkerImage.get(winningName, this.size, this.squareID)

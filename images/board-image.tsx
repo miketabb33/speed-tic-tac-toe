@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 export default class BoardImage {
-  get(size, index) {
+  get(size: number, index: number) {
     const boardID = 'board-' + index
     return (
       <Image

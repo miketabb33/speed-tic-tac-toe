@@ -1,7 +1,12 @@
 import React from 'react'
 import gameStyles from '../styles/GameStyles.module.css'
 
-export default class TimeInputView extends React.Component {
+interface TimeInputViewProps {
+  hide: boolean
+  didChangeTime: (time: number) => void
+}
+
+export default class TimeInputView extends React.Component<TimeInputViewProps, {}> {
   render() {
     return (
       <div 
@@ -15,7 +20,7 @@ export default class TimeInputView extends React.Component {
           type="text" 
           className= {gameStyles.timeInput}
           defaultValue='10'
-          maxLength="5"
+          maxLength={5}
           onKeyDown= { (e)=> this.validateKeyPress(e) }
           onKeyUp= { (e)=> this.didPressValidKey(e, this.props.didChangeTime) }
           id = { 'time-input' }
@@ -30,14 +35,14 @@ export default class TimeInputView extends React.Component {
     }
   }
 
-  didPressValidKey(e, callback) {
+  didPressValidKey(e: any, callback: (time: number) => void) {
     const event = e || window.event
     const input = event.target.value
     const milliseconds = input * 100
-    callback(parseInt(milliseconds))
+    callback(milliseconds)
   }
 
-  validateKeyPress(e) {
+  validateKeyPress(e: any) {
     const event = e || window.event
     const keyCode = event.keyCode
     const key = String.fromCharCode(keyCode || event.which)

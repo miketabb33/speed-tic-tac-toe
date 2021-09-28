@@ -1,3 +1,6 @@
+import Board from "./board"
+import Square from "./square"
+
 export default class Winner {
   winningVariations = [
 		[0, 1, 2],
@@ -10,7 +13,7 @@ export default class Winner {
     [2, 4, 6]
 	]
 
-  check(board) {
+  check(board: Board): number[][] | undefined {
     const squares = board.squares
     for (let i=0; i<this.winningVariations.length; i++) {
       const [a, b, c] = this.winningVariations[i]

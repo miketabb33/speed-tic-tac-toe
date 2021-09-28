@@ -47,7 +47,7 @@ exports[`render o active 1`] = `
         alt="o-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="o-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
@@ -79,7 +79,7 @@ exports[`render o active 1`] = `
           alt="o-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="o-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
@@ -166,7 +166,7 @@ exports[`render o inactive 1`] = `
         alt="o-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="o-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
@@ -198,7 +198,7 @@ exports[`render o inactive 1`] = `
           alt="o-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="o-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
@@ -285,7 +285,7 @@ exports[`render o no time 1`] = `
         alt="redo-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="redo-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
@@ -317,7 +317,7 @@ exports[`render o no time 1`] = `
           alt="redo-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="redo-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
@@ -404,7 +404,7 @@ exports[`render o no time 2`] = `
         alt="redo-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="redo-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
@@ -436,7 +436,7 @@ exports[`render o no time 2`] = `
           alt="redo-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="redo-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
@@ -523,7 +523,7 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
         alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="x-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -555,7 +555,7 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
           alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
@@ -642,7 +642,7 @@ exports[`render time at 10 seconds 1`] = `
         alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="x-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -674,7 +674,7 @@ exports[`render time at 10 seconds 1`] = `
           alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
@@ -761,7 +761,7 @@ exports[`render time at 50 seconds 1`] = `
         alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="x-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -793,7 +793,7 @@ exports[`render time at 50 seconds 1`] = `
           alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
@@ -880,7 +880,7 @@ exports[`render x active 1`] = `
         alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="x-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -912,7 +912,7 @@ exports[`render x active 1`] = `
           alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
@@ -999,7 +999,7 @@ exports[`render x below 0.00 1`] = `
         alt="redx-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="redx-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
@@ -1031,7 +1031,7 @@ exports[`render x below 0.00 1`] = `
           alt="redx-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="redx-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
@@ -1118,7 +1118,7 @@ exports[`render x inactive 1`] = `
         alt="x-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="x-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
@@ -1150,7 +1150,7 @@ exports[`render x inactive 1`] = `
           alt="x-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="x-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
@@ -1237,7 +1237,7 @@ exports[`render x no time 1`] = `
         alt="redx-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable="false"
+        draggable={false}
         id="redx-marker-timer-view"
         src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
         srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
@@ -1269,7 +1269,7 @@ exports[`render x no time 1`] = `
           alt="redx-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable="false"
+          draggable={false}
           id="redx-marker-timer-view"
           loading="lazy"
           src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
