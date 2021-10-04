@@ -2,9 +2,9 @@ import Board from "./board"
 import Winner from "./winner"
 
 export default class Winner3D {
-  winner = new Winner
+  #winner = new Winner
 
-  diagonalWinVariations = [
+  #diagonalWinVariations = [
     [[0,0],[4,1],[8,2]],
     [[2,0],[4,1],[6,2]],
     [[6,0],[4,1],[2,2]],
@@ -12,15 +12,15 @@ export default class Winner3D {
   ]
 
   check(boards: Board[]): boolean | number[][] {
-    const initialPlaneWinningCombination = this.checkPlansForWinner(boards)
+    const initialPlaneWinningCombination = this.checkPlanesForWinner(boards)
     if (initialPlaneWinningCombination) { return initialPlaneWinningCombination }
 
     const sideBySidePlanes = this.getSideToSidePlanes(boards)
-    const sideBySideWinningCombination = this.checkPlansForWinner(sideBySidePlanes)
+    const sideBySideWinningCombination = this.checkPlanesForWinner(sideBySidePlanes)
     if (sideBySideWinningCombination) { return sideBySideWinningCombination }
 
     const topToBottomPlanes = this.getTopToBottomPlanes(boards)
-    const topToBottomWinningCombination = this.checkPlansForWinner(topToBottomPlanes)
+    const topToBottomWinningCombination = this.checkPlanesForWinner(topToBottomPlanes)
     if (topToBottomWinningCombination) { return topToBottomWinningCombination } 
 
     const diagonalWinCombination = this.checkFor3DDiagonalWin(boards)
@@ -28,10 +28,10 @@ export default class Winner3D {
     return false
   }
 
-  checkPlansForWinner(boards: Board[]): number[][] | undefined {
+  checkPlanesForWinner(boards: Board[]): number[][] | undefined {
     for (let j=0; j<boards.length; j++) {
       const board = boards[j]
-      const winningCombination = this.winner.check(board)
+      const winningCombination = this.#winner.check(board)
       if (winningCombination) {
         return winningCombination
       }
@@ -39,8 +39,8 @@ export default class Winner3D {
   }
 
   checkFor3DDiagonalWin(boards: Board[]): number[][] | undefined {
-    for (let i=0; i<this.diagonalWinVariations.length;i++) {
-      const winVariation = this.diagonalWinVariations[i]
+    for (let i=0; i<this.#diagonalWinVariations.length;i++) {
+      const winVariation = this.#diagonalWinVariations[i]
       let cache = []
       for (let j=0; j<winVariation.length;j++) {
         const indexPath = winVariation[j]

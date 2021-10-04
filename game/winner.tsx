@@ -1,8 +1,7 @@
 import Board from "./board"
-import Square from "./square"
 
 export default class Winner {
-  winningVariations = [
+  #winningVariations = [
 		[0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -15,8 +14,8 @@ export default class Winner {
 
   check(board: Board): number[][] | undefined {
     const squares = board.squares
-    for (let i=0; i<this.winningVariations.length; i++) {
-      const [a, b, c] = this.winningVariations[i]
+    for (let i=0; i<this.#winningVariations.length; i++) {
+      const [a, b, c] = this.#winningVariations[i]
       if (squares[a].marker && squares[a].marker === squares[b].marker && squares[a].marker === squares[c].marker) {
         squares[a].winningMarker = true
         squares[b].winningMarker = true

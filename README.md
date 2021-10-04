@@ -1,6 +1,9 @@
 ## Getting Started
 
-First, download and install [Node.js](https://nodejs.org/en/)
+Install next, react, and react-dom 
+```
+npm install next react react-dom
+```
 
 Then, run the development server:
 
