@@ -1,5 +1,5 @@
 .clear {
-	opacity: 0.0;
+  opacity: 0;
 }
 
 .boards {
@@ -11,7 +11,10 @@
 }
 
 .board {
- margin: 0px 3em;
+  position: relative;
+  margin: 0px 3vw;
+  width: 300px;
+  height: 300px;
 }
 
 .boardImage {
@@ -22,6 +25,21 @@
 .boardSquares {
   position: relative;
   z-index: 1;
+  /* background-color: rgba(0, 255, 0, 0.1); */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+}
+
+.square {
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 0px solid black;
+  z-index: 2;
+  width: 33.33%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 .boardTitle {
@@ -30,15 +48,6 @@
   font-size: 1.5em;
   margin-top: 15px;
   color: #2d2d2d;
-}
-
-.square {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.0);
-  border: 0px solid black;
-  padding: 10px;
-  margin: 5px;
-  z-index: 4;
 }
 
 .timeInputView {
@@ -62,4 +71,32 @@
   display: inline-block;
   font-size: 1.5em;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .board {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .boards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px
+  }
+
+  .board {
+    margin-top: 35px;
+  }
+
+  .timeInputView {
+    margin-top: 10px;
+  }
+
+  .boardTitle {
+    font-size: 1em;
+  }
 }

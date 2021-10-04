@@ -266,89 +266,57 @@ exports[`render 1`] = `
   <div
     className="boards"
   >
-    <div
-      className="board"
-    >
+    <div>
       <div
-        className="boardImage"
+        className="board"
       >
         <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+          className="boardImage"
         >
           <div
             style={
               Object {
                 "boxSizing": "border-box",
-                "display": "block",
+                "display": "inline-block",
+                "margin": 0,
                 "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
               }
             }
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            <div
               style={
                 Object {
-                  "border": "none",
+                  "boxSizing": "border-box",
                   "display": "block",
-                  "margin": 0,
                   "maxWidth": "100%",
-                  "padding": 0,
                 }
               }
-            />
-          </div>
-          <img
-            alt="board-0"
-            data-nimg="intrinsic"
-            decoding="async"
-            draggable="false"
-            id="board-0"
-            src="/_next/image?url=%2Fboard.png&w=750&q=75"
-            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
             <img
               alt="board-0"
               data-nimg="intrinsic"
               decoding="async"
               draggable="false"
               id="board-0"
-              loading="lazy"
-              src="/_next/image?url=%2Fboard.png&w=750&q=75"
-              srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+              src="/_next/image?url=%2Fboard.png&w=1080&q=75"
+              srcSet="/_next/image?url=%2Fboard.png&w=640&q=75 1x, /_next/image?url=%2Fboard.png&w=1080&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -372,161 +340,1023 @@ exports[`render 1`] = `
                 }
               }
             />
-          </noscript>
+            <noscript>
+              <img
+                alt="board-0"
+                data-nimg="intrinsic"
+                decoding="async"
+                draggable="false"
+                id="board-0"
+                loading="lazy"
+                src="/_next/image?url=%2Fboard.png&w=1080&q=75"
+                srcSet="/_next/image?url=%2Fboard.png&w=640&q=75 1x, /_next/image?url=%2Fboard.png&w=1080&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
         </div>
-      </div>
-      <div
-        className="boardSquares"
-      >
-        <div>
-          <button
-            className="square"
-            id="board-1-square-1"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+        <div
+          className="boardSquares"
+        >
+          <div>
+            <button
+              className="square"
+              id="board-1-square-1"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-1-square-2"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-1"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-1"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-1"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-1"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-1-square-2"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-1-square-3"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-2"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-2"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-2"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-2"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-1-square-3"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button
-            className="square"
-            id="board-1-square-4"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-3"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-3"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-3"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-3"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
+          <div>
+            <button
+              className="square"
+              id="board-1-square-4"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-1-square-5"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-4"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-4"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-4"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-4"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-1-square-5"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-1-square-6"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-5"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-5"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-5"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-5"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-1-square-6"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button
-            className="square"
-            id="board-1-square-7"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-6"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-6"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-6"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-6"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
+          <div>
+            <button
+              className="square"
+              id="board-1-square-7"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-1-square-8"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-7"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-7"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-7"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-7"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-1-square-8"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-1-square-9"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-8"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-8"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-8"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-8"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-1-square-9"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-1-square-9"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-1-square-9"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-1-square-9"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-1-square-9"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -535,89 +1365,57 @@ exports[`render 1`] = `
         Top
       </div>
     </div>
-    <div
-      className="board"
-    >
+    <div>
       <div
-        className="boardImage"
+        className="board"
       >
         <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+          className="boardImage"
         >
           <div
             style={
               Object {
                 "boxSizing": "border-box",
-                "display": "block",
+                "display": "inline-block",
+                "margin": 0,
                 "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
               }
             }
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            <div
               style={
                 Object {
-                  "border": "none",
+                  "boxSizing": "border-box",
                   "display": "block",
-                  "margin": 0,
                   "maxWidth": "100%",
-                  "padding": 0,
                 }
               }
-            />
-          </div>
-          <img
-            alt="board-1"
-            data-nimg="intrinsic"
-            decoding="async"
-            draggable="false"
-            id="board-1"
-            src="/_next/image?url=%2Fboard.png&w=750&q=75"
-            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
             <img
               alt="board-1"
               data-nimg="intrinsic"
               decoding="async"
               draggable="false"
               id="board-1"
-              loading="lazy"
-              src="/_next/image?url=%2Fboard.png&w=750&q=75"
-              srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+              src="/_next/image?url=%2Fboard.png&w=1080&q=75"
+              srcSet="/_next/image?url=%2Fboard.png&w=640&q=75 1x, /_next/image?url=%2Fboard.png&w=1080&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -641,161 +1439,1023 @@ exports[`render 1`] = `
                 }
               }
             />
-          </noscript>
+            <noscript>
+              <img
+                alt="board-1"
+                data-nimg="intrinsic"
+                decoding="async"
+                draggable="false"
+                id="board-1"
+                loading="lazy"
+                src="/_next/image?url=%2Fboard.png&w=1080&q=75"
+                srcSet="/_next/image?url=%2Fboard.png&w=640&q=75 1x, /_next/image?url=%2Fboard.png&w=1080&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
         </div>
-      </div>
-      <div
-        className="boardSquares"
-      >
-        <div>
-          <button
-            className="square"
-            id="board-2-square-1"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+        <div
+          className="boardSquares"
+        >
+          <div>
+            <button
+              className="square"
+              id="board-2-square-1"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-2-square-2"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-1"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-1"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-1"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-1"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-2-square-2"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-2-square-3"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-2"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-2"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-2"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-2"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-2-square-3"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button
-            className="square"
-            id="board-2-square-4"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-3"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-3"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-3"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-3"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
+          <div>
+            <button
+              className="square"
+              id="board-2-square-4"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-2-square-5"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-4"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-4"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-4"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-4"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-2-square-5"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-2-square-6"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-5"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-5"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-5"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-5"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-2-square-6"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button
-            className="square"
-            id="board-2-square-7"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-6"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-6"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-6"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-6"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
+          <div>
+            <button
+              className="square"
+              id="board-2-square-7"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-2-square-8"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-7"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-7"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-7"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-7"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-2-square-8"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-2-square-9"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-8"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-8"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-8"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-8"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-2-square-9"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-2-square-9"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-2-square-9"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-2-square-9"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-2-square-9"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -804,89 +2464,57 @@ exports[`render 1`] = `
         Middle
       </div>
     </div>
-    <div
-      className="board"
-    >
+    <div>
       <div
-        className="boardImage"
+        className="board"
       >
         <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+          className="boardImage"
         >
           <div
             style={
               Object {
                 "boxSizing": "border-box",
-                "display": "block",
+                "display": "inline-block",
+                "margin": 0,
                 "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
               }
             }
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjMzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            <div
               style={
                 Object {
-                  "border": "none",
+                  "boxSizing": "border-box",
                   "display": "block",
-                  "margin": 0,
                   "maxWidth": "100%",
-                  "padding": 0,
                 }
               }
-            />
-          </div>
-          <img
-            alt="board-2"
-            data-nimg="intrinsic"
-            decoding="async"
-            draggable="false"
-            id="board-2"
-            src="/_next/image?url=%2Fboard.png&w=750&q=75"
-            srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
             <img
               alt="board-2"
               data-nimg="intrinsic"
               decoding="async"
               draggable="false"
               id="board-2"
-              loading="lazy"
-              src="/_next/image?url=%2Fboard.png&w=750&q=75"
-              srcSet="/_next/image?url=%2Fboard.png&w=384&q=75 1x, /_next/image?url=%2Fboard.png&w=750&q=75 2x"
+              src="/_next/image?url=%2Fboard.png&w=1080&q=75"
+              srcSet="/_next/image?url=%2Fboard.png&w=640&q=75 1x, /_next/image?url=%2Fboard.png&w=1080&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -910,161 +2538,1023 @@ exports[`render 1`] = `
                 }
               }
             />
-          </noscript>
+            <noscript>
+              <img
+                alt="board-2"
+                data-nimg="intrinsic"
+                decoding="async"
+                draggable="false"
+                id="board-2"
+                loading="lazy"
+                src="/_next/image?url=%2Fboard.png&w=1080&q=75"
+                srcSet="/_next/image?url=%2Fboard.png&w=640&q=75 1x, /_next/image?url=%2Fboard.png&w=1080&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
         </div>
-      </div>
-      <div
-        className="boardSquares"
-      >
-        <div>
-          <button
-            className="square"
-            id="board-3-square-1"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+        <div
+          className="boardSquares"
+        >
+          <div>
+            <button
+              className="square"
+              id="board-3-square-1"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-3-square-2"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-1"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-1"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-1"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-1"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-3-square-2"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-3-square-3"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-2"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-2"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-2"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-2"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-3-square-3"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button
-            className="square"
-            id="board-3-square-4"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-3"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-3"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-3"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-3"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
+          <div>
+            <button
+              className="square"
+              id="board-3-square-4"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-3-square-5"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-4"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-4"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-4"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-4"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-3-square-5"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-3-square-6"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-5"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-5"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-5"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-5"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-3-square-6"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button
-            className="square"
-            id="board-3-square-7"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-6"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-6"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-6"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-6"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
+          <div>
+            <button
+              className="square"
+              id="board-3-square-7"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-3-square-8"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-7"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-7"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-7"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-7"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-3-square-8"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
-          <button
-            className="square"
-            id="board-3-square-9"
-            onClick={[Function]}
-          >
-            <svg
-              height={79}
-              width={79}
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-8"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-8"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-8"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-8"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+            <button
+              className="square"
+              id="board-3-square-9"
+              onClick={[Function]}
             >
-              <rect
-                className="clear"
-                height={79}
-                width={79}
-              />
-            </svg>
-          </button>
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="clear-marker-board-3-square-9"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  draggable={false}
+                  id="clear-marker-board-3-square-9"
+                  src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                  srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="clear-marker-board-3-square-9"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    draggable={false}
+                    id="clear-marker-board-3-square-9"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                    srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       <div

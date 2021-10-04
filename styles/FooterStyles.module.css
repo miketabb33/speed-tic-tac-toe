@@ -14,3 +14,13 @@
   padding-top: 7px;
   display: inline-block;
 }
+
+@media only screen and (max-width: 768px) {
+  .footerText {
+    opacity: 0;
+  }
+
+  .footerBar {
+    opacity: 0;
+  }
+}

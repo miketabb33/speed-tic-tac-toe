@@ -11,7 +11,7 @@ interface SquareViewProps {
 }
 
 export default class SquareView extends React.Component<SquareViewProps, {}> {
-	size = 79
+	size = 200
 	playerMarkerImage = new PlayerMarkerImage
 	squareID = 'board-' + (this.props.boardIndex + 1) + '-square-' + (this.props.squareIndex + 1)
 
@@ -28,21 +28,14 @@ export default class SquareView extends React.Component<SquareViewProps, {}> {
 	}
 
 	getContents(square: Square) {
+		var imageName
 		if (square.marker == 'X' && square.winningMarker || square.marker == 'O' && square.winningMarker) {
-			const winningName = 'yellow' + square.marker
-			return this.playerMarkerImage.get(winningName, this.size, this.squareID)
+			imageName = 'yellow' + square.marker
 		} else if (square.marker == 'X' || square.marker == 'O') {
-			return this.playerMarkerImage.get(square.marker, this.size, this.squareID)
+			imageName = square.marker
 		} else {
-   		return this.getBlankSpace()
+			imageName = 'clear'
    	}
-	}
-
-	getBlankSpace() {
-		return (
-   		<svg width={this.size} height={this.size}>
-			  <rect width={this.size} height={this.size} className={gameStyles.clear}/>
-			</svg>
- 		)
+		return this.playerMarkerImage.get(imageName, this.size, this.squareID)
 	}
 }

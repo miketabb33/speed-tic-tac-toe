@@ -8,6 +8,7 @@ export default class PlayerMarkerImage {
     #oImageName = 'O'
     #redOImageName = 'redO'
     #yellowOImageName = 'yellowO'
+    #clear = 'clear'
   
     get(imageName: string, size: number, location: string) {
       const imageID = imageName.toLowerCase() + '-marker-' + location
@@ -23,6 +24,8 @@ export default class PlayerMarkerImage {
         return this.#getYellowX(size, imageID)
       } else if (imageName == this.#yellowOImageName) {
         return this.#getYellowO(size, imageID)
+      } else if (imageName == this.#clear) {
+        return this.#getClear(size, imageID)
       }
     }
   
@@ -101,6 +104,20 @@ export default class PlayerMarkerImage {
         <Image
           priority
           src= { '/player-marker/yellowo.png' } 
+          height={size}
+          width={size}
+          alt={ imageID }
+          id= { imageID }
+          draggable= { this.#imageDraggable }
+        />
+      )
+    }
+
+    #getClear(size: number, imageID: string)  {
+      return (
+        <Image
+          priority
+          src= { '/player-marker/clear.png' } 
           height={size}
           width={size}
           alt={ imageID }

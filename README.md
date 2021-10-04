@@ -1,5 +1,10 @@
 ## Getting Started
 
+#### System Requirements:
+* Node JS 12.0 or later
+
+### Setup
+
 Install next, react, and react-dom 
 ```
 npm install next react react-dom

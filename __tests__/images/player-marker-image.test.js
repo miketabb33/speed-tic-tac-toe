@@ -63,3 +63,12 @@ test('yellow o image rendering', () => {
   const result = rendering.toJSON()
 	expect(result).toMatchSnapshot()
 })
+
+test('clear image rendering', () => {
+  const rendering = renderer.create(
+    subject.get('clear', someImageSize, someLocation)
+  )
+  
+  const result = rendering.toJSON()
+	expect(result).toMatchSnapshot()
+})
