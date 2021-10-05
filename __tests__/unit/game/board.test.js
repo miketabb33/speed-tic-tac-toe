@@ -124,3 +124,8 @@ test('get blank squares', () => {
 	expect(result[8].marker).toEqual(null)
 	expect(result[8].indexPath).toEqual([8, boardIndex])
 })
+
+test('set winning marker to true', () => {
+	subject.setWinningMarker(2)
+	expect(subject.squares[2].winningMarker).toBe(true)
+})
