@@ -65,3 +65,29 @@
 .timerViewTextNoTimeLeft {
   color: red;
 }
+
+@media only screen and (max-width: 1100px) {
+  .timerView {
+    font-size: 1.5em;
+  }
+
+  .timerViewImage {
+    width: 18px;
+    margin-right: 8px;
+  }
+
+  .timerViewText {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .timerViewImage {
+    display: block;
+    margin: auto;
+  }
+
+  .textDisplay {
+    font-size: 1.5em;
+  }
+}

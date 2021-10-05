@@ -12,6 +12,9 @@ export default class TimerView extends React.Component<TimerViewProps, {}> {
   imageSize = 25
   playerMarkerImage = new PlayerMarkerImage
 
+  #xPlayer = 'X'
+  #oPlayer = 'O'
+
   render() {
     if (this.props.remainingTimeInHundredthsOfSeconds <= 0) {
       return this.renderTimerView('red'+ this.props.player, topBarStyles.timerViewNoTimeLeft, topBarStyles.timerViewTextNoTimeLeft)
@@ -34,9 +37,9 @@ export default class TimerView extends React.Component<TimerViewProps, {}> {
   }
 
   getActiveState() {
-    if (this.props.activePlayer == this.props.player && this.props.player == "X") {
+    if (this.props.activePlayer == this.props.player && this.props.player == this.#xPlayer) {
       return topBarStyles.timerViewActiveX
-    } else if (this.props.activePlayer == this.props.player && this.props.player == "O"){
+    } else if (this.props.activePlayer == this.props.player && this.props.player == this.#oPlayer){
       return topBarStyles.timerViewActiveO
     } else {
       return topBarStyles.timerViewInactive
@@ -44,7 +47,7 @@ export default class TimerView extends React.Component<TimerViewProps, {}> {
   }
 
   getPlayerStyle() {
-    if (this.props.player == 'X') {
+    if (this.props.player == this.#xPlayer) {
       return topBarStyles.timerViewX
     } else {
       return topBarStyles.timerViewO

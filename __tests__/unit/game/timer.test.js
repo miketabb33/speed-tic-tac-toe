@@ -14,14 +14,14 @@ beforeEach(() => {
 })
 
 test('updateTime time above 0', () => {  
-  subject.totalTimeInHundredthsOfSeconds = 100
+  subject.setTotalTime(100)
   subject.updateTime(12)
 
   expect(remainingTimeInHundredthsOfSeconds).toBe(88)
 })
 
 test('updateTime time at 0', () => {
-  subject.totalTimeInHundredthsOfSeconds = 100
+  subject.setTotalTime(100)
   subject.updateTime(100)
 
   expect(remainingTimeInHundredthsOfSeconds).toBe(0)

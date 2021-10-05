@@ -11,7 +11,7 @@ interface SquareViewProps {
 }
 
 export default class SquareView extends React.Component<SquareViewProps, {}> {
-	size = 79
+	size = 200
 	playerMarkerImage = new PlayerMarkerImage
 	squareID = 'board-' + (this.props.boardIndex + 1) + '-square-' + (this.props.squareIndex + 1)
 
@@ -28,21 +28,29 @@ export default class SquareView extends React.Component<SquareViewProps, {}> {
 	}
 
 	getContents(square: Square) {
-		if (square.marker == 'X' && square.winningMarker || square.marker == 'O' && square.winningMarker) {
-			const winningName = 'yellow' + square.marker
-			return this.playerMarkerImage.get(winningName, this.size, this.squareID)
-		} else if (square.marker == 'X' || square.marker == 'O') {
-			return this.playerMarkerImage.get(square.marker, this.size, this.squareID)
-		} else {
-   		return this.getBlankSpace()
-   	}
+		const imageName = this.getSquareImageName(square)
+		return this.playerMarkerImage.get(imageName, this.size, this.squareID)
 	}
 
-	getBlankSpace() {
-		return (
-   		<svg width={this.size} height={this.size}>
-			  <rect width={this.size} height={this.size} className={gameStyles.clear}/>
-			</svg>
- 		)
+	getSquareImageName(square: Square): string {
+		const xMarker = 'X'
+		const oMarker = 'O'
+		var imageName = 'clear'
+
+		if (square.marker == xMarker || square.marker == oMarker) {
+			imageName = this.getPlayerMarkerImageName(square)
+		}
+		 
+		return imageName
+	}
+
+	getPlayerMarkerImageName(square: Square): string {
+		var imageName
+		if (square.winningMarker) {
+			imageName = 'yellow' + square.marker	
+		} else {
+			imageName = square.marker
+		}
+		return imageName!
 	}
 }

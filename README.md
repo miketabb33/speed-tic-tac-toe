@@ -1,6 +1,14 @@
 ## Getting Started
 
-First, download and install [Node.js](https://nodejs.org/en/)
+#### System Requirements:
+* Node JS 12.0 or later
+
+### Setup
+
+Install next, react, and react-dom 
+```
+npm install next react react-dom
+```
 
 Then, run the development server:
 

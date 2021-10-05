@@ -32,4 +32,8 @@ export default class Board {
 		}
 		return squares
 	}
+
+	setWinningMarker(index: number) {
+		this.squares[index].winningMarker = true
+	}
 }

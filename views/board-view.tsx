@@ -12,7 +12,7 @@ interface BoardViewProps {
 }
 
 export default class BoardView extends React.Component<BoardViewProps, {}> {
-	boardImageSize = 330
+	boardImageSize = 500
 	boardImage = new BoardImage
 
 	renderSquare(i: number) {
@@ -28,9 +28,11 @@ export default class BoardView extends React.Component<BoardViewProps, {}> {
 
 	render() { 
 		return (
-			<div className= {gameStyles.board}>
-				{ this.boardImageView() }
-				{ this.boardSquares() }
+			<div>
+				<div className= {gameStyles.board}>
+					{ this.boardImageView() }
+					{ this.boardSquares() }	
+				</div>
 				{ this.boardLabel(this.props.boardTitle) }
 			</div>
 		)
