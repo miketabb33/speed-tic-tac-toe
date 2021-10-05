@@ -50,8 +50,8 @@ export default class Game {
   }
 
   setTimers(time: number) {
-    this.#xTimer.totalTimeInHundredthsOfSeconds = time
-    this.#oTimer.totalTimeInHundredthsOfSeconds = time
+    this.#xTimer.setTotalTime(time)
+    this.#oTimer.setTotalTime(time)
   }
 
   setGameOver() {
