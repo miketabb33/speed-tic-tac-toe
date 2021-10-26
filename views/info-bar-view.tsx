@@ -14,9 +14,9 @@ export default class InfoBarView extends React.Component<InfoBarViewProps, {}> {
   render() {
     return (
       <div className={topBarStyles.topBar}>
-        <TimerView player={'X'} activePlayer={this.props.activePlayer} remainingTimeInHundredthsOfSeconds = {this.props.xRemainingTimeInHundredthsOfSeconds} />
+        <TimerView player={'x'} activePlayer={this.props.activePlayer} remainingTimeInHundredthsOfSeconds = {this.props.xRemainingTimeInHundredthsOfSeconds} />
         <TextDisplayView value = { this.props.textDisplay }/>
-        <TimerView player={'O'} activePlayer={this.props.activePlayer} remainingTimeInHundredthsOfSeconds = {this.props.oRemainingTimeInHundredthsOfSeconds} />
+        <TimerView player={'o'} activePlayer={this.props.activePlayer} remainingTimeInHundredthsOfSeconds = {this.props.oRemainingTimeInHundredthsOfSeconds} />
       </div>
     )
   }

@@ -12,8 +12,8 @@ export default class TimerView extends React.Component<TimerViewProps, {}> {
   imageSize = 25
   playerMarkerImage = new PlayerMarkerImage
 
-  #xPlayer = 'X'
-  #oPlayer = 'O'
+  #xPlayer = 'x'
+  #oPlayer = 'o'
 
   render() {
     if (this.props.remainingTimeInHundredthsOfSeconds <= 0) {
@@ -29,7 +29,7 @@ export default class TimerView extends React.Component<TimerViewProps, {}> {
         <div className={topBarStyles.timerViewImage}>
           { this.playerMarkerImage.get(imageName, this.imageSize, "timer-view") }
         </div>
-        <div className={ `${topBarStyles.timerViewText} ${textStyle} `} id = { imageName + "player-remaining-time" }>
+        <div className={ `${topBarStyles.timerViewText} ${textStyle} `} id = { imageName + "-player-remaining-time" }>
           { this.formatTime(this.props.remainingTimeInHundredthsOfSeconds) }
         </div>
       </div>

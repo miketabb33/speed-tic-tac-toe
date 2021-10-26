@@ -5,8 +5,8 @@ export default class BoardImage {
     const boardID = 'board-' + index
     return (
       <Image
-        priority 
-        src= "/board.png"
+        priority = { true }
+        src= { `/board.png` }
         width= {size}
         height= {size}
         id = {boardID}

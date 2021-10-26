@@ -33,8 +33,8 @@ export default class SquareView extends React.Component<SquareViewProps, {}> {
 	}
 
 	getSquareImageName(square: Square): string {
-		const xMarker = 'X'
-		const oMarker = 'O'
+		const xMarker = 'x'
+		const oMarker = 'o'
 		var imageName = 'clear'
 
 		if (square.marker == xMarker || square.marker == oMarker) {

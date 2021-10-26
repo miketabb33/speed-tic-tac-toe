@@ -46,7 +46,7 @@ exports[`render empty 1`] = `
       alt="clear-marker-board-2-square-2"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
+      draggable="false"
       id="clear-marker-board-2-square-2"
       src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
       srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -78,7 +78,7 @@ exports[`render empty 1`] = `
         alt="clear-marker-board-2-square-2"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
+        draggable="false"
         id="clear-marker-board-2-square-2"
         loading="lazy"
         src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -154,13 +154,13 @@ exports[`render o 1`] = `
       />
     </div>
     <img
-      alt="clear-marker-board-2-square-2"
+      alt="o-marker-board-2-square-2"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="clear-marker-board-2-square-2"
-      src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+      draggable="false"
+      id="o-marker-board-2-square-2"
+      src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=640&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=640&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -186,14 +186,14 @@ exports[`render o 1`] = `
     />
     <noscript>
       <img
-        alt="clear-marker-board-2-square-2"
+        alt="o-marker-board-2-square-2"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="clear-marker-board-2-square-2"
+        draggable="false"
+        id="o-marker-board-2-square-2"
         loading="lazy"
-        src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+        src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=640&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=640&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -265,13 +265,13 @@ exports[`render x 1`] = `
       />
     </div>
     <img
-      alt="clear-marker-board-2-square-2"
+      alt="x-marker-board-2-square-2"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="clear-marker-board-2-square-2"
-      src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+      draggable="false"
+      id="x-marker-board-2-square-2"
+      src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -297,14 +297,14 @@ exports[`render x 1`] = `
     />
     <noscript>
       <img
-        alt="clear-marker-board-2-square-2"
+        alt="x-marker-board-2-square-2"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="clear-marker-board-2-square-2"
+        draggable="false"
+        id="x-marker-board-2-square-2"
         loading="lazy"
-        src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
+        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75 2x"
         style={
           Object {
             "border": "none",
