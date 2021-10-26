@@ -2,7 +2,7 @@
 
 exports[`render o active 1`] = `
 <div
-  className="timerView timerViewActiveO"
+  className="timerView timerViewInactive"
 >
   <div
     className="timerViewImage"
@@ -44,13 +44,13 @@ exports[`render o active 1`] = `
         />
       </div>
       <img
-        alt="o-marker-timer-view"
+        alt="O-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="o-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
+        draggable="false"
+        id="O-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -76,14 +76,14 @@ exports[`render o active 1`] = `
       />
       <noscript>
         <img
-          alt="o-marker-timer-view"
+          alt="O-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="o-marker-timer-view"
+          draggable="false"
+          id="O-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -112,7 +112,7 @@ exports[`render o active 1`] = `
   </div>
   <div
     className="timerViewText timerViewO "
-    id="Oplayer-remaining-time"
+    id="O-player-remaining-time"
   >
     00:00.05
   </div>
@@ -163,13 +163,13 @@ exports[`render o inactive 1`] = `
         />
       </div>
       <img
-        alt="o-marker-timer-view"
+        alt="O-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="o-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
+        draggable="false"
+        id="O-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -195,14 +195,14 @@ exports[`render o inactive 1`] = `
       />
       <noscript>
         <img
-          alt="o-marker-timer-view"
+          alt="O-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="o-marker-timer-view"
+          draggable="false"
+          id="O-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FO.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -231,7 +231,7 @@ exports[`render o inactive 1`] = `
   </div>
   <div
     className="timerViewText timerViewO "
-    id="Oplayer-remaining-time"
+    id="O-player-remaining-time"
   >
     00:00.05
   </div>
@@ -282,13 +282,13 @@ exports[`render o no time 1`] = `
         />
       </div>
       <img
-        alt="redo-marker-timer-view"
+        alt="redO-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="redo-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
+        draggable="false"
+        id="redO-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FredO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -314,14 +314,14 @@ exports[`render o no time 1`] = `
       />
       <noscript>
         <img
-          alt="redo-marker-timer-view"
+          alt="redO-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="redo-marker-timer-view"
+          draggable="false"
+          id="redO-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FredO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -350,7 +350,7 @@ exports[`render o no time 1`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
-    id="redOplayer-remaining-time"
+    id="redO-player-remaining-time"
   >
     00:00.00
   </div>
@@ -401,13 +401,13 @@ exports[`render o no time 2`] = `
         />
       </div>
       <img
-        alt="redo-marker-timer-view"
+        alt="redO-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="redo-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
+        draggable="false"
+        id="redO-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FredO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -433,14 +433,14 @@ exports[`render o no time 2`] = `
       />
       <noscript>
         <img
-          alt="redo-marker-timer-view"
+          alt="redO-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="redo-marker-timer-view"
+          draggable="false"
+          id="redO-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FredO.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredO.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -469,7 +469,7 @@ exports[`render o no time 2`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
-    id="redOplayer-remaining-time"
+    id="redO-player-remaining-time"
   >
     00:00.00
   </div>
@@ -478,7 +478,7 @@ exports[`render o no time 2`] = `
 
 exports[`render time at 5 minutes and 50.01 seconds 1`] = `
 <div
-  className="timerView timerViewActiveX"
+  className="timerView timerViewInactive"
 >
   <div
     className="timerViewImage"
@@ -520,13 +520,13 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
         />
       </div>
       <img
-        alt="x-marker-timer-view"
+        alt="X-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="x-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        draggable="false"
+        id="X-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -552,14 +552,14 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
       />
       <noscript>
         <img
-          alt="x-marker-timer-view"
+          alt="X-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="x-marker-timer-view"
+          draggable="false"
+          id="X-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -587,8 +587,8 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
     </div>
   </div>
   <div
-    className="timerViewText timerViewX "
-    id="Xplayer-remaining-time"
+    className="timerViewText timerViewO "
+    id="X-player-remaining-time"
   >
     58:20.01
   </div>
@@ -597,7 +597,7 @@ exports[`render time at 5 minutes and 50.01 seconds 1`] = `
 
 exports[`render time at 10 seconds 1`] = `
 <div
-  className="timerView timerViewActiveX"
+  className="timerView timerViewInactive"
 >
   <div
     className="timerViewImage"
@@ -639,13 +639,13 @@ exports[`render time at 10 seconds 1`] = `
         />
       </div>
       <img
-        alt="x-marker-timer-view"
+        alt="X-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="x-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        draggable="false"
+        id="X-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -671,14 +671,14 @@ exports[`render time at 10 seconds 1`] = `
       />
       <noscript>
         <img
-          alt="x-marker-timer-view"
+          alt="X-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="x-marker-timer-view"
+          draggable="false"
+          id="X-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -706,8 +706,8 @@ exports[`render time at 10 seconds 1`] = `
     </div>
   </div>
   <div
-    className="timerViewText timerViewX "
-    id="Xplayer-remaining-time"
+    className="timerViewText timerViewO "
+    id="X-player-remaining-time"
   >
     01:40.00
   </div>
@@ -716,7 +716,7 @@ exports[`render time at 10 seconds 1`] = `
 
 exports[`render time at 50 seconds 1`] = `
 <div
-  className="timerView timerViewActiveX"
+  className="timerView timerViewInactive"
 >
   <div
     className="timerViewImage"
@@ -758,13 +758,13 @@ exports[`render time at 50 seconds 1`] = `
         />
       </div>
       <img
-        alt="x-marker-timer-view"
+        alt="X-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="x-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        draggable="false"
+        id="X-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -790,14 +790,14 @@ exports[`render time at 50 seconds 1`] = `
       />
       <noscript>
         <img
-          alt="x-marker-timer-view"
+          alt="X-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="x-marker-timer-view"
+          draggable="false"
+          id="X-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -825,8 +825,8 @@ exports[`render time at 50 seconds 1`] = `
     </div>
   </div>
   <div
-    className="timerViewText timerViewX "
-    id="Xplayer-remaining-time"
+    className="timerViewText timerViewO "
+    id="X-player-remaining-time"
   >
     08:20.00
   </div>
@@ -835,7 +835,7 @@ exports[`render time at 50 seconds 1`] = `
 
 exports[`render x active 1`] = `
 <div
-  className="timerView timerViewActiveX"
+  className="timerView timerViewInactive"
 >
   <div
     className="timerViewImage"
@@ -877,13 +877,13 @@ exports[`render x active 1`] = `
         />
       </div>
       <img
-        alt="x-marker-timer-view"
+        alt="X-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="x-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        draggable="false"
+        id="X-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -909,14 +909,14 @@ exports[`render x active 1`] = `
       />
       <noscript>
         <img
-          alt="x-marker-timer-view"
+          alt="X-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="x-marker-timer-view"
+          draggable="false"
+          id="X-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -944,8 +944,8 @@ exports[`render x active 1`] = `
     </div>
   </div>
   <div
-    className="timerViewText timerViewX "
-    id="Xplayer-remaining-time"
+    className="timerViewText timerViewO "
+    id="X-player-remaining-time"
   >
     00:00.05
   </div>
@@ -996,13 +996,13 @@ exports[`render x below 0.00 1`] = `
         />
       </div>
       <img
-        alt="redx-marker-timer-view"
+        alt="redX-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="redx-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
+        draggable="false"
+        id="redX-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -1028,14 +1028,14 @@ exports[`render x below 0.00 1`] = `
       />
       <noscript>
         <img
-          alt="redx-marker-timer-view"
+          alt="redX-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="redx-marker-timer-view"
+          draggable="false"
+          id="redX-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1064,7 +1064,7 @@ exports[`render x below 0.00 1`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
-    id="redXplayer-remaining-time"
+    id="redX-player-remaining-time"
   >
     00:00.00
   </div>
@@ -1115,13 +1115,13 @@ exports[`render x inactive 1`] = `
         />
       </div>
       <img
-        alt="x-marker-timer-view"
+        alt="X-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="x-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+        draggable="false"
+        id="X-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -1147,14 +1147,14 @@ exports[`render x inactive 1`] = `
       />
       <noscript>
         <img
-          alt="x-marker-timer-view"
+          alt="X-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="x-marker-timer-view"
+          draggable="false"
+          id="X-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1182,8 +1182,8 @@ exports[`render x inactive 1`] = `
     </div>
   </div>
   <div
-    className="timerViewText timerViewX "
-    id="Xplayer-remaining-time"
+    className="timerViewText timerViewO "
+    id="X-player-remaining-time"
   >
     00:00.05
   </div>
@@ -1234,13 +1234,13 @@ exports[`render x no time 1`] = `
         />
       </div>
       <img
-        alt="redx-marker-timer-view"
+        alt="redX-marker-timer-view"
         data-nimg="intrinsic"
         decoding="async"
-        draggable={false}
-        id="redx-marker-timer-view"
-        src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
-        srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
+        draggable="false"
+        id="redX-marker-timer-view"
+        src="/_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75"
+        srcSet="/_next/image?url=%2Fplayer-marker%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75 2x"
         style={
           Object {
             "border": "none",
@@ -1266,14 +1266,14 @@ exports[`render x no time 1`] = `
       />
       <noscript>
         <img
-          alt="redx-marker-timer-view"
+          alt="redX-marker-timer-view"
           data-nimg="intrinsic"
           decoding="async"
-          draggable={false}
-          id="redx-marker-timer-view"
+          draggable="false"
+          id="redX-marker-timer-view"
           loading="lazy"
-          src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75"
-          srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=64&q=75 2x"
+          src="/_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75"
+          srcSet="/_next/image?url=%2Fplayer-marker%2FredX.png&w=32&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredX.png&w=64&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1302,7 +1302,7 @@ exports[`render x no time 1`] = `
   </div>
   <div
     className="timerViewText timerViewTextNoTimeLeft "
-    id="redXplayer-remaining-time"
+    id="redX-player-remaining-time"
   >
     00:00.00
   </div>

@@ -157,13 +157,13 @@ exports[`render 1`] = `
               />
             </div>
             <img
-              alt="x-marker-board-2-square-1"
+              alt="clear-marker-board-2-square-1"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
-              id="x-marker-board-2-square-1"
-              src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75"
-              srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75 2x"
+              draggable="false"
+              id="clear-marker-board-2-square-1"
+              src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+              srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -189,14 +189,14 @@ exports[`render 1`] = `
             />
             <noscript>
               <img
-                alt="x-marker-board-2-square-1"
+                alt="clear-marker-board-2-square-1"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
-                id="x-marker-board-2-square-1"
+                draggable="false"
+                id="clear-marker-board-2-square-1"
                 loading="lazy"
-                src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75"
-                srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=640&q=75 2x"
+                src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
+                srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -268,7 +268,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-2"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-2"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -300,7 +300,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-2"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-2"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -376,7 +376,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-3"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-3"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -408,7 +408,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-3"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-3"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -486,7 +486,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-4"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-4"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -518,7 +518,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-4"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-4"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -594,7 +594,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-5"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-5"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -626,7 +626,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-5"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-5"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -702,7 +702,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-6"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-6"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -734,7 +734,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-6"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-6"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -812,7 +812,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-7"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-7"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -844,7 +844,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-7"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-7"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -920,7 +920,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-8"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-8"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -952,7 +952,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-8"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-8"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
@@ -1028,7 +1028,7 @@ exports[`render 1`] = `
               alt="clear-marker-board-2-square-9"
               data-nimg="intrinsic"
               decoding="async"
-              draggable={false}
+              draggable="false"
               id="clear-marker-board-2-square-9"
               src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"
               srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75 2x"
@@ -1060,7 +1060,7 @@ exports[`render 1`] = `
                 alt="clear-marker-board-2-square-9"
                 data-nimg="intrinsic"
                 decoding="async"
-                draggable={false}
+                draggable="false"
                 id="clear-marker-board-2-square-9"
                 loading="lazy"
                 src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=640&q=75"

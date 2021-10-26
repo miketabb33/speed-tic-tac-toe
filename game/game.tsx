@@ -12,7 +12,7 @@ export default class Game {
   #xTimer
   #oTimer
   #isGameOver = false
-  playerMarkers = ['X', 'O']
+  playerMarkers = ['x', 'o']
 
 	constructor(timerValueDidChange: (marker: string, time: number) => void, timerDidHit0: (marker: string) => void) {   
     const board1 = new Board(0)

@@ -10,11 +10,11 @@ export default class TextDisplayView extends React.Component<TextDisplayViewProp
 	static draw = 'Draw'
 
 	static turn(player: string) {
-		return player + "'s Turn"
+		return player.toUpperCase() + "'s Turn"
 	}
 
 	static winner(player: string) {
-		return player + ' is the Winner!'
+		return player.toUpperCase() + ' is the Winner!'
 	}
 
 	render() {

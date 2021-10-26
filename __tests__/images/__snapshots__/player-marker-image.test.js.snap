@@ -41,7 +41,7 @@ exports[`clear image rendering 1`] = `
     alt="clear-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
+    draggable="false"
     id="clear-marker-some-ui-location"
     src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75"
     srcSet="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75 2x"
@@ -73,7 +73,7 @@ exports[`clear image rendering 1`] = `
       alt="clear-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
+      draggable="false"
       id="clear-marker-some-ui-location"
       loading="lazy"
       src="/_next/image?url=%2Fplayer-marker%2Fclear.png&w=256&q=75"
@@ -143,13 +143,13 @@ exports[`o image rendering 1`] = `
     />
   </div>
   <img
-    alt="o-marker-some-ui-location"
+    alt="O-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
-    id="o-marker-some-ui-location"
-    src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=256&q=75"
-    srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=256&q=75 2x"
+    draggable="false"
+    id="O-marker-some-ui-location"
+    src="/_next/image?url=%2Fplayer-marker%2FO.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplayer-marker%2FO.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FO.png&w=256&q=75 2x"
     style={
       Object {
         "border": "none",
@@ -175,14 +175,14 @@ exports[`o image rendering 1`] = `
   />
   <noscript>
     <img
-      alt="o-marker-some-ui-location"
+      alt="O-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="o-marker-some-ui-location"
+      draggable="false"
+      id="O-marker-some-ui-location"
       loading="lazy"
-      src="/_next/image?url=%2Fplayer-marker%2Fo.png&w=256&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fo.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fo.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fplayer-marker%2FO.png&w=256&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2FO.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FO.png&w=256&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -248,13 +248,13 @@ exports[`red o image rendering 1`] = `
     />
   </div>
   <img
-    alt="redo-marker-some-ui-location"
+    alt="redO-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
-    id="redo-marker-some-ui-location"
-    src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=256&q=75"
-    srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=256&q=75 2x"
+    draggable="false"
+    id="redO-marker-some-ui-location"
+    src="/_next/image?url=%2Fplayer-marker%2FredO.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplayer-marker%2FredO.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredO.png&w=256&q=75 2x"
     style={
       Object {
         "border": "none",
@@ -280,14 +280,14 @@ exports[`red o image rendering 1`] = `
   />
   <noscript>
     <img
-      alt="redo-marker-some-ui-location"
+      alt="redO-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="redo-marker-some-ui-location"
+      draggable="false"
+      id="redO-marker-some-ui-location"
       loading="lazy"
-      src="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=256&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fredo.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredo.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fplayer-marker%2FredO.png&w=256&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2FredO.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredO.png&w=256&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -353,13 +353,13 @@ exports[`red x image rendering 1`] = `
     />
   </div>
   <img
-    alt="redx-marker-some-ui-location"
+    alt="redX-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
-    id="redx-marker-some-ui-location"
-    src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=256&q=75"
-    srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=256&q=75 2x"
+    draggable="false"
+    id="redX-marker-some-ui-location"
+    src="/_next/image?url=%2Fplayer-marker%2FredX.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplayer-marker%2FredX.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredX.png&w=256&q=75 2x"
     style={
       Object {
         "border": "none",
@@ -385,14 +385,14 @@ exports[`red x image rendering 1`] = `
   />
   <noscript>
     <img
-      alt="redx-marker-some-ui-location"
+      alt="redX-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="redx-marker-some-ui-location"
+      draggable="false"
+      id="redX-marker-some-ui-location"
       loading="lazy"
-      src="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=256&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fredx.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fredx.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fplayer-marker%2FredX.png&w=256&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2FredX.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FredX.png&w=256&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -458,13 +458,13 @@ exports[`x image rendering 1`] = `
     />
   </div>
   <img
-    alt="x-marker-some-ui-location"
+    alt="X-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
-    id="x-marker-some-ui-location"
-    src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75"
-    srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 2x"
+    draggable="false"
+    id="X-marker-some-ui-location"
+    src="/_next/image?url=%2Fplayer-marker%2FX.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=256&q=75 2x"
     style={
       Object {
         "border": "none",
@@ -490,14 +490,14 @@ exports[`x image rendering 1`] = `
   />
   <noscript>
     <img
-      alt="x-marker-some-ui-location"
+      alt="X-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="x-marker-some-ui-location"
+      draggable="false"
+      id="X-marker-some-ui-location"
       loading="lazy"
-      src="/_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fx.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fx.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fplayer-marker%2FX.png&w=256&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2FX.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FX.png&w=256&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -563,13 +563,13 @@ exports[`yellow o image rendering 1`] = `
     />
   </div>
   <img
-    alt="yellowo-marker-some-ui-location"
+    alt="yellowO-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
-    id="yellowo-marker-some-ui-location"
-    src="/_next/image?url=%2Fplayer-marker%2Fyellowo.png&w=256&q=75"
-    srcSet="/_next/image?url=%2Fplayer-marker%2Fyellowo.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fyellowo.png&w=256&q=75 2x"
+    draggable="false"
+    id="yellowO-marker-some-ui-location"
+    src="/_next/image?url=%2Fplayer-marker%2FyellowO.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplayer-marker%2FyellowO.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FyellowO.png&w=256&q=75 2x"
     style={
       Object {
         "border": "none",
@@ -595,14 +595,14 @@ exports[`yellow o image rendering 1`] = `
   />
   <noscript>
     <img
-      alt="yellowo-marker-some-ui-location"
+      alt="yellowO-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="yellowo-marker-some-ui-location"
+      draggable="false"
+      id="yellowO-marker-some-ui-location"
       loading="lazy"
-      src="/_next/image?url=%2Fplayer-marker%2Fyellowo.png&w=256&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fyellowo.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fyellowo.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fplayer-marker%2FyellowO.png&w=256&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2FyellowO.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FyellowO.png&w=256&q=75 2x"
       style={
         Object {
           "border": "none",
@@ -668,13 +668,13 @@ exports[`yellow x image rendering 1`] = `
     />
   </div>
   <img
-    alt="yellowx-marker-some-ui-location"
+    alt="yellowX-marker-some-ui-location"
     data-nimg="intrinsic"
     decoding="async"
-    draggable={false}
-    id="yellowx-marker-some-ui-location"
-    src="/_next/image?url=%2Fplayer-marker%2Fyellowx.png&w=256&q=75"
-    srcSet="/_next/image?url=%2Fplayer-marker%2Fyellowx.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fyellowx.png&w=256&q=75 2x"
+    draggable="false"
+    id="yellowX-marker-some-ui-location"
+    src="/_next/image?url=%2Fplayer-marker%2FyellowX.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplayer-marker%2FyellowX.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FyellowX.png&w=256&q=75 2x"
     style={
       Object {
         "border": "none",
@@ -700,14 +700,14 @@ exports[`yellow x image rendering 1`] = `
   />
   <noscript>
     <img
-      alt="yellowx-marker-some-ui-location"
+      alt="yellowX-marker-some-ui-location"
       data-nimg="intrinsic"
       decoding="async"
-      draggable={false}
-      id="yellowx-marker-some-ui-location"
+      draggable="false"
+      id="yellowX-marker-some-ui-location"
       loading="lazy"
-      src="/_next/image?url=%2Fplayer-marker%2Fyellowx.png&w=256&q=75"
-      srcSet="/_next/image?url=%2Fplayer-marker%2Fyellowx.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2Fyellowx.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fplayer-marker%2FyellowX.png&w=256&q=75"
+      srcSet="/_next/image?url=%2Fplayer-marker%2FyellowX.png&w=128&q=75 1x, /_next/image?url=%2Fplayer-marker%2FyellowX.png&w=256&q=75 2x"
       style={
         Object {
           "border": "none",
